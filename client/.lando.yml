@@ -1,0 +1,16 @@
+name: spark-lando
+services:
+  node:
+    type: node:18
+    scanner: false
+    ports:
+      - 5173:5173
+    build:
+      - npm install
+tooling:
+  dev:
+    service: node
+    cmd: npm run dev
+  build:
+    service: node
+    cmd: npm run build
