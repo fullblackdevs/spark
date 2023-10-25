@@ -1,4 +1,4 @@
-name: spark-lando
+name: spark-ui
 services:
   node:
     type: node:18
@@ -7,6 +7,9 @@ services:
       - 5173:5173
     build:
       - npm install
+proxy:
+  node:
+    - spark-ui.local:5173
 tooling:
   dev:
     service: node
