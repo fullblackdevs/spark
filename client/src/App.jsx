@@ -1,12 +1,10 @@
 import './App.css'
-import SparkNav from './components/navbar'
-import SparkCard from './components/sparkCard'
+import SparkNav from './components/sparkNav'
 
 function App() {
   return (
     <>
       <SparkNav />
-     <SparkCard />
     </>
   )
 }
