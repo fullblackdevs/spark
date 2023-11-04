@@ -1,25 +1,27 @@
-import {  Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle} from 'flowbite-react/lib/esm/components/Navbar';
+'use client';
+
+import { Navbar } from 'flowbite-react';
 import { Link } from 'react';
 
 export default function SparkNav() {
   return (
     <Navbar fluid rounded>
-      <NavbarBrand as={Link} href="https://flowbite-react.com">
-        <img src="client/public/vite.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+      <Navbar.Brand as={Link} href="https://flowbite-react.com">
+        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
-      </NavbarBrand>
-      <NavbarToggle />
-      <NavbarCollapse>
-        <NavbarLink href="#" active>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+      <Navbar.Collapse>
+        <Navbar.Link href="#" active>
           Home
-        </NavbarLink>
-        <NavbarLink as={Link} href="#">
+        </Navbar.Link>
+        <Navbar.Link as={Link} href="#">
           About
-        </NavbarLink>
-        <NavbarLink href="#">Services</NavbarLink>
-        <NavbarLink href="#">Pricing</NavbarLink>
-        <NavbarLink href="#">Contact</NavbarLink>
-      </NavbarCollapse>
+        </Navbar.Link>
+        <Navbar.Link href="#">Services</Navbar.Link>
+        <Navbar.Link href="#">Pricing</Navbar.Link>
+        <Navbar.Link href="#">Contact</Navbar.Link>
+      </Navbar.Collapse>
     </Navbar>
   );
 }

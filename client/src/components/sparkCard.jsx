@@ -1,4 +1,6 @@
-import { Card } from 'flowbite-react/lib/esm/components/Card/Card';
+'use client';
+
+import { Card } from 'flowbite-react';
 
 export default function SparkCard() {
   return (
