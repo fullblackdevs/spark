@@ -1,0 +1,15 @@
+name: spark-cms
+services:
+  node:
+    type: node:18
+    build:
+      - npm install
+    port: 3333
+    command: sanity dev --host=0.0.0.0
+tooling:
+  dev:
+    service: node
+    cmd: npm run dev
+  build:
+    service: node
+    cmd: npm run build
