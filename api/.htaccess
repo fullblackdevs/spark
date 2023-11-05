@@ -1,5 +1,6 @@
 <IfModule mod_rewrite.c>
 	Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Headers "Content-Type"
     RewriteEngine on
 
     RewriteRule    ^(\.well-known/.*)$ $1 [L]

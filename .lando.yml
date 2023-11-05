@@ -6,6 +6,10 @@ services:
     ssl: true
     webroot: api/web
     composer_version: 2-latest
+    build_as_root:
+      - apt-get update -y
+      - apt-get install -y apache2
+      - a2enmod headers
     build:
       - composer update -d /app/api
   cache:
@@ -20,5 +24,7 @@ services:
       - npm --prefix /app/client install
     command: npm --prefix /app/client run build && npm --prefix /app/client run dev
 proxy:
+  api:
+    - api.spark.loc
   client:
     - spark.loc:5173
