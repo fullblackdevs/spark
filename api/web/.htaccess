@@ -1,5 +1,9 @@
+<IfModule mod_headers.c>
+	Header set Access-Control-Allow-Origin "http://spark.loc"
+	Header set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
+
 <IfModule mod_rewrite.c>
-	Header set Access-Control-Allow-Origin "*"
 	RewriteEngine On
 
 	RewriteCond %{REQUEST_FILENAME} !-f
