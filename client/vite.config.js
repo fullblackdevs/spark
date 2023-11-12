@@ -5,9 +5,16 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
+    proxy: {
+      '/api': {
+        target: 'http://spark.loc',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    },
     https: false,
     host: true,
     port: 5173,
-    hmr: {host: 'localhost', port: 5173, protocol: 'ws'},
+    hmr: {host: 'localhost' | 'spark.loc', protocol: 'ws'},
 },
 })
