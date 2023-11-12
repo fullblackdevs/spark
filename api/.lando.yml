@@ -8,12 +8,14 @@ services:
     ssl: true
     webroot: web
     composer_version: 2-latest
+    build_as_root:
+      - a2enmod headers
     build:
       - composer update
   cache:
     type: redis:6
     persist: false
-    portforward: 56381
+    portforward: 56382
 proxy:
   app:
-    - spark.loc
+    - api.spark.loc
