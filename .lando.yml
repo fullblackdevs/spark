@@ -1,10 +1,10 @@
 name: spark
 services:
-  api:
+  site:
     type: php:8.1
     via: apache
     ssl: true
-    webroot: /api/web
+    webroot: /site/web
     composer_version: 2-latest
     build_as_root:
       - a2enmod headers
@@ -14,15 +14,6 @@ services:
     type: redis:6
     persist: false
     portforward: 56381
-  client:
-    type: node:18
-    scanner: false
-    port: 5173
-    build:
-      - npm --prefix /app/client install
-    command: npm --prefix /app/client run build && npm --prefix /app/client run dev
 proxy:
-  api:
-    - api.spark.loc
-  client:
-    - spark.loc:5173
+  site:
+    - spark.loc

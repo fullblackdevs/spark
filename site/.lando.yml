@@ -1,8 +1,8 @@
-name: spark-api
+name: spark-web
 env_file:
   - .env
 services:
-  app:
+  site:
     type: php:8.1
     via: apache
     ssl: true
@@ -17,5 +17,5 @@ services:
     persist: false
     portforward: 56382
 proxy:
-  app:
-    - api.spark.loc
+  site:
+    - spark.loc

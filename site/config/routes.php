@@ -9,6 +9,11 @@ use App\Action\API\GetResourcesAction;
 use App\Action\API\PulseAction;
 
 return function (App $app) {
+	$app->get('[/]', function ($request, $response) {
+		$response->getBody()->write('Hello world!');
+		return $response;
+	});
+
 	$app->group('/api', function (RouteCollectorProxy $api) {
         $api->group('/v0', function(RouteCollectorProxy $api) {
 			$api->get('/pulse', PulseAction::class);
