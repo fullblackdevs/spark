@@ -7,12 +7,10 @@ use App\Action\API\GetEventsAction;
 use App\Action\API\GetPartnersAction;
 use App\Action\API\GetResourcesAction;
 use App\Action\API\PulseAction;
+use App\Action\Page\HomeAction;
 
 return function (App $app) {
-	$app->get('[/]', function ($request, $response) {
-		$response->getBody()->write('Hello world!');
-		return $response;
-	});
+	$app->get('[/]', HomeAction::class);
 
 	$app->group('/api', function (RouteCollectorProxy $api) {
         $api->group('/v0', function(RouteCollectorProxy $api) {
