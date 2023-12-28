@@ -8,6 +8,10 @@ class HomeAction extends CoreAction
 {
 	public function invoke() : void
 	{
-		$this->getResponse()->getBody()->write('Welcome to Spark!');
+		$this->getView()->render($this->getResponse(), 'pages/home.php', [
+			'pageTitle' => 'Home',
+			'isHome' => true,
+			'pageSlug' => 'home',
+		]);
 	}
 }

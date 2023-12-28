@@ -9,7 +9,7 @@ services:
     build_as_root:
       - a2enmod headers
     build:
-      - composer update -d api
+      - composer update -d site
   cache:
     type: redis:6
     persist: false
@@ -17,3 +17,11 @@ services:
 proxy:
   site:
     - spark.loc
+tooling:
+  php:
+    service: site
+    cmd: php
+  composer:
+    service: site
+    cmd: composer -d site
+    description: "Run Composer commands"

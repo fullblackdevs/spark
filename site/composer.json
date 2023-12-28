@@ -11,7 +11,10 @@
     ],
     "require": {
         "slim/slim": "^4.12",
-        "guzzlehttp/psr7": "^2.6"
+        "guzzlehttp/psr7": "^2.6",
+        "sentry/sentry": "^4.3",
+        "slim/php-view": "^3.2",
+        "spatie/ray": "^1.40"
     },
 	"autoload": {
         "psr-4": {
