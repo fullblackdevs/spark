@@ -6,7 +6,7 @@
 			</a>
 			<div class="grow flex flex-col p-5">
 				<a href="#">
-					<h5 class="mb-2 text-2xl font-bold tracking-tight text-courageous-plum-900 dark:text-white">AHF Pharmacy</h5>
+					<h4 class="mb-2 text-2xl font-bold tracking-tight text-courageous-plum-900 dark:text-white">AHF Pharmacy</h4>
 				</a>
 				<p class="grow mb-3 font-normal text-gray-700 dark:text-gray-400">AHF offers multiple services to complete an easy-to-use circle of care. With convenient pharmacy locations, healthcare centers, and specialty medicare programs, we've got you covered.</p>
 				<a href="/resource/ahf-pharmacy" class="w-fit inline-flex items-center px-3 py-2 text-sm font-medium text-center text-courageous-plum border-2 border-courageous-plum rounded-lg hover:bg-courageous-plum-300 hover:text-white focus:ring-4 focus:outline-none focus:ring-courageous-plum-400 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

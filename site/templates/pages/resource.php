@@ -1,13 +1,13 @@
 <div class="bg-[#FAF3F9] grow min-h-full px-28 text-black py-16 tracking-tight">
 	<div class="flex gap-16">
 		<section class="w-3/5">
-			<h2 class="text-3xl font-bold text-courageous-plum">AHF Pharmacy</h2>
+			<h3 class="text-3xl font-bold text-courageous-plum">AHF Pharmacy</h3>
 			<p><a href="/partner/ahf">AIDS Healthcare Foundation</a></p>
 
 			<p class="mt-6 leading-loose">AHF Pharmacy is a not-for-profit healthcare provider operated by Los Angeles-based AIDS Healthcare Foundation. The organization offers pharmaceutical essentials to patients through a network of pharmacies. The pharmacies employ clinically trained pharmacists to provide custom services. Customers can select between pickup at store locations or getting the medications delivered at their doorstep. It also offers special packaging that guides patients on the medication to be taken and at what time of the day. For this, it adopts GoPak and CalendarPak custom medication packaging and labeling services. As part of GoPak packaging, the organization keeps a month’s medication into daily dose-specific packets labeled with the date and time when the medication is to be taken, and its CalendarPak service labels the monthly medications. AHF Pharmacy also offers a mobile app for patients to stay connected with pharmacies, receive alerts on medications, and get refills throughout the day. It also sends reminders to patients on monthly refills. It coordinates with the patient’s physician, insurance companies, and other parties that could be involved in the patient’s overall healthcare.</p>
 
 			<div class="my-10">
-				<h2 class="font-semibold text-xl">Testimonials/Reviews</h2>
+				<h3 class="font-semibold text-xl">Testimonials/Reviews</h3>
 				<p>“I have been a customer of AHF Pharmacy for over 10 years. I have always received excellent service from the staff. They are always friendly and helpful. I have never had a problem with my medications. I would recommend AHF Pharmacy to anyone who needs a pharmacy.”</p>
 			</div>
 		</section>
