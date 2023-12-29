@@ -9,8 +9,8 @@
 	];
 
 	$base = 'inline-block py-2';
-	$active = 'border-b-2 border-[#CFAE70]';
-	$hover = 'border-b-2 border-transparent hover:text-confident-carnation-400 hover:border-[#CFAE70]'; // arbitrary hover color needed to be added last to work as expected
+	$active = 'border-b-2 border-spark-gold';
+	$hover = 'border-b-2 border-transparent hover:text-confident-carnation-400 hover:border-spark-gold'; // arbitrary hover color needed to be added last to work as expected
 ?>
 <h1 class="text-9xl font-bold uppercase -mb-8 -mt-2"><a href="/">Spark</a></h1>
 <nav class="flex grow text-2xl items-center ml-6">

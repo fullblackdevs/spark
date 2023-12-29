@@ -1,5 +1,5 @@
 <footer class="flex-none bg-courageous-plum text-slate-50 px-28 pb-6 bg-gradient-to-t from-courageous-plum-900/75 from-20%">
-	<div class="flex flex-col items-center py-10 bg-[#CFAE70] rounded-b-xl">
+	<div class="flex flex-col items-center py-10 bg-spark-gold rounded-b-xl">
 		<p class="text-6xl font-display uppercase tracking-wide">Stay in the know</p>
 		<div class="w-2/5">
 			<label for="email" class="block text-sm font-medium leading-6 text-gray-900 sr-only">Email Address</label>

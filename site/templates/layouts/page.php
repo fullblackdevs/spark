@@ -53,8 +53,10 @@
 
 		<?php if(isset($isHome)): ?>
 			<?= $this->fetch('components/masthead-hero.php') ?>
-		<?php else: ?>
+		<?php elseif(!isset($isSingle) && in_array($pageSlug, ['about', 'partners', 'events', 'resources', 'blog', 'connect'])): ?>
 			<?= $this->fetch('components/masthead.php', compact('pageTitle', 'pageDescription')) ?>
+		<?php else: ?>
+			<?= $this->fetch('components/masthead-single.php', ['pageData' => $pageData]) ?>
 		<?php endif; ?>
 
 		<?= $content ?>

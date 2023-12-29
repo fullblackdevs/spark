@@ -330,6 +330,14 @@
       "oAP" : "\/src\/Action\/API\/PulseAction.php",
       "oF" : 0
     },
+    "\/src\/Action\/GetEventPageAction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Action\/GetEventPageAction.php",
+      "oF" : 0
+    },
     "\/src\/Action\/GetResourcePageAction.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -445,6 +453,14 @@
       "oAP" : "\/templates\/components\/masthead-hero.php",
       "oF" : 0
     },
+    "\/templates\/components\/masthead-single.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/components\/masthead-single.php",
+      "oF" : 0
+    },
     "\/templates\/components\/masthead.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -507,6 +523,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pages\/connect.php",
+      "oF" : 0
+    },
+    "\/templates\/pages\/event.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/event.php",
       "oF" : 0
     },
     "\/templates\/pages\/events.php" : {
@@ -593,6 +617,46 @@
       "oAP" : "\/web\/assets\/fonts\/PlakatGrotesk-Regular.woff2",
       "oF" : 0
     },
+    "\/web\/assets\/icons\/quotations-stitched-2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/icons\/quotations-stitched-2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/web\/assets\/icons\/quotations-stitched-3.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/icons\/quotations-stitched-3.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/web\/assets\/icons\/quotations-stitched.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/icons\/quotations-stitched.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/web\/assets\/icons\/quotations.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/icons\/quotations.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/web\/assets\/images\/alex-starnes-tbYPDBChsZU-unsplash.png" : {
       "ft" : 32768,
       "iS" : 3268973,
@@ -624,6 +688,19 @@
       "iS" : 6328937,
       "oA" : 0,
       "oAP" : "\/web\/assets\/images\/leighann-blackwood-hx87JWG4yCI-unsplash.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/web\/assets\/images\/otc-ahf.png" : {
+      "ft" : 32768,
+      "iS" : 2647426,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/otc-ahf.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
