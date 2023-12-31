@@ -1,23 +1,30 @@
 <div class="bg-[#FAF3F9] grow min-h-full *:px-8 md:*:px-28 text-black">
 	<section class="flex flex-col bg-courageous-plum-100 relative gap-4 py-8 md:py-24 overflow-hidden">
-		<div class="flex me-9 gap-4 items-center">
-			<h2 class="text-8xl font-display uppercase tracking-tight text-courageous-plum grow whitespace-nowrap border-b-8 border-spark-gold-700">The Latest</h2>
-			<div class="hidden md:grid md:grid-cols-4 gap-2 shrink">
+		<div class="flex md:me-9 gap-4 items-center">
+
+			<h2 class="grow border-b-8 border-spark-gold-700 pb-2 xl:w-2/5 md:self-end xl:self-center">
+				<svg viewbox="0 0 360 80" class="font-display text-8xl w-full">
+					<text y="75" textLength="360" lengthAdjust="spacingAndGlyphs" class="fill-courageous-plum tracking-tight uppercase">The Latest</text>
+				</svg>
+			</h2>
+
+			<div class="hidden md:grid md:grid-cols-4 gap-2 shrink justify-stretch w-3/5">
 				<div>
-					<img class="h-auto max-w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+					<img class="max-h-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
 				</div>
 				<div>
-					<img class="h-auto max-w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+					<img class="max-h-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
 				</div>
 				<div>
-					<img class="h-auto max-w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+					<img class="max-h-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
 				</div>
 				<div>
-					<img class="h-auto max-w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+					<img class="max-h-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
 				</div>
 			</div>
 		</div>
 		<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-6">
+
 			<div class="flex flex-col w-full md:w-2/3 border-2 border-courageous-200 rounded-xl shadow bg-[url('/assets/images/ian-schneider-PAykYb-8Er8-unsplash.jpg')] bg-cover overflow-hidden relative">
 				<a href="/blog/new-website" class="inset-0 absolute block md:hidden">&nbsp;</a>
 				<div class="flex flex-col justify-between grow h-64 p-4 bg-gradient-to-t from-courageous-plum-900">
@@ -38,8 +45,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid grid-flow-col auto-cols-max md:flex-col md:w-1/3 gap-4 overflow-x-scroll">
-				<div class="flex flex-col border border-gray-200 rounded-xl shadow overflow-hidden bg-[url('/assets/images/thought-catalog-23KdVfc395A-unsplash.jpg')] h-48 aspect-square bg-cover">
+			<div class="grid grid-flow-col auto-cols-max md:flex md:flex-col md:w-1/3 gap-4 overflow-x-scroll md:overflow-hidden">
+				<div class="flex flex-col border border-gray-200 rounded-xl shadow overflow-hidden bg-[url('/assets/images/thought-catalog-23KdVfc395A-unsplash.jpg')] md:h-64 h-48 aspect-square bg-cover">
 					<div class="flex flex-col grow justify-between p-4 bg-gradient-to-t from-courageous-plum-600">
 						<div class="flex justify-end">
 							<div class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 w-fit">Event</div>
@@ -63,7 +70,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex flex-col border border-gray-200 rounded-xl shadow overflow-hidden bg-[url('/assets/images/christina-wocintechchat-com-jzonFmreWok-unsplash.jpg')] md:h-64 aspect-square h-48 bg-cover">
+				<div class="flex flex-col border border-gray-200 rounded-xl shadow overflow-hidden bg-[url('/assets/images/christina-wocintechchat-com-jzonFmreWok-unsplash.jpg')] md:h-64 aspect-square h-48 bg-cover md:hidden">
 					<div class="flex flex-col grow justify-between p-4 bg-gradient-to-t from-courageous-plum-600">
 						<div class="flex justify-end">
 							<div class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 w-fit">Article</div>
@@ -75,28 +82,28 @@
 						</div>
 					</div>
 				</div>
-				<nav class="hidden md:flex md:flex-col space-y-3 rtl:space-x-reverse justify-center">
-					<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-					<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-					<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-					<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-					<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-				</nav>
 			</div>
+			<nav class="hidden md:flex md:flex-col space-y-3 rtl:space-x-reverse justify-center">
+				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+			</nav>
 		</div>
 	</section>
-	<section class="flex bg-spark-pink relative items-center overflow-hidden py-16">
-		<svg viewBox="0 0 250 115" class="font-display w-96 text-7xl tracking-tighter uppercase">
-			<text y="55" class="fill-none stroke-1 stroke-courageous-plum tracking-tight" textLength="100%" lengthAdjust="spacingAndGlyphs">Partner</text>
-			<text y="112" textLength="100%" lengthAdjust="spacingAndGlyphs" class="fill-courageous-plum">Spotlight</text>
+	<section class="flex flex-col md:flex-row bg-spark-pink relative items-center overflow-hidden py-10 md:py-16">
+		<svg viewbox="0 0 360 150" class="font-display text-8xl relative z-10 md:w-2/5 w-full" xmlns="http://www.w3.org/2000/svg">
+			<text x="0" y="70" lengthAdjust="spacingAndGlyphs" class="fill-none stroke-1 stroke-courageous-plum tracking-tight uppercase" textLength="360">Partner</text>
+			<text x="0" y="145" textLength="360" lengthAdjust="spacingAndGlyphs" class="fill-courageous-plum tracking-tight uppercase">Spotlight</text>
 		</svg>
-		<div class="flex grow shrink-0 bg-slate-800 rounded-xl overflow-hidden h-80 w-80 aspect-square place-self-center justify-stretch items-stretch relative z-40 ml-28 transition-all duration-300 ease-in-out bg-[url('/assets/images/otc-ahf.png')] bg-center bg-scalable hover:bg-scale-10 bg-no-repeat">
+		<div class="flex grow shrink-0 bg-slate-800 rounded-xl overflow-hidden md:h-80 w-full md:w-80 aspect-square place-self-center justify-stretch items-stretch relative z-40 mt-8 md:mt-0 md:ml-28 transition-all duration-300 ease-in-out bg-[url('/assets/images/otc-ahf.png')] bg-center bg-scalable hover:bg-scale-10 bg-no-repeat">
 			<div class="flex flex-col justify-center items-center grow text-white">
 				<div class="text-2xl">Logo</div>
 				<div class="mt-10">Link</div>
 			</div>
 		</div>
-		<svg viewbox="0 0 976 976" class="absolute -top-1/2 right-0 w-[976px] -mr-[45%] z-20">
+		<svg viewbox="0 0 976 976" class="hidden absolute -top-1/2 right-0 w-[976px] -mr-[45%] z-20">
 			<defs>
 				<radialGradient id="spotlight">
 					<stop offset="0%" stop-color="#f7d6e9" />
@@ -105,7 +112,7 @@
 			</defs>
 			<circle cy="488" cx="488" r="488" fill="url(#spotlight)" />
 		</svg>
-		<svg viewbox="0 0 1352 1352" class="absolute -top-3/4 right-0 w-[1352px] -mr-[55%]">
+		<svg viewbox="0 0 1352 1352" class="hidden absolute -top-3/4 right-0 w-[1352px] -mr-[55%]">
 			<defs>
 				<radialGradient id="spotlight">
 					<stop offset="0%" stop-color="#f7d6e9" />

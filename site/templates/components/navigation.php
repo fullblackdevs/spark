@@ -8,14 +8,14 @@ $routes = [
 	'connect',
 ];
 
-$base = 'inline-block py-2';
+$base = 'inline-block py-2 relative z-50';
 $active = 'border-b-2 border-spark-gold';
 $hover = 'border-b-2 border-transparent hover:text-confident-carnation-400 hover:border-spark-gold'; // arbitrary hover color needed to be added last to work as expected
 ?>
 
-<nav class="md:flex md:grow md:items-center md:ml-6 h-fit overflow-y-hidden">
+<nav class="md:flex md:grow md:items-center h-fit overflow-y-hidden">
 	<h1 class="font-display text-6xl md:text-7xl lg:text-9xl font-bold uppercase -mb-4 lg:-mb-8 -mt-2 lg:-mt-4"><a href="/">Spark</a></h1>
-	<ul class="hidden md:flex grow justify-between list-none lowercase font-body font-semibold text-xl tracking-tight me-12 lg:text-2xl">
+	<ul class="hidden md:flex grow justify-between list-none lowercase font-body font-semibold text-xl tracking-tight ml-6 me-12">
 		<?php foreach ($routes as $route) : ?>
 			<?= $route === $pageSlug ? '<li class="' . implode(' ', [$base, $active]) . '">' : '<li><a href="/' . $route . '" class="' . implode(' ', [$base, $hover]) . '">' ?>
 			<?= $route === 'blog' ? 'Sparkle' : ucfirst($route) ?>

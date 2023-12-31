@@ -1,6 +1,6 @@
 <footer class="flex-none bg-courageous-plum text-slate-50 md:px-28 pb-6 bg-gradient-to-t from-courageous-plum-900/75 from-20%">
 	<div class="flex flex-col items-center py-10 bg-spark-gold md:rounded-b-xl">
-		<p class="text-5xl md:text-6xl font-display uppercase tracking-wide">Stay in the know</p>
+		<p class="text-6xl font-display uppercase tracking-tight">Stay in the know</p>
 		<div class="md:w-2/5">
 			<label for="email" class="block text-sm font-medium leading-6 text-gray-900 sr-only">Email Address</label>
 			<div class="mt-2 flex rounded-md shadow-sm">
@@ -18,8 +18,8 @@
 			<p class="mt-2 text-xs text-gray-500" id="email-description">We care about the protection of your data. Read our <a href="#">Privacy Policy</a>.</p>
 		</div>
 	</div>
-	<div class="flex justify-between mb-6 mt-10 text-sm md:border-t pt-6 px-6">
-		<p>Copyright &copy; 2023 Spark. All Rights Reserved.</p>
+	<div class="flex flex-col md:flex-row justify-between items-center mb-6 mt-10 text-sm md:border-t md:pt-6 gap-4">
+		<p>Copyright &copy; 2023 Spark United. All Rights Reserved.</p>
 		<ul class="flex justify-between items-center gap-4">
 			<li>
 				<a href="https://www.facebook.com/sparktheconvo/" target="_blank" class="text-white hover:text-[#CFAE70]">

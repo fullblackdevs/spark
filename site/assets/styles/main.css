@@ -18,3 +18,27 @@
 	font-style: normal;
 	display: swap;
 }
+
+@layer utilities {
+	.scrollbar-none::-webkit-scrollbar {
+		display: none;
+	}
+
+	.scrollbar-none {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.scrollbar::-webkit-scrollbar {
+		width: unset;
+	}
+
+	.scrollbar::-webkit-scrollbar-track {
+		all: unset;
+	}
+
+	.scrollbar {
+		-ms-overflow-style: scrollbar;
+		scrollbar-width: thin;
+	}
+}

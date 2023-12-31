@@ -47,7 +47,7 @@
 
 <body class="antialiased lg:flex lg:flex-col lg:justify-stretch font-body lg:min-h-lvh">
 	<div class="lg:flex lg:grow lg:flex-col container mx-auto max-w-screen-xl lg:justify-stretch">
-		<header class="lg:flex lg:px-28 lg:-mt-1 <?= !isset($isHome) ? 'bg-courageous-plum text-confident-carnation' : 'text-spark-pink-100' ?> bg-gradient-to-b from-courageous-plum-900/75 from-20% relative z-40">
+		<header class="lg:flex lg:px-28 lg:-mt-1 <?= !isset($isHome) ? 'bg-courageous-plum text-confident-carnation' : 'text-spark-pink-100' ?> bg-gradient-to-b from-courageous-plum-900/75 from-20% relative z-20">
 			<?= $this->fetch('components/navigation.php', compact('pageSlug')) ?>
 		</header>
 
