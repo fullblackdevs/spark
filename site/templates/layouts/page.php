@@ -45,9 +45,9 @@
 	</script>
 </head>
 
-<body class="antialiased flex flex-col justify-stretch font-body min-h-lvh">
-	<div class="flex grow flex-col container mx-auto max-w-screen-xl text-slate-50 justify-stretch">
-		<header class="flex px-28 -mt-1 overflow-hidden z-40 font-display <?= !isset($isHome) ? 'bg-courageous-plum text-confident-carnation' : '' ?> bg-gradient-to-b from-courageous-plum-900/75 from-20%">
+<body class="antialiased lg:flex lg:flex-col lg:justify-stretch font-body lg:min-h-lvh">
+	<div class="lg:flex lg:grow lg:flex-col container mx-auto max-w-screen-xl lg:justify-stretch">
+		<header class="lg:flex lg:px-28 lg:-mt-1 <?= !isset($isHome) ? 'bg-courageous-plum text-confident-carnation' : 'text-spark-pink-100' ?> bg-gradient-to-b from-courageous-plum-900/75 from-20% relative z-40">
 			<?= $this->fetch('components/navigation.php', compact('pageSlug')) ?>
 		</header>
 
