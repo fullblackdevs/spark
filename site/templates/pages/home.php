@@ -103,7 +103,7 @@
 				<div class="mt-10">Link</div>
 			</div>
 		</div>
-		<svg viewbox="0 0 976 976" class="hidden absolute -top-1/2 right-0 w-[976px] -mr-[45%] z-20">
+		<svg viewbox="0 0 976 976" class="hidden md:block absolute -top-1/2 right-0 w-[976px] -mr-[45%] z-20">
 			<defs>
 				<radialGradient id="spotlight">
 					<stop offset="0%" stop-color="#f7d6e9" />
@@ -112,7 +112,7 @@
 			</defs>
 			<circle cy="488" cx="488" r="488" fill="url(#spotlight)" />
 		</svg>
-		<svg viewbox="0 0 1352 1352" class="hidden absolute -top-3/4 right-0 w-[1352px] -mr-[55%]">
+		<svg viewbox="0 0 1352 1352" class="hidden md:block absolute -top-3/4 right-0 w-[1352px] -mr-[55%]">
 			<defs>
 				<radialGradient id="spotlight">
 					<stop offset="0%" stop-color="#f7d6e9" />
