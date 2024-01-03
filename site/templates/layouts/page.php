@@ -35,6 +35,7 @@
 		};
 	</script>
 
+	<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
 
 	<script src="https://js.sentry-cdn.com/20dbba795e01fdf9047e1b02244ac562.min.js" crossorigin="anonymous"></script>
@@ -42,8 +43,8 @@
 </head>
 
 <body class="antialiased lg:flex lg:flex-col lg:justify-stretch font-body lg:min-h-lvh">
-	<div class="lg:flex lg:grow lg:flex-col container mx-auto max-w-screen-xl lg:justify-stretch overflow-y-hidden">
-		<header class="flex lg:px-28 lg:-mt-1 <?= !isset($isHome) ? 'bg-courageous-plum text-confident-carnation' : 'text-spark-pink-100' ?> bg-gradient-to-b from-courageous-plum-900/75 from-20% relative z-20">
+	<div x-data="{ transitionMobileHomeHeader: false }" class="lg:flex lg:grow lg:flex-col container mx-auto max-w-screen-xl lg:justify-stretch relative">
+		<header class="flex grow xl:px-28 lg:-mt-1 <?= !isset($isHome) ? 'bg-courageous-plum text-confident-carnation' : 'text-spark-pink-100 md:bg-transparent' ?> z-50 fixed top-0 transition-all ease-in-out duration-600 md:flex md:static md:h-auto bg-gradient-to-b from-courageous-plum-900/75 w-screen md:w-auto" :class="transitionMobileHomeHeader ? 'bg-courageous-plum-900/75 h-14' : 'h-[20vh]'" >
 			<?= $this->fetch('components/navigation.php', compact('pageSlug')) ?>
 		</header>
 

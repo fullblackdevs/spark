@@ -26,7 +26,7 @@
 		<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-6">
 
 			<div class="flex flex-col w-full md:w-2/3 border-2 border-courageous-200 rounded-xl shadow bg-[url('/assets/images/ian-schneider-PAykYb-8Er8-unsplash.jpg')] bg-cover overflow-hidden relative">
-				<a href="/blog/new-website" class="inset-0 absolute block md:hidden">&nbsp;</a>
+				<a href="/blog/new-website" class="inset-0 absolute block md:hidden z-10">&nbsp;</a>
 				<div class="flex flex-col justify-between grow h-64 p-4 bg-gradient-to-t from-courageous-plum-900">
 					<!-- Content Badges -->
 					<div class="flex justify-end">
