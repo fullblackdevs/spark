@@ -13,10 +13,4 @@ require_once dirname(__DIR__) . '/config/paths.php';
 $app = Application::create();
 $routes = require_once dirname(__DIR__) . '/config/routes.php';
 
-try {
-	$this->functionFailsForSure();
-} catch (\Throwable $exception) {
-	\Sentry\captureException($exception);
-}
-
 $app = $routes($app)->run();
