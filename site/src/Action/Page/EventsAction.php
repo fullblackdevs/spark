@@ -5,6 +5,19 @@ class EventsAction extends CoreAction
 {
 	public function invoke() : void
 	{
+		$events = [
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+			[],
+		];
+
 		$this->getView()->render($this->getResponse(), 'pages/events.php', [
 			'pageTitle' => 'Events',
 			'pageDescription' => 'Events that empower, engage and entertain.',
