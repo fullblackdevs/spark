@@ -19,7 +19,7 @@
 		</div>
 	</div>
 	<div class="flex flex-col md:flex-row justify-between items-center mb-6 mt-10 text-sm md:border-t md:pt-6 gap-4">
-		<p>Copyright &copy; 2023 Spark United. All Rights Reserved.</p>
+		<p>Copyright &copy; <?= $now->year ?> Spark United. All Rights Reserved.</p>
 		<ul class="flex justify-between items-center gap-4">
 			<li>
 				<a href="https://www.facebook.com/sparktheconvo/" target="_blank" class="text-white hover:text-[#CFAE70]">

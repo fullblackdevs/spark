@@ -14,7 +14,8 @@
         "guzzlehttp/psr7": "^2.6",
         "sentry/sentry": "^4.3",
         "slim/php-view": "^3.2",
-        "spatie/ray": "^1.40"
+        "spatie/ray": "^1.40",
+        "cakephp/chronos": "^3.0"
     },
 	"autoload": {
         "psr-4": {

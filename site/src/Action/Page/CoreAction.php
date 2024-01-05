@@ -1,6 +1,7 @@
 <?php
 namespace App\Action\Page;
 
+use Cake\Chronos\ChronosDate;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Slim\Views\PhpRenderer;
@@ -38,6 +39,8 @@ abstract class CoreAction
 		}
 
 		$this->renderer->setLayout('layouts/page.php');
+
+		$this->renderer->addAttribute('now', ChronosDate::now());
 
 		return $this->renderer;
 	}
