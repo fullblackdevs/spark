@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34564",
   "files" : {
+    "\/.env" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/.env",
+      "oF" : 1
+    },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
