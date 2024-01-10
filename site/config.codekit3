@@ -37,9 +37,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/assets\/.gitkeep",
-      "oF" : 0
+      "oF" : 1
     },
     "\/assets\/fonts\/.gitkeep" : {
       "cB" : 0,
@@ -215,6 +215,12 @@
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/config",
+      "oF" : 0
+    },
+    "\/data" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/data",
       "oF" : 0
     },
     "\/node_modules" : {
@@ -2373,7 +2379,7 @@
     ],
     "rollupTreeshakingEnabled" : 1,
     "rollupTreeshakingModuleSideEffects" : 1,
-    "skippedFoldersString" : "node_modules,log,_logs,_cache,.idea,\/config,cache,\/vars,\/storage\/framework\/sessions,logs,\/vendor",
+    "skippedFoldersString" : "\/config,log,_logs,.idea,cache,node_modules,\/data,\/vars,\/vendor,logs,_cache,\/storage\/framework\/sessions",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowArbitraryExtensions" : 0,

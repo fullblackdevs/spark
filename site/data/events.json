@@ -1,0 +1,18 @@
+{
+	"tags": [
+		{
+			"id": null,
+			"name": "in-person",
+			"label": "In-Peron",
+			"color": null
+		},
+		{
+			"id": null,
+			"name": "online",
+			"label": "Online",
+			"color": null
+		}
+	],
+	"topics": [],
+	"items": []
+}
