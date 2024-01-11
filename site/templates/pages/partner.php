@@ -1,34 +1,35 @@
 <?php
 
 use Cake\Chronos\Chronos;
-
-$eventStartDate = Chronos::createFromFormat(Chronos::ATOM, $event['schedule']['dates']['start']);
 ?>
 <div class="flex flex-col justify-end flex-none bg-masthead-about bg-cover min-h-96 px-28 pb-24 bg-blend-darken bg-courageous-plum-950 bg-opacity-50 text-spark-pink-100">
-	<div class="flex mb-2">
-		<div class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">In Person</div>
-	</div>
-	<h2 class="text-6xl font-semibold tracking-tighter"><?= $event['name'] ?></h2>
-	<dl>
-		<dt class="sr-only">Date</dt>
-		<dd class="text-2xl font-medium tracking-tighter"><?= $eventStartDate->format('l, F j, Y') ?></dd>
-		<dt class="sr-only">Time</dt>
-		<dd class="text-2xl font-medium tracking-tighter"><?= $eventStartDate->format('g:i A') ?></dd>
-		<div class="flex gap-4">
-			<dt class="sr-only">Location</dt>
-			<dd><?= $event['venue']['address']['city'] . ', ' . $event['venue']['address']['state'] ?></dd>
-			<dt class="sr-only">Region</dt>
-			<dd><?= $event['venue']['region'] . ' Region' ?></dd>
-		</div>
-	</dl>
+	<h2 class="text-6xl font-semibold tracking-tighter"><?= $partner['name'] ?></h2>
+	<p class="leading-loose"><?= $partner['mission'] ?></p>
 </div>
 
 <div class="bg-[#FAF3F9] grow min-h-full px-28 text-black pt-16 tracking-tight">
 	<div class="flex gap-16 -mt-32 bg-[#FAF3F9] p-10 rounded-t-lg">
 		<section class="w-3/5">
-			<h3 class="text-3xl font-bold text-courageous-plum">Event Overview</h3>
+			<?php if (isset($partner['partnership-summary'])) : ?>
+				<h3 class="text-3xl font-bold text-courageous-plum">How <?= $partner['name'] ?> Partners with Spark</h3>
+				<p class="my-6 leading-loose"><?= $partner['partnership-summary'] ?></p>
+			<?php endif; ?>
 
-			<p class="my-6 leading-loose"><?= $event['description'] ?></p>
+			<h3 class="text-3xl font-bold text-courageous-plum">Upcoming Events</h3>
+
+			<?php if (isset($partner['events'])) : ?>
+				<p class="my-6 leading-loose"><?= $partner['events'] ?></p>
+			<?php else : ?>
+				<p class="my-6 leading-loose">There are no Upcoming Events for this Partner.</p>
+			<?php endif; ?>
+
+			<h3 class="text-3xl font-bold text-courageous-plum">Resources & Services</h3>
+
+			<?php if (isset($partner['resources'])) : ?>
+				<p class="my-6 leading-loose"><?= $partner['resources'] ?></p>
+			<?php else : ?>
+				<p class="my-6 leading-loose">There are no Resources or Services currently available for this Partner.</p>
+			<?php endif; ?>
 
 			<div class="grid grid-cols-2 md:grid-cols-3 gap-2">
 				<div>
@@ -75,21 +76,18 @@ $eventStartDate = Chronos::createFromFormat(Chronos::ATOM, $event['schedule']['d
 
 		<aside class="w-2/5 h-fit flex flex-col justify-center divide-y grow-0 overflow-hidden rounded-md bg-white shadow *:py-6">
 			<div class="flex justify-between px-6">
-				<h4>Organizer</h4>
-				<p class="text-right"><a href="<?= isset($event['organizer']['slug']) ? '/partner/' . $event['organizer']['slug'] : '#' ?>"><?= $event['organizer']['name'] ?></a></p>
-			</div>
-			<div class="flex justify-between px-6">
-				<h4>Venue</h4>
+				<h4>Location</h4>
 				<p class="text-right">
-					<?= $event['venue']['name'] ?><br />
-					<?= $event['venue']['address']['street'] ?><br />
-					<?= $event['venue']['address']['city'] . ', ' . $event['venue']['address']['state'] . ' ' . $event['venue']['address']['zip'] ?>
+					<?= $partner['address']['street'] ?><br />
+					<?= $partner['address']['city'] . ', ' . $partner['address']['state'] . ' ' . $partner['address']['zip'] ?>
 				</p>
 			</div>
-			<div class="flex justify-between px-6">
-				<h4>Website</h4>
-				<p><a href="https://wtpmarch.org/"><?= $event['website'] ?></a></p>
-			</div>
+			<?php if (isset($partner['website'])) : ?>
+				<div class="flex justify-between px-6">
+					<h4>Website</h4>
+					<p><a href="https://wtpmarch.org/"><?= $partner['website'] ?></a></p>
+				</div>
+			<?php endif; ?>
 			<div class="flex justify-between px-6">
 				<h4>Socials</h4>
 				<ul class="flex justify-between items-center gap-4">

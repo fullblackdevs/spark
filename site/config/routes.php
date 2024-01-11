@@ -8,6 +8,7 @@ use App\Action\API\GetPartnersAction;
 use App\Action\API\GetResourcesAction;
 use App\Action\API\PulseAction;
 use App\Action\GetEventPageAction;
+use App\Action\GetPartnerPageAction;
 use App\Action\Page\AboutAction;
 use App\Action\Page\BlogAction;
 use App\Action\Page\ConnectAction;
@@ -28,6 +29,7 @@ return function (App $app) {
 
 	$app->get('/resource/{slug}', GetResourcePageAction::class);
 	$app->get('/event/{slug}', GetEventPageAction::class);
+	$app->get('/partner/{slug}', GetPartnerPageAction::class);
 
 	$app->group('/api', function (RouteCollectorProxy $api) {
         $api->group('/v0', function(RouteCollectorProxy $api) {

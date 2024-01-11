@@ -352,6 +352,14 @@
       "oAP" : "\/src\/Action\/GetEventPageAction.php",
       "oF" : 0
     },
+    "\/src\/Action\/GetPartnerPageAction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Action\/GetPartnerPageAction.php",
+      "oF" : 0
+    },
     "\/src\/Action\/GetResourcePageAction.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -430,6 +438,46 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Action\/Page\/ResourcesAction.php",
+      "oF" : 0
+    },
+    "\/src\/Repository\/EventsRepository.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Repository\/EventsRepository.php",
+      "oF" : 0
+    },
+    "\/src\/Repository\/PartnersRepository.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Repository\/PartnersRepository.php",
+      "oF" : 0
+    },
+    "\/src\/Repository\/RepositoryInterface.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Repository\/RepositoryInterface.php",
+      "oF" : 0
+    },
+    "\/src\/Repository\/ResourcesRepository.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Repository\/ResourcesRepository.php",
+      "oF" : 0
+    },
+    "\/src\/Service\/DigitalOceanSpacesService.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Service\/DigitalOceanSpacesService.php",
       "oF" : 0
     },
     "\/tailwind.config.js" : {
@@ -561,6 +609,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pages\/home.php",
+      "oF" : 0
+    },
+    "\/templates\/pages\/partner.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/partner.php",
       "oF" : 0
     },
     "\/templates\/pages\/partners.php" : {

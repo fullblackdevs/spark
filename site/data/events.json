@@ -1,18 +1,2122 @@
 {
-	"tags": [
-		{
-			"id": null,
-			"name": "in-person",
-			"label": "In-Peron",
-			"color": null
-		},
-		{
-			"id": null,
-			"name": "online",
-			"label": "Online",
-			"color": null
-		}
-	],
-	"topics": [],
-	"items": []
+    "states": {
+        "Alabama": { "abbr": "AL" },
+        "Alaska": { "abbr": "AK" },
+        "Arizona": { "abbr": "AZ" },
+        "Arkansas": { "abbr": "AR" },
+        "California": { "abbr": "CA" },
+        "Colorado": { "abbr": "CO" },
+        "Connecticut": { "abbr": "CT" },
+        "Delaware": { "abbr": "DE" },
+		"District of Columbia": { "abbr": "DC" },
+        "Florida": { "abbr": "FL" },
+        "Georgia": { "abbr": "GA" },
+        "Hawaii": { "abbr": "HI" },
+        "Idaho": { "abbr": "ID" },
+        "Illinois": { "abbr": "IL" },
+        "Indiana": { "abbr": "IN" },
+        "Iowa": { "abbr": "IA" },
+        "Kansas": { "abbr": "KS" },
+        "Kentucky": { "abbr": "KY" },
+        "Louisiana": { "abbr": "LA" },
+        "Maine": { "abbr": "ME" },
+        "Maryland": { "abbr": "MD" },
+        "Massachusetts": { "abbr": "MA" },
+        "Michigan": { "abbr": "MI" },
+        "Minnesota": { "abbr": "MN" },
+        "Mississippi": { "abbr": "MS" },
+        "Missouri": { "abbr": "MO" },
+        "Montana": { "abbr": "MT" },
+        "Nebraska": { "abbr": "NE" },
+        "Nevada": { "abbr": "NV" },
+        "New Hampshire": { "abbr": "NH" },
+        "New Jersey": { "abbr": "NJ" },
+        "New Mexico": { "abbr": "NM" },
+        "New York": { "abbr": "NY" },
+        "North Carolina": { "abbr": "NC" },
+        "North Dakota": { "abbr": "ND" },
+        "Ohio": { "abbr": "OH" },
+        "Oklahoma": { "abbr": "OK" },
+        "Oregon": { "abbr": "OR" },
+        "Pennsylvania": { "abbr": "PA" },
+        "Rhode Island": { "abbr": "RI" },
+        "South Carolina": { "abbr": "SC" },
+        "South Dakota": { "abbr": "SD" },
+        "Tennessee": { "abbr": "TN" },
+        "Texas": { "abbr": "TX" },
+        "Utah": { "abbr": "UT" },
+        "Vermont": { "abbr": "VT" },
+        "Virginia": { "abbr": "VA" },
+        "Washington": { "abbr": "WA" },
+        "West Virginia": { "abbr": "WV" },
+        "Wisconsin": { "abbr": "WI" },
+        "Wyoming": { "abbr": "WY" }
+    },
+    "tags": [
+        {
+            "id": "1783440c-5476-43df-9997-8ec5a14dea24",
+            "name": "in-person",
+            "label": "In-Peron",
+            "color": null
+        },
+        {
+            "id": "3b239a40-0658-4b01-a8ea-188932cbfc28",
+            "name": "online",
+            "label": "Online",
+            "color": null
+        },
+        {
+            "id": "af1ce102-fb5d-43f0-a306-2f242145cbe3",
+            "name": "featured-event",
+            "label": "Featured Event",
+            "color": null
+        }
+    ],
+    "topics": [
+        {
+            "id": "53b61646-404e-4ef9-9ddb-3f09dadb9bc3",
+            "name": "advocacy",
+            "label": "Advocacy",
+            "color": null
+        },
+        {
+            "id": "15fc74ec-fc68-40a0-aec5-b2f918d3fbb3",
+            "name": "healthcare",
+            "label": "Healthcare",
+            "color": null
+        },
+        {
+            "id": "3bf15790-5b41-44ce-93e8-6e1fa1634ec8",
+            "name": "motherhood",
+            "label": "Motherhood",
+            "color": null
+        },
+        {
+            "id": "0101e30b-cdd4-44aa-99fb-b9d6aa5aa2bb",
+            "name": "partner-violence",
+            "label": "Partner Violence",
+            "color": null
+        },
+        {
+            "id": "8c1f9aba-2c77-4345-ad8b-9ef4eba4e689",
+            "name": "fitness",
+            "label": "Fitness",
+            "color": null
+        },
+        {
+            "id": "58b459b9-353a-4188-af2f-79a4cb4a116d",
+            "name": "nutrition",
+            "label": "Nutrition",
+            "color": null
+        }
+    ],
+    "scheduling": {
+        "types": [
+            {
+                "id": "ff26a7f1-299a-4895-a42e-275e5240149f",
+                "name": "one-time",
+                "label": "One-time"
+            },
+            {
+                "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                "name": "recurring",
+                "label": "Recurring"
+            },
+            {
+                "id": "575c648c-f1ab-4da8-ac89-5cb0a0233521",
+                "name": "multi-day",
+                "label": "Multi-Day"
+            }
+        ],
+        "intervals": [
+            {
+                "id": "2b4b6181-8000-4cde-b9d6-4106ae87a878",
+                "name": "weekly",
+                "label": "Weekly"
+            },
+            {
+                "id": "45da27d5-f959-491f-8c3f-a4cc67adc82e",
+                "name": "bi-weekly",
+                "label": "Bi-Weekly"
+            },
+            {
+                "id": "cc3c8a6b-3689-4665-a111-231b62fad078",
+                "name": "monthly",
+                "label": "Monthly"
+            }
+        ]
+    },
+    "social": {
+        "platforms": [
+            {
+                "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                "name": "facebook",
+                "label": "Facebook",
+                "url": "https://www.facebook.com/"
+            },
+            {
+                "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                "name": "x-twitter",
+                "label": "X",
+                "url": "https://x.com/"
+            },
+            {
+                "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                "name": "instagram",
+                "label": "Instagram",
+                "url": "https://www.instagram.com/"
+            },
+            {
+                "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                "name": "youtube",
+                "label": "YouTube",
+                "url": "https://www.youtube.com/"
+            }
+        ]
+    },
+    "items": [
+        {
+            "name": "Women's Empowerment Summit",
+            "slug": "womens-empowerment-summit",
+            "description": "Join us at the Women's Empowerment Summit to hear from inspiring female leaders, network with like-minded individuals, and gain valuable tools and resources to advance your personal and professional goals.",
+            "id": "dce0ec4d-fa7e-43b6-a016-837f6ae06284",
+            "organizer": {
+                "id": "a65107fc-8a84-4add-b12f-8bb52f58110e",
+                "name": "Sisterhood Support Network",
+                "mission": "Creating a supportive community for women to navigate life's challenges together.",
+                "slug": "sisterhood-support-network",
+                "address": {
+                    "street": "789 Oak St",
+                    "city": "Chicago",
+                    "state": "Illinois",
+                    "zip": "60605",
+                    "region": "Midwest"
+                },
+                "timezone": "America/Chicago"
+            },
+            "venue": {
+                "name": "The Electric Grove",
+                "address": {
+                    "street": "123 Main Street",
+                    "city": "Chicago",
+                    "state": "Illinois",
+                    "zip": "60611"
+                },
+                "region": "Midwest"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "45da27d5-f959-491f-8c3f-a4cc67adc82e",
+                    "name": "bi-weekly",
+                    "label": "Bi-Weekly"
+                },
+                "dates": {
+                    "start": "2024-02-15T18:00:00+00:00",
+                    "end": "2024-02-15T19:00:00+00:00",
+                    "duration": 2,
+                    "timezone": "America/Chicago"
+                }
+            },
+            "website": "hermiston.biz",
+            "social": [
+                {
+                    "id": "56e23918-206b-3f81-93e1-eb898cc2aecb",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "owiegand",
+                    "url": "https://www.instagram.com/owiegand"
+                },
+                {
+                    "id": "6ded8b7b-f49c-3f17-8b13-3322367b6ec0",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "zrath",
+                    "url": "https://www.facebook.com/zrath"
+                }
+            ]
+        },
+        {
+            "name": "Breaking Barriers: Women in STEM Conference",
+            "slug": "breaking-barriers-women-in-stem-conference",
+            "description": "This conference aims to address and break down the barriers faced by women in the fields of Science, Technology, Engineering, and Math (STEM). Attendees will have the opportunity to learn from successful women in these fields, participate in hands-on workshops, and network with industry professionals.",
+            "id": "149b1933-1031-41a0-bdf4-de93c71f06dc",
+            "organizer": {
+                "id": "5c2fe3ce-3d26-4ff7-8f9a-bab4e885856b",
+                "name": "Women's Support Circle",
+                "mission": "Creating a safe and empowering space for women to connect and grow.",
+                "slug": "womens-support-circle",
+                "address": {
+                    "street": "555 Main St",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "zip": "77002",
+                    "region": "Southern"
+                },
+                "timezone": "America/Chicago"
+            },
+            "venue": {
+                "name": "The City Lights Theatre",
+                "address": {
+                    "street": "500 Main St",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "zip": "77002"
+                },
+                "region": "Southern"
+            },
+            "schedule": {
+                "type": {
+                    "id": "575c648c-f1ab-4da8-ac89-5cb0a0233521",
+                    "name": "multi-day",
+                    "label": "Multi-Day"
+                },
+                "dates": {
+                    "start": "2024-03-04T10:00:00+00:00",
+                    "end": "2024-03-04T11:00:00+00:00",
+                    "days": 3,
+                    "timezone": "America/Chicago"
+                }
+            },
+            "website": "glover.com",
+            "social": [
+                {
+                    "id": "af925aab-9d33-3925-a4f9-2a8537c8fc49",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "marianne.wisozk",
+                    "url": "https://www.instagram.com/marianne.wisozk"
+                }
+            ]
+        },
+        {
+            "name": "Female Founders Forum",
+            "slug": "female-founders-forum",
+            "description": "Calling all aspiring and current female entrepreneurs! Our Female Founders Forum offers a platform for women to connect, learn, and share their experiences in building and growing successful businesses. Get ready to be inspired and empowered!",
+            "id": "35e2ccaf-a54e-4a0c-8312-5ab380fd8caa",
+            "organizer": {
+                "id": "f0b4159d-afef-4192-9b7b-584ca89627ad",
+                "name": "Girls Rising Association",
+                "mission": "Empowering and uplifting girls through education, mentorship, and leadership opportunities.",
+                "slug": "girls-rising-association",
+                "address": {
+                    "street": "555 Elm St",
+                    "city": "Minneapolis",
+                    "state": "Minnesota",
+                    "zip": "55401",
+                    "region": "Midwest"
+                },
+                "timezone": "America/Chicago"
+            },
+            "venue": {
+                "name": "The Electric Garden",
+                "address": {
+                    "street": "1235 Main St",
+                    "city": "Minneapolis",
+                    "state": "Minnesota",
+                    "zip": "55401"
+                },
+                "region": "Midwest"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "2b4b6181-8000-4cde-b9d6-4106ae87a878",
+                    "name": "weekly",
+                    "label": "Weekly"
+                },
+                "dates": {
+                    "start": "2023-09-24T11:00:00+00:00",
+                    "end": "2023-09-24T15:00:00+00:00",
+                    "days": 3,
+                    "duration": 12,
+                    "timezone": "America/Chicago"
+                }
+            },
+            "website": "mitchell.com",
+            "social": [
+                {
+                    "id": "2154e5a7-2d15-3bb8-844a-b18bb765e4fa",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "dortiz",
+                    "url": "https://www.youtube.com/dortiz"
+                }
+            ]
+        },
+        {
+            "name": "Gender Pay Gap Awareness Workshop",
+            "slug": "gender-pay-gap-awareness-workshop",
+            "description": "This workshop highlights the issue of the gender pay gap and provides participants with practical strategies for negotiating fair wages and advocating for equal pay in the workplace. Take a stand against this disparity and join us for this informative and empowering event.",
+            "id": "ecd38165-3e5f-4d0e-a1b3-c6caac670a44",
+            "organizer": {
+                "id": "a44ca010-ae99-4e87-9500-ed37f2c7ae6c",
+                "name": "Girls Rock Foundation",
+                "mission": "Providing mentorship and resources to help girls achieve their full potential.",
+                "slug": "girls-rock-foundation",
+                "address": {
+                    "street": "456 Broadway Ave",
+                    "city": "Atlanta",
+                    "state": "Georgia",
+                    "zip": "30303",
+                    "region": "Southern"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "The Electric Oasis",
+                "address": {
+                    "street": "158 Sycamore Lane",
+                    "city": "Atlanta",
+                    "state": "Georgia",
+                    "zip": "30303"
+                },
+                "region": "Southern"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "45da27d5-f959-491f-8c3f-a4cc67adc82e",
+                    "name": "bi-weekly",
+                    "label": "Bi-Weekly"
+                },
+                "dates": {
+                    "start": "2023-08-07T19:00:00+00:00",
+                    "end": "2023-08-07T23:00:00+00:00",
+                    "duration": 6,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "altenwerth.com",
+            "social": [
+                {
+                    "id": "8aa371ed-3a2c-3d7f-8691-bdd116b24e35",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "koelpin.stacey",
+                    "url": "https://www.instagram.com/koelpin.stacey"
+                }
+            ]
+        },
+        {
+            "name": "Women's Mental Health Summit",
+            "slug": "womens-mental-health-summit",
+            "description": "Join us at the Women's Mental Health Summit to discuss and address the unique mental health challenges faced by women. This event offers workshops, panel discussions, and resources to promote mental wellness and self-care among women.",
+            "id": "f82bda1f-e542-45de-bb53-8165a8a815b9",
+            "organizer": {
+                "id": "1f3b33d6-8a3f-40c8-9bf9-2f57a28be3c8",
+                "name": "Sisters United",
+                "mission": "Empowering, educating, and uplifting women of all backgrounds to create a stronger community.",
+                "slug": "sisters-united",
+                "address": {
+                    "street": "333 Oak St",
+                    "city": "Detroit",
+                    "state": "Michigan",
+                    "zip": "48201",
+                    "region": "Midwest"
+                },
+                "timezone": "America/Detroit"
+            },
+            "venue": {
+                "name": "The Electric Oasis",
+                "address": {
+                    "street": "123 Main Street",
+                    "city": "Detroit",
+                    "state": "Michigan",
+                    "zip": "48201"
+                },
+                "region": "Midwest"
+            },
+            "schedule": {
+                "type": {
+                    "id": "ff26a7f1-299a-4895-a42e-275e5240149f",
+                    "name": "one-time",
+                    "label": "One-time"
+                },
+                "dates": {
+                    "start": "2024-05-02T20:00:00+00:00",
+                    "end": "2024-05-03T01:00:00+00:00",
+                    "days": 1,
+                    "timezone": "America/Detroit"
+                }
+            },
+            "website": "ryan.com",
+            "social": [
+                {
+                    "id": "9555e00f-50e2-380f-b5d0-1d089e834f31",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "mcclure.quentin",
+                    "url": "https://x.com/mcclure.quentin"
+                },
+                {
+                    "id": "e922d529-90f0-3c32-aa82-da86a88cbf7f",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "davion54",
+                    "url": "https://www.youtube.com/davion54"
+                },
+                {
+                    "id": "2e6fe938-4889-30f8-aee2-d92fcdd03204",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "gutmann.allison",
+                    "url": "https://www.instagram.com/gutmann.allison"
+                }
+            ]
+        },
+        {
+            "name": "Girls in Leadership Conference",
+            "slug": "girls-in-leadership-conference",
+            "description": "Calling all young female leaders! This conference is designed to support and empower girls to become strong and effective leaders in their communities and beyond. Attendees will gain valuable skills, knowledge, and connections to fuel their leadership journey.",
+            "id": "0543e9cd-9dc0-47f7-80ff-8ed23e2403c7",
+            "organizer": {
+                "id": "a44ca010-ae99-4e87-9500-ed37f2c7ae6c",
+                "name": "Girls Rock Foundation",
+                "mission": "Providing mentorship and resources to help girls achieve their full potential.",
+                "slug": "girls-rock-foundation",
+                "address": {
+                    "street": "456 Broadway Ave",
+                    "city": "Atlanta",
+                    "state": "Georgia",
+                    "zip": "30303",
+                    "region": "Southern"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "The Electric Theatre",
+                "address": {
+                    "street": "625 Peachtree St NE",
+                    "city": "Atlanta",
+                    "state": "Georgia",
+                    "zip": "30308"
+                },
+                "region": "Southern"
+            },
+            "schedule": {
+                "type": {
+                    "id": "ff26a7f1-299a-4895-a42e-275e5240149f",
+                    "name": "one-time",
+                    "label": "One-time"
+                },
+                "dates": {
+                    "start": "2024-02-28T16:00:00+00:00",
+                    "end": "2024-02-28T19:00:00+00:00",
+                    "days": 1,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "grant.com",
+            "social": [
+                {
+                    "id": "6f54fa38-f141-3756-aa9e-4f2a0cad7385",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "ibeatty",
+                    "url": "https://www.facebook.com/ibeatty"
+                },
+                {
+                    "id": "28cff161-ed68-315a-a2b4-aae1bfc5e7e7",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "ignatius04",
+                    "url": "https://x.com/ignatius04"
+                },
+                {
+                    "id": "bbed5225-3c78-3aa6-ba55-fbcd0245eece",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "jesse.torphy",
+                    "url": "https://www.youtube.com/jesse.torphy"
+                }
+            ]
+        },
+        {
+            "name": "Intersectional Feminism Workshop",
+            "slug": "intersectional-feminism-workshop",
+            "description": "In this workshop, we explore the importance of intersectionality in feminist movements and how it can drive more inclusive and effective advocacy for women's rights. Join us to learn, discuss, and take action towards building a more intersectional and equitable society.",
+            "id": "554d30df-6656-4ef2-b4e2-5fbc68dda14b",
+            "organizer": {
+                "id": "d76c6664-48b7-4429-a9fd-79e5f24b8875",
+                "name": "Women's Empowerment Alliance",
+                "mission": "Empowering women and girls through education and leadership development.",
+                "slug": "womens-empowerment-alliance",
+                "address": {
+                    "street": "123 Main St",
+                    "city": "New York City",
+                    "state": "New York",
+                    "zip": "10001",
+                    "region": "Mid-Atlantic"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "The Electric Oasis",
+                "address": {
+                    "street": "320 East 54th Street",
+                    "city": "New York City",
+                    "state": "New York",
+                    "zip": "10022"
+                },
+                "region": "Mid-Atlantic"
+            },
+            "schedule": {
+                "type": {
+                    "id": "575c648c-f1ab-4da8-ac89-5cb0a0233521",
+                    "name": "multi-day",
+                    "label": "Multi-Day"
+                },
+                "dates": {
+                    "start": "2024-01-22T17:00:00+00:00",
+                    "end": "2024-01-22T19:00:00+00:00",
+                    "days": 4,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "jast.net",
+            "social": [
+                {
+                    "id": "5cd42936-844d-3156-b4c0-790e169e0418",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "jett06",
+                    "url": "https://www.youtube.com/jett06"
+                },
+                {
+                    "id": "bed4579d-0f2e-3cbf-b88b-55b8a78ab657",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "macey.braun",
+                    "url": "https://www.instagram.com/macey.braun"
+                },
+                {
+                    "id": "f743c42d-0dc5-3f7c-8351-b25759f09f02",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "erna.hudson",
+                    "url": "https://www.facebook.com/erna.hudson"
+                }
+            ],
+            "isPinned": true
+        },
+        {
+            "name": "Girl Boss Business Bootcamp",
+            "slug": "girl-boss-business-bootcamp",
+            "description": "Calling all aspiring female entrepreneurs! This bootcamp offers practical and comprehensive training on starting and growing a successful business. Gain skills in strategy, marketing, finance, and more to become a #GirlBoss in the business world.",
+            "id": "13fa51b1-0bb4-4bc7-a712-2d6af8913f46",
+            "organizer": {
+                "id": "e4ab69f9-0f4a-42f9-a2fd-caca90cb775c",
+                "name": "Women's Resource Center",
+                "mission": "Offering resources, support, and education to women in need.",
+                "slug": "womens-resource-center",
+                "address": {
+                    "street": "111 Elm St",
+                    "city": "Baltimore",
+                    "state": "Maryland",
+                    "zip": "21201",
+                    "region": "Mid-Atlantic"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "Revolution Arts Center",
+                "address": {
+                    "street": "123 Main St",
+                    "city": "Baltimore",
+                    "state": "Maryland",
+                    "zip": "21202"
+                },
+                "region": "Mid-Atlantic"
+            },
+            "schedule": {
+                "type": {
+                    "id": "ff26a7f1-299a-4895-a42e-275e5240149f",
+                    "name": "one-time",
+                    "label": "One-time"
+                },
+                "dates": {
+                    "start": "2024-05-14T20:00:00+00:00",
+                    "end": "2024-05-14T21:30:00+00:00",
+                    "days": 1,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "prosacco.biz",
+            "social": [
+                {
+                    "id": "1f77ae61-addf-32dc-982f-0f2f2595b723",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "kip.koelpin",
+                    "url": "https://www.youtube.com/kip.koelpin"
+                }
+            ]
+        },
+        {
+            "name": "HeForShe: Male Allies in Gender Equality",
+            "slug": "heforshe-male-allies-in-gender-equality",
+            "description": "This event highlights the role of men in promoting and achieving gender equality. It offers workshops, discussions, and resources to educate and engage male allies in supporting women's rights and empowerment. Join us in the fight for gender equality!",
+            "id": "c7589e96-f7a4-477d-8ab2-d7fc76aac726",
+            "organizer": {
+                "id": "f0b4159d-afef-4192-9b7b-584ca89627ad",
+                "name": "Girls Rising Association",
+                "mission": "Empowering and uplifting girls through education, mentorship, and leadership opportunities.",
+                "slug": "girls-rising-association",
+                "address": {
+                    "street": "555 Elm St",
+                    "city": "Minneapolis",
+                    "state": "Minnesota",
+                    "zip": "55401",
+                    "region": "Midwest"
+                },
+                "timezone": "America/Chicago"
+            },
+            "venue": {
+                "name": "The Glittering Grove",
+                "address": {
+                    "street": "123 Main St",
+                    "city": "Minneapolis",
+                    "state": "Minnesota",
+                    "zip": "55401"
+                },
+                "region": "Midwest"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "2b4b6181-8000-4cde-b9d6-4106ae87a878",
+                    "name": "weekly",
+                    "label": "Weekly"
+                },
+                "dates": {
+                    "start": "2024-04-06T20:00:00+00:00",
+                    "end": "2024-04-06T22:00:00+00:00",
+                    "days": 3,
+                    "duration": 1,
+                    "timezone": "America/Chicago"
+                }
+            },
+            "website": "mayert.com",
+            "social": [
+                {
+                    "id": "723a596c-46e7-3ac8-8cb3-a408838dcff9",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "hulda.kilback",
+                    "url": "https://x.com/hulda.kilback"
+                },
+                {
+                    "id": "a00fb7fa-c8c8-32ef-85b8-187c02271e88",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "hessel.leatha",
+                    "url": "https://www.instagram.com/hessel.leatha"
+                },
+                {
+                    "id": "75530c68-8e22-3dd4-bc2d-79aa4ee7e8fb",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "champlin.raleigh",
+                    "url": "https://www.facebook.com/champlin.raleigh"
+                },
+                {
+                    "id": "f5564605-4fea-3af6-8205-9364e141fe01",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "leffler.alexie",
+                    "url": "https://www.youtube.com/leffler.alexie"
+                }
+            ]
+        },
+        {
+            "name": "Ending Violence Against Women Symposium",
+            "slug": "ending-violence-against-women-symposium",
+            "description": "This symposium brings together experts, advocates, and survivors to address the critical issue of violence against women and discuss strategies for prevention and support. Join us in creating a safer and more just society for women and girls.",
+            "id": "63bea90c-d60a-47f9-969d-21645808f66d",
+            "organizer": {
+                "id": "aa86f8af-0d21-4547-a926-377cb1ab0a90",
+                "name": "Women's Strength Alliance",
+                "mission": "Creating a supportive and empowering community for women to find strength in their struggles.",
+                "slug": "womens-strength-alliance",
+                "address": {
+                    "street": "321 Oak St",
+                    "city": "Boston",
+                    "state": "Massachusetts",
+                    "zip": "02108",
+                    "region": "Northern"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "The Ivy Place",
+                "address": {
+                    "street": "123 Ivy Street",
+                    "city": "Boston",
+                    "state": "Massachusetts",
+                    "zip": "02108"
+                },
+                "region": "Northern"
+            },
+            "schedule": {
+                "type": {
+                    "id": "575c648c-f1ab-4da8-ac89-5cb0a0233521",
+                    "name": "multi-day",
+                    "label": "Multi-Day"
+                },
+                "dates": {
+                    "start": "2023-12-25T16:00:00+00:00",
+                    "end": "2023-12-25T21:00:00+00:00",
+                    "days": 4,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "bruen.com",
+            "social": [
+                {
+                    "id": "52989e2e-5a14-39fe-8d49-8a674563ef88",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "cummerata.emelie",
+                    "url": "https://www.facebook.com/cummerata.emelie"
+                },
+                {
+                    "id": "61f9f153-93b0-3038-8ab3-86959211437d",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "elyse.smitham",
+                    "url": "https://www.instagram.com/elyse.smitham"
+                },
+                {
+                    "id": "f7e7a4e1-59af-3456-abc4-e831a56fdd95",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "abbie.weissnat",
+                    "url": "https://www.youtube.com/abbie.weissnat"
+                },
+                {
+                    "id": "06932124-e2c4-30d4-b8cd-359bbf8f7331",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "lauretta.kunze",
+                    "url": "https://x.com/lauretta.kunze"
+                }
+            ]
+        },
+        {
+            "name": "Motherhood and Work-Life Balance Panel",
+            "slug": "motherhood-and-work-life-balance-panel",
+            "description": "Join us for a panel discussion on the challenges and strategies for balancing motherhood with career aspirations. This event will offer insights, resources, and a community of support for working mothers.",
+            "id": "02d0549c-31a8-4f67-a297-4e44cd1d08a5",
+            "organizer": {
+                "id": "5a5b716b-a68f-4e57-b382-dba9d1fa2c41",
+                "name": "Girls' Education Initiative",
+                "mission": "Providing access to education and mentorship for girls in underserved communities.",
+                "slug": "girls-education-initiative",
+                "address": {
+                    "street": "456 Main St",
+                    "city": "Seattle",
+                    "state": "Washington",
+                    "zip": "98101",
+                    "region": "Western"
+                },
+                "timezone": "America/Los_Angeles"
+            },
+            "venue": {
+                "name": "The Electric Oasis",
+                "address": {
+                    "street": "1234 Pearl Street",
+                    "city": "Seattle",
+                    "state": "Washington",
+                    "zip": "98101"
+                },
+                "region": "Western"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "2b4b6181-8000-4cde-b9d6-4106ae87a878",
+                    "name": "weekly",
+                    "label": "Weekly"
+                },
+                "dates": {
+                    "start": "2024-04-01T20:00:00+00:00",
+                    "end": "2024-04-02T01:00:00+00:00",
+                    "days": 1,
+                    "duration": 3,
+                    "timezone": "America/Los_Angeles"
+                }
+            },
+            "website": "jones.com",
+            "social": [
+                {
+                    "id": "466ae25a-0a2e-39b7-b122-88a7c4651e54",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "coralie.hickle",
+                    "url": "https://www.instagram.com/coralie.hickle"
+                }
+            ]
+        },
+        {
+            "name": "Women in Politics Forum",
+            "slug": "women-in-politics-forum",
+            "description": "Dive into the world of politics and hear from experienced and inspiring female leaders on breaking barriers and creating change in the political landscape. This forum offers valuable insights, networking opportunities, and resources for women interested in pursuing a career in politics.",
+            "id": "53eba223-b0d6-4b61-98b5-f681b48c4147",
+            "organizer": {
+                "id": "a65107fc-8a84-4add-b12f-8bb52f58110e",
+                "name": "Sisterhood Support Network",
+                "mission": "Creating a supportive community for women to navigate life's challenges together.",
+                "slug": "sisterhood-support-network",
+                "address": {
+                    "street": "789 Oak St",
+                    "city": "Chicago",
+                    "state": "Illinois",
+                    "zip": "60605",
+                    "region": "Midwest"
+                },
+                "timezone": "America/Chicago"
+            },
+            "venue": {
+                "name": "The Electric Garden",
+                "address": {
+                    "street": "123 Bluebird Ave",
+                    "city": "Chicago",
+                    "state": "Illinois",
+                    "zip": "60611"
+                },
+                "region": "Midwest"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "2b4b6181-8000-4cde-b9d6-4106ae87a878",
+                    "name": "weekly",
+                    "label": "Weekly"
+                },
+                "dates": {
+                    "start": "2024-02-12T14:00:00+00:00",
+                    "end": "2024-02-12T17:00:00+00:00",
+                    "days": 1,
+                    "duration": 3,
+                    "timezone": "America/Chicago"
+                }
+            },
+            "website": "botsford.net",
+            "social": [
+                {
+                    "id": "69d82c83-4ebb-36c5-87bc-89b1d78e1391",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "rhett.fahey",
+                    "url": "https://www.youtube.com/rhett.fahey"
+                },
+                {
+                    "id": "2ca71ef5-6f8c-3f2b-bec3-e7fa824d6c69",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "vesta.reichert",
+                    "url": "https://www.facebook.com/vesta.reichert"
+                },
+                {
+                    "id": "3dffa8f7-ddf8-37da-b258-91f82b834992",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "will.dedric",
+                    "url": "https://www.instagram.com/will.dedric"
+                }
+            ]
+        },
+        {
+            "name": "Body Positivity Workshop",
+            "slug": "body-positivity-workshop",
+            "description": "In this workshop, we explore the harmful impact of societal beauty standards and promote self-love and acceptance for all body types. Join us in celebrating diversity and promoting positive body image for girls and women.",
+            "id": "fe1332e6-3ca9-4203-ad46-ff2b9cea31b3",
+            "organizer": {
+                "id": "adf0e7f1-903b-4e5c-9e92-8a95feaa6668",
+                "name": "Girls' Future Foundation",
+                "mission": "Empowering young girls to create a better future for themselves and their communities.",
+                "slug": "girls-future-foundation",
+                "address": {
+                    "street": "999 Oak St",
+                    "city": "Phoenix",
+                    "state": "Arizona",
+                    "zip": "85003",
+                    "region": "Western"
+                },
+                "timezone": "America/Phoenix"
+            },
+            "venue": {
+                "name": "Sunset Park Plaza",
+                "address": {
+                    "street": "123 Main St",
+                    "city": "Phoenix",
+                    "state": "Arizona",
+                    "zip": "85001"
+                },
+                "region": "Western"
+            },
+            "schedule": {
+                "type": {
+                    "id": "575c648c-f1ab-4da8-ac89-5cb0a0233521",
+                    "name": "multi-day",
+                    "label": "Multi-Day"
+                },
+                "dates": {
+                    "start": "2023-09-24T08:00:00+00:00",
+                    "end": "2023-09-24T09:00:00+00:00",
+                    "days": 3,
+                    "timezone": "America/Phoenix"
+                }
+            },
+            "website": "stamm.com",
+            "social": [
+                {
+                    "id": "b8e4fe00-28e5-3e49-b4d3-0e9876c0a349",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "borer.kip",
+                    "url": "https://www.instagram.com/borer.kip"
+                },
+                {
+                    "id": "992bc1bc-a452-3776-baef-48be15ca3621",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "wolff.retta",
+                    "url": "https://www.youtube.com/wolff.retta"
+                },
+                {
+                    "id": "e7b61f2c-8510-388a-b21a-0edbab218aec",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "jadams",
+                    "url": "https://www.facebook.com/jadams"
+                }
+            ]
+        },
+        {
+            "name": "Sisters in STEM Networking Mixer",
+            "slug": "sisters-in-stem-networking-mixer",
+            "description": "Calling all women in STEM fields! Join us for an evening of networking, mentorship, and support to build connections and foster a strong community of women in these traditionally male-dominated industries.",
+            "id": "34c9d516-2d0a-4985-90ba-d9d2d8e5a17d",
+            "organizer": {
+                "id": "72c8de7d-6ad4-45b8-b7cf-11af7c6e6b39",
+                "name": "Girls on the Rise",
+                "mission": "Empowering girls to reach their full potential by providing mentorship and educational opportunities.",
+                "slug": "girls-on-the-rise",
+                "address": {
+                    "street": "12 Main St",
+                    "city": "Nashville",
+                    "state": "Tennessee",
+                    "zip": "37203",
+                    "region": "Southern"
+                },
+                "timezone": "America/Chicago"
+            },
+            "venue": {
+                "name": "The Electric Oasis",
+                "address": {
+                    "street": "19 North 8th Street",
+                    "city": "Nashville",
+                    "state": "Tennessee",
+                    "zip": "37203"
+                },
+                "region": "Southern"
+            },
+            "schedule": {
+                "type": {
+                    "id": "575c648c-f1ab-4da8-ac89-5cb0a0233521",
+                    "name": "multi-day",
+                    "label": "Multi-Day"
+                },
+                "dates": {
+                    "start": "2024-02-25T12:00:00+00:00",
+                    "end": "2024-02-25T16:00:00+00:00",
+                    "days": 3,
+                    "timezone": "America/Chicago"
+                }
+            },
+            "website": "botsford.info",
+            "social": [
+                {
+                    "id": "fe3e6aa4-1f0e-3096-88fb-acfdfb71b25b",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "abel.rippin",
+                    "url": "https://www.youtube.com/abel.rippin"
+                },
+                {
+                    "id": "d6cbc4f0-f666-3b82-ad51-557f2d6aacf7",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "joan88",
+                    "url": "https://www.instagram.com/joan88"
+                },
+                {
+                    "id": "92e51178-ec6f-3f64-8b5d-6a386a5894d4",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "bashirian.jalyn",
+                    "url": "https://www.facebook.com/bashirian.jalyn"
+                }
+            ]
+        },
+        {
+            "name": "Feminist Book Club",
+            "slug": "feminist-book-club",
+            "description": "Join our book club to discuss and explore literature that addresses issues of gender equality, women's rights, and diverse experiences of womanhood. This inclusive and thought-provoking club welcomes readers of all backgrounds and identities.",
+            "id": "47a4d0ba-1dcb-4b9b-944a-56eef5f3c02f",
+            "organizer": {
+                "id": "72c8de7d-6ad4-45b8-b7cf-11af7c6e6b39",
+                "name": "Girls on the Rise",
+                "mission": "Empowering girls to reach their full potential by providing mentorship and educational opportunities.",
+                "slug": "girls-on-the-rise",
+                "address": {
+                    "street": "12 Main St",
+                    "city": "Nashville",
+                    "state": "Tennessee",
+                    "zip": "37203",
+                    "region": "Southern"
+                },
+                "timezone": "America/Chicago"
+            },
+            "venue": {
+                "name": "The Sapphire Stage",
+                "address": {
+                    "street": "456 Main Street",
+                    "city": "Nashville",
+                    "state": "Tennessee",
+                    "zip": "37203"
+                },
+                "region": "Southern"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "cc3c8a6b-3689-4665-a111-231b62fad078",
+                    "name": "monthly",
+                    "label": "Monthly"
+                },
+                "dates": {
+                    "start": "2023-08-31T15:00:00+00:00",
+                    "end": "2023-08-31T19:00:00+00:00",
+                    "duration": 3,
+                    "timezone": "America/Chicago"
+                }
+            },
+            "website": "littel.com",
+            "social": [
+                {
+                    "id": "55d4a3fc-66bb-3349-a938-c79602af2f2d",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "tyrell.champlin",
+                    "url": "https://www.facebook.com/tyrell.champlin"
+                },
+                {
+                    "id": "f586562a-5ab4-3d17-9f74-5e767290f8dc",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "arohan",
+                    "url": "https://x.com/arohan"
+                },
+                {
+                    "id": "0b988a0a-911b-3ea9-aefd-660b55301383",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "frami.adaline",
+                    "url": "https://www.instagram.com/frami.adaline"
+                },
+                {
+                    "id": "3f8a64f7-38e1-37d9-afbc-1473d321b42b",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "tbauch",
+                    "url": "https://www.youtube.com/tbauch"
+                }
+            ]
+        },
+        {
+            "name": "Girls' Leadership Summit",
+            "slug": "girls-leadership-summit",
+            "description": "This summit empowers girls to be strong and confident leaders, equipping them with skills, resources, and connections to make a positive impact in their communities. Join us to learn from inspiring female leaders and ignite your own leadership potential.",
+            "id": "2399c1f3-0e39-4ceb-87c4-e50a81984634",
+            "organizer": {
+                "id": "1f3b33d6-8a3f-40c8-9bf9-2f57a28be3c8",
+                "name": "Sisters United",
+                "mission": "Empowering, educating, and uplifting women of all backgrounds to create a stronger community.",
+                "slug": "sisters-united",
+                "address": {
+                    "street": "333 Oak St",
+                    "city": "Detroit",
+                    "state": "Michigan",
+                    "zip": "48201",
+                    "region": "Midwest"
+                },
+                "timezone": "America/Detroit"
+            },
+            "venue": {
+                "name": "The Sparkling Stage",
+                "address": {
+                    "street": "101 Main St",
+                    "city": "Detroit",
+                    "state": "Michigan",
+                    "zip": "48226"
+                },
+                "region": "Midwest"
+            },
+            "schedule": {
+                "type": {
+                    "id": "ff26a7f1-299a-4895-a42e-275e5240149f",
+                    "name": "one-time",
+                    "label": "One-time"
+                },
+                "dates": {
+                    "start": "2024-06-23T17:00:00+00:00",
+                    "end": "2024-06-23T19:30:00+00:00",
+                    "days": 1,
+                    "timezone": "America/Detroit"
+                }
+            },
+            "website": "huel.com",
+            "social": [
+                {
+                    "id": "56c7300f-ce72-381c-864d-2f5a6ff61194",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "jonathan89",
+                    "url": "https://www.facebook.com/jonathan89"
+                },
+                {
+                    "id": "ce28005c-a738-3986-b741-5c71c2b113bb",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "ykub",
+                    "url": "https://www.youtube.com/ykub"
+                },
+                {
+                    "id": "0bab841e-0bf5-3eb4-b0d1-88226cf766b9",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "micaela02",
+                    "url": "https://www.instagram.com/micaela02"
+                }
+            ]
+        },
+        {
+            "name": "Women and Finance Workshop",
+            "slug": "women-and-finance-workshop",
+            "description": "Gain financial literacy and confidence in managing your finances through our Women and Finance Workshop. Expert speakers will provide practical tips and tools for budgeting, investing, and building wealth, tailored specifically for women's unique financial needs.",
+            "id": "930803cb-6afd-4d94-a044-d52c605b6bc2",
+            "organizer": {
+                "id": "5a5b716b-a68f-4e57-b382-dba9d1fa2c41",
+                "name": "Girls' Education Initiative",
+                "mission": "Providing access to education and mentorship for girls in underserved communities.",
+                "slug": "girls-education-initiative",
+                "address": {
+                    "street": "456 Main St",
+                    "city": "Seattle",
+                    "state": "Washington",
+                    "zip": "98101",
+                    "region": "Western"
+                },
+                "timezone": "America/Los_Angeles"
+            },
+            "venue": {
+                "name": "Chroma Arts Center",
+                "address": {
+                    "street": "123 Main Street",
+                    "city": "Seattle",
+                    "state": "Washington",
+                    "zip": "98101"
+                },
+                "region": "Western"
+            },
+            "schedule": {
+                "type": {
+                    "id": "575c648c-f1ab-4da8-ac89-5cb0a0233521",
+                    "name": "multi-day",
+                    "label": "Multi-Day"
+                },
+                "dates": {
+                    "start": "2023-07-31T15:00:00+00:00",
+                    "end": "2023-07-31T16:00:00+00:00",
+                    "days": 4,
+                    "timezone": "America/Los_Angeles"
+                }
+            },
+            "website": "dach.info",
+            "social": [
+                {
+                    "id": "f9899cc9-7cfd-3475-b118-11928923eda2",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "bernier.otis",
+                    "url": "https://www.youtube.com/bernier.otis"
+                },
+                {
+                    "id": "06efa25c-4864-3185-91a9-ed7cbd5c7331",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "uhirthe",
+                    "url": "https://www.facebook.com/uhirthe"
+                },
+                {
+                    "id": "f8902ce4-860d-30a7-b818-f7fecf10f782",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "ratke.merl",
+                    "url": "https://www.instagram.com/ratke.merl"
+                },
+                {
+                    "id": "556ad6e6-b211-3f70-8389-7d3a53731cd3",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "andy32",
+                    "url": "https://x.com/andy32"
+                }
+            ]
+        },
+        {
+            "name": "Redefining Masculinity Panel",
+            "slug": "redefining-masculinity-panel",
+            "description": "This panel discussion delves into the topic of toxic masculinity and how it affects both men and women. Our panelists will share personal insights and discuss ways to promote healthier and more progressive ideas of masculinity in society.",
+            "id": "46e7cd06-c3f1-491c-9f99-22a939264789",
+            "organizer": {
+                "id": "87001193-956e-4205-b655-94b6a6a90d3a",
+                "name": "Sisterly Love Foundation",
+                "mission": "Promoting sisterhood and providing resources for women to succeed in all areas of life.",
+                "slug": "sisterly-love-foundation",
+                "address": {
+                    "street": "777 Main St",
+                    "city": "Washington DC",
+                    "state": "District of Columbia",
+                    "zip": "20005",
+                    "region": "Mid-Atlantic"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "The Electric Palms",
+                "address": {
+                    "street": "1245 H Street NW",
+                    "city": "Washington DC",
+                    "state": "District of Columbia",
+                    "zip": "20005"
+                },
+                "region": "Mid-Atlantic"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "45da27d5-f959-491f-8c3f-a4cc67adc82e",
+                    "name": "bi-weekly",
+                    "label": "Bi-Weekly"
+                },
+                "dates": {
+                    "start": "2023-08-08T08:00:00+00:00",
+                    "end": "2023-08-08T10:00:00+00:00",
+                    "duration": 6,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "wilderman.org",
+            "social": [
+                {
+                    "id": "75f28130-effa-31f9-9ad9-60583f60d256",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "gunner.berge",
+                    "url": "https://www.youtube.com/gunner.berge"
+                }
+            ]
+        },
+        {
+            "name": "Tech for Good Hackathon",
+            "slug": "tech-for-good-hackathon",
+            "description": "Calling all female hackers, programmers, and designers! Join us in using technology for social good and creating solutions for issues facing women and girls. This hackathon offers cash prizes, networking opportunities, and a chance to make a positive impact.",
+            "id": "c7ffeb9c-33b3-4e12-9d43-acf93ec3ea82",
+            "organizer": {
+                "id": "a8f0d338-262d-4fee-9381-079e0ae7afad",
+                "name": "Girls on the Rise Foundation",
+                "mission": "Empowering and equipping young girls with the tools and resources they need to reach their fullest potential.",
+                "slug": "girls-on-the-rise-foundation",
+                "address": {
+                    "street": "789 Main St",
+                    "city": "Miami",
+                    "state": "Florida",
+                    "zip": "33130",
+                    "region": "Southern"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "Sunset Square",
+                "address": {
+                    "street": "126 NE 8th St",
+                    "city": "Miami",
+                    "state": "FL",
+                    "zip": "33132"
+                },
+                "region": "Southern"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "45da27d5-f959-491f-8c3f-a4cc67adc82e",
+                    "name": "bi-weekly",
+                    "label": "Bi-Weekly"
+                },
+                "dates": {
+                    "start": "2024-04-29T11:00:00+00:00",
+                    "end": "2024-04-29T14:00:00+00:00",
+                    "duration": 6,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "hoppe.com",
+            "social": [
+                {
+                    "id": "51f46bb6-de22-31a5-b4cf-551cce00813b",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "joshua50",
+                    "url": "https://www.youtube.com/joshua50"
+                },
+                {
+                    "id": "cc174f32-d80a-3671-84a0-dd04d6d11f3e",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "kemmer.gaetano",
+                    "url": "https://www.facebook.com/kemmer.gaetano"
+                }
+            ]
+        },
+        {
+            "name": "Menstruation Matters Workshop",
+            "slug": "menstruation-matters-workshop",
+            "description": "Aiming to break the taboo and stigma surrounding menstruation, this workshop provides education and resources on menstrual health and hygiene. Join us in advocating for menstrual equity and promoting dignity and well-being for all menstruating individuals.",
+            "id": "1f2bcde0-44a5-497f-bdc5-38ef7138db3e",
+            "organizer": {
+                "id": "adf0e7f1-903b-4e5c-9e92-8a95feaa6668",
+                "name": "Girls' Future Foundation",
+                "mission": "Empowering young girls to create a better future for themselves and their communities.",
+                "slug": "girls-future-foundation",
+                "address": {
+                    "street": "999 Oak St",
+                    "city": "Phoenix",
+                    "state": "Arizona",
+                    "zip": "85003",
+                    "region": "Western"
+                },
+                "timezone": "America/Phoenix"
+            },
+            "venue": {
+                "name": "The Phoenix Theatre & Event Center",
+                "address": {
+                    "street": "125 S Main St",
+                    "city": "Phoenix",
+                    "state": "Arizona",
+                    "zip": "85004"
+                },
+                "region": "Western"
+            },
+            "schedule": {
+                "type": {
+                    "id": "575c648c-f1ab-4da8-ac89-5cb0a0233521",
+                    "name": "multi-day",
+                    "label": "Multi-Day"
+                },
+                "dates": {
+                    "start": "2023-08-04T17:00:00+00:00",
+                    "end": "2023-08-04T20:00:00+00:00",
+                    "days": 3,
+                    "timezone": "America/Phoenix"
+                }
+            },
+            "website": "wyman.net",
+            "social": [
+                {
+                    "id": "debcc66e-f9fa-39fb-8e44-c8bd53adcf1a",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "graham.abbigail",
+                    "url": "https://x.com/graham.abbigail"
+                },
+                {
+                    "id": "7bd81b37-df2b-3851-8e58-bb8259b5c029",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "xmcclure",
+                    "url": "https://www.facebook.com/xmcclure"
+                },
+                {
+                    "id": "564e4713-1630-3a42-9e7b-ea1c19f3ebbc",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "demond.pouros",
+                    "url": "https://www.youtube.com/demond.pouros"
+                }
+            ]
+        },
+        {
+            "name": "HerStory: Women's History Month Celebration",
+            "slug": "herstory-womens-history-month-celebration",
+            "description": "Join us in celebrating the achievements and contributions of women throughout history and today. This event offers music, art, and discussions showcasing the diverse experiences and powerful voices of women around the world.",
+            "id": "7416ca44-5da2-4828-a2cc-537d135270c6",
+            "organizer": {
+                "id": "a2c05aff-06ff-4d0b-a3a3-38c6c35b0ae4",
+                "name": "Girls for Change",
+                "mission": "Empowering girls to become agents of change in their communities through leadership development and community service.",
+                "slug": "girls-for-change",
+                "address": {
+                    "street": "222 Pine St",
+                    "city": "Philadelphia",
+                    "state": "Pennsylvania",
+                    "zip": "19103",
+                    "region": "Mid-Atlantic"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "The Electric Enclave",
+                "address": {
+                    "street": "2115 Maiden Lane",
+                    "city": "Philadelphia",
+                    "state": "Pennsylvania",
+                    "zip": "19103"
+                },
+                "region": "Mid-Atlantic"
+            },
+            "schedule": {
+                "type": {
+                    "id": "575c648c-f1ab-4da8-ac89-5cb0a0233521",
+                    "name": "multi-day",
+                    "label": "Multi-Day"
+                },
+                "dates": {
+                    "start": "2024-04-14T15:00:00+00:00",
+                    "end": "2024-04-14T18:00:00+00:00",
+                    "days": 3,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "bayer.com",
+            "social": [
+                {
+                    "id": "7b5aba98-df28-390f-b08c-dbb007ea0a12",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "tania54",
+                    "url": "https://x.com/tania54"
+                },
+                {
+                    "id": "f10ccb23-8be7-3f8d-a5de-7e425e9ce159",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "catherine.zulauf",
+                    "url": "https://www.instagram.com/catherine.zulauf"
+                }
+            ]
+        },
+        {
+            "name": "Empowering Immigrant Women Conference",
+            "slug": "empowering-immigrant-women-conference",
+            "description": "Designed specifically for immigrant women, this conference offers workshops, resources, and a safe space to discuss the challenges and opportunities faced by immigrant women in their personal and professional lives. Join us in empowering and uplifting immigrant women.",
+            "id": "e75ad73e-721e-4778-b5ae-553d88c4ea52",
+            "organizer": {
+                "id": "a44ca010-ae99-4e87-9500-ed37f2c7ae6c",
+                "name": "Girls Rock Foundation",
+                "mission": "Providing mentorship and resources to help girls achieve their full potential.",
+                "slug": "girls-rock-foundation",
+                "address": {
+                    "street": "456 Broadway Ave",
+                    "city": "Atlanta",
+                    "state": "Georgia",
+                    "zip": "30303",
+                    "region": "Southern"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "The Grove at Midtown",
+                "address": {
+                    "street": "123 Main Street",
+                    "city": "Atlanta",
+                    "state": "Georgia",
+                    "zip": "30329"
+                },
+                "region": "Southern"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "45da27d5-f959-491f-8c3f-a4cc67adc82e",
+                    "name": "bi-weekly",
+                    "label": "Bi-Weekly"
+                },
+                "dates": {
+                    "start": "2024-05-26T08:00:00+00:00",
+                    "end": "2024-05-26T12:00:00+00:00",
+                    "duration": 3,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "glover.net",
+            "social": [
+                {
+                    "id": "5871ed59-e0db-3368-b9e9-8954d94073ce",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "kreiger.roman",
+                    "url": "https://www.facebook.com/kreiger.roman"
+                }
+            ]
+        },
+        {
+            "name": "Let's Talk Consent: Sex Ed for Girls",
+            "slug": "lets-talk-consent-sex-ed-for-girls",
+            "description": "This event offers a comprehensive and inclusive sex education workshop for girls, covering topics such as consent, healthy relationships, and reproductive health. Arm yourself with accurate information and tools for making informed decisions about your body and your sexual health.",
+            "id": "e33b6481-6ccc-4893-9b08-da2acaf6d6b1",
+            "organizer": {
+                "id": "c18e4b0a-d81e-4509-a242-1a7c379669b0",
+                "name": "Girl Power Initiative",
+                "mission": "Inspiring and empowering girls through mentorship, education, and leadership development.",
+                "slug": "girl-power-initiative",
+                "address": {
+                    "street": "456 Elm St",
+                    "city": "Denver",
+                    "state": "Colorado",
+                    "zip": "80202",
+                    "region": "Western"
+                },
+                "timezone": "America/Denver"
+            },
+            "venue": {
+                "name": "The Electric Grove",
+                "address": {
+                    "street": "1111 W Colfax Ave",
+                    "city": "Denver",
+                    "state": "CO",
+                    "zip": "80204"
+                },
+                "region": "Western"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "45da27d5-f959-491f-8c3f-a4cc67adc82e",
+                    "name": "bi-weekly",
+                    "label": "Bi-Weekly"
+                },
+                "dates": {
+                    "start": "2023-10-12T20:00:00+00:00",
+                    "end": "2023-10-12T22:00:00+00:00",
+                    "duration": 12,
+                    "timezone": "America/Denver"
+                }
+            },
+            "website": "jacobs.com",
+            "social": [
+                {
+                    "id": "4e8d9322-4130-38df-9901-e7b550461a06",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "ygutmann",
+                    "url": "https://www.youtube.com/ygutmann"
+                }
+            ]
+        },
+        {
+            "name": "Women in Film Showcase",
+            "slug": "women-in-film-showcase",
+            "description": "This film showcase features the work of female filmmakers from a variety of backgrounds and identities. Join us in celebrating and amplifying the voices and stories of women in film while supporting the growth and diversity of the industry.",
+            "id": "22007c6a-cae1-4027-b0d4-26c86e9693dd",
+            "organizer": {
+                "id": "e4ab69f9-0f4a-42f9-a2fd-caca90cb775c",
+                "name": "Women's Resource Center",
+                "mission": "Offering resources, support, and education to women in need.",
+                "slug": "womens-resource-center",
+                "address": {
+                    "street": "111 Elm St",
+                    "city": "Baltimore",
+                    "state": "Maryland",
+                    "zip": "21201",
+                    "region": "Mid-Atlantic"
+                },
+                "timezone": "America/New_York"
+            },
+            "venue": {
+                "name": "The Starlight Center",
+                "address": {
+                    "street": "123 Main Street",
+                    "city": "Baltimore",
+                    "state": "Maryland",
+                    "zip": "21201"
+                },
+                "region": "Mid-Atlantic"
+            },
+            "schedule": {
+                "type": {
+                    "id": "ff26a7f1-299a-4895-a42e-275e5240149f",
+                    "name": "one-time",
+                    "label": "One-time"
+                },
+                "dates": {
+                    "start": "2023-07-16T09:00:00+00:00",
+                    "end": "2023-07-16T14:00:00+00:00",
+                    "days": 1,
+                    "timezone": "America/New_York"
+                }
+            },
+            "website": "hodkiewicz.net",
+            "social": [
+                {
+                    "id": "c8a0d7b3-8f85-3289-9dfc-50240c1e831c",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "orion.robel",
+                    "url": "https://www.instagram.com/orion.robel"
+                },
+                {
+                    "id": "08d870c6-9436-3e28-92dd-480fcbd45262",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "feeney.milford",
+                    "url": "https://www.facebook.com/feeney.milford"
+                },
+                {
+                    "id": "268ec4aa-9343-3b67-98d1-055f96fcd79d",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "stehr.mireya",
+                    "url": "https://x.com/stehr.mireya"
+                }
+            ]
+        },
+        {
+            "name": "MentorHERship Program Launch Event",
+            "slug": "mentorhership-program-launch-event",
+            "description": "Join us in launching MentorHERship, a program connecting women with experienced mentors in their desired fields. Attendees will have the opportunity to learn about the program, meet potential mentors, and network with other aspiring mentees.",
+            "id": "e288584b-5666-4fbb-8a3e-91dac63554a6",
+            "organizer": {
+                "id": "c18e4b0a-d81e-4509-a242-1a7c379669b0",
+                "name": "Girl Power Initiative",
+                "mission": "Inspiring and empowering girls through mentorship, education, and leadership development.",
+                "slug": "girl-power-initiative",
+                "address": {
+                    "street": "456 Elm St",
+                    "city": "Denver",
+                    "state": "Colorado",
+                    "zip": "80202",
+                    "region": "Western"
+                },
+                "timezone": "America/Denver"
+            },
+            "venue": {
+                "name": "The Glittering Stage",
+                "address": {
+                    "street": "1200 Sparkling Boulevard",
+                    "city": "Denver",
+                    "state": "Colorado",
+                    "zip": "80203"
+                },
+                "region": "Western"
+            },
+            "schedule": {
+                "type": {
+                    "id": "ff26a7f1-299a-4895-a42e-275e5240149f",
+                    "name": "one-time",
+                    "label": "One-time"
+                },
+                "dates": {
+                    "start": "2023-07-12T13:00:00+00:00",
+                    "end": "2023-07-12T14:30:00+00:00",
+                    "days": 1,
+                    "timezone": "America/Denver"
+                }
+            },
+            "website": "gibson.com",
+            "social": [
+                {
+                    "id": "44efec2d-c6e1-3e5e-9793-069343939acf",
+                    "platform": {
+                        "id": "8547695f-7e61-49f1-b421-cda7a5a91340",
+                        "name": "instagram",
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    "user": "ehudson",
+                    "url": "https://www.instagram.com/ehudson"
+                },
+                {
+                    "id": "e216477c-0c5b-376c-a065-98bfd125c32a",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "cmraz",
+                    "url": "https://www.youtube.com/cmraz"
+                }
+            ]
+        },
+        {
+            "name": "A Seat at the Table: Diversity in Leadership Forum",
+            "slug": "a-seat-at-the-table-diversity-in-leadership-forum",
+            "description": "This forum aims to promote diversity and inclusivity in leadership positions by discussing the barriers faced by underrepresented groups and offering strategies for creating a more inclusive and equitable workplace. Join us in advocating for diversity and representation at the top.",
+            "id": "e1c706b2-9d7d-47cc-bc6a-fb92b5ff1350",
+            "organizer": {
+                "id": "5cd27bd3-54b6-4658-a317-77953a676a46",
+                "name": "GirlStrong Foundation",
+                "mission": "Empowering and inspiring girls to become confident leaders of tomorrow.",
+                "slug": "girlstrong-foundation",
+                "address": {
+                    "street": "888 Pine St",
+                    "city": "San Francisco",
+                    "state": "California",
+                    "zip": "94108",
+                    "region": "Western"
+                },
+                "timezone": "America/Los_Angeles"
+            },
+            "venue": {
+                "name": "Harmony Hall",
+                "address": {
+                    "street": "123 Main Street",
+                    "city": "San Francisco",
+                    "state": "California",
+                    "zip": "94102"
+                },
+                "region": "Western"
+            },
+            "schedule": {
+                "type": {
+                    "id": "dde80af6-121f-448f-b403-0b221e2e6be7",
+                    "name": "recurring",
+                    "label": "Recurring"
+                },
+                "interval": {
+                    "id": "cc3c8a6b-3689-4665-a111-231b62fad078",
+                    "name": "monthly",
+                    "label": "Monthly"
+                },
+                "dates": {
+                    "start": "2024-06-30T17:00:00+00:00",
+                    "end": "2024-06-30T20:00:00+00:00",
+                    "duration": 6,
+                    "timezone": "America/Los_Angeles"
+                }
+            },
+            "website": "corwin.com",
+            "social": [
+                {
+                    "id": "2fdf86bd-cb68-3eb8-a2cd-8ca4254f9f66",
+                    "platform": {
+                        "id": "134fb85d-0f98-4408-b16c-dd8216a7f15f",
+                        "name": "x-twitter",
+                        "label": "X",
+                        "url": "https://x.com/"
+                    },
+                    "user": "marianna.murphy",
+                    "url": "https://x.com/marianna.murphy"
+                },
+                {
+                    "id": "e6fe8324-c876-304c-abd0-e3d84e0c4294",
+                    "platform": {
+                        "id": "a0834eb3-dd5d-4302-b333-5236f43fc71d",
+                        "name": "facebook",
+                        "label": "Facebook",
+                        "url": "https://www.facebook.com/"
+                    },
+                    "user": "omer.heathcote",
+                    "url": "https://www.facebook.com/omer.heathcote"
+                },
+                {
+                    "id": "f3ae5b9e-3a4c-30f9-8db4-12a23c2ed4c2",
+                    "platform": {
+                        "id": "7449c898-2ef4-4008-8ad8-1a346bb89180",
+                        "name": "youtube",
+                        "label": "YouTube",
+                        "url": "https://www.youtube.com/"
+                    },
+                    "user": "maddison.dicki",
+                    "url": "https://www.youtube.com/maddison.dicki"
+                }
+            ]
+        }
+    ]
 }

@@ -2,26 +2,31 @@
 namespace App\Action;
 
 use App\Action\Page\CoreAction;
+use App\Repository\EventsRepository;
+use Cake\Chronos\ChronosDate;
+use Cake\Collection\Collection;
 
 class GetEventPageAction extends CoreAction
 {
-	private array $_events = [
-		'we-the-people' => [
-			'title' => 'We the People National March',
-			'date' => 'Sunday, July 2, 2023',
-			'sponsor' => 'AIDS Healthcare Foundation',
-		],
-	];
+	private EventsRepository $Events;
 
 	public function invoke() : void
 	{
+		$this->Events = new EventsRepository();
+		$this->getView()->addAttribute('states', $this->Events->getStates());
+
+		$today = ChronosDate::today();
+		$events = [];
+		$events['all'] = new Collection($this->Events->getEvents());
+
 		$slug = $this->getRequest()->getAttribute('slug');
-		$event = $this->_events[$slug];
+		ray($slug);
+		$event = $events['all']->firstMatch(['slug' => $slug]);
 
 		$this->getView()->render($this->getResponse(), 'pages/event.php', [
-			'pageData' => $event,
+			'event' => $event,
 			'pageSlug' => 'events',
-			'isSingle' => true,
+			'isSinglePage' => true,
 		]);
 	}
 }

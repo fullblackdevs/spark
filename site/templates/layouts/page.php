@@ -44,16 +44,14 @@
 
 <body class="antialiased lg:flex lg:flex-col lg:justify-stretch font-body lg:min-h-lvh">
 	<div x-data="{ transitionMobileHomeHeader: false }" class="lg:flex lg:grow lg:flex-col container mx-auto max-w-screen-xl lg:justify-stretch relative">
-		<header class="flex grow xl:px-28 lg:-mt-1 <?= !isset($isHome) ? 'bg-courageous-plum text-confident-carnation' : 'text-spark-pink-100 md:bg-transparent' ?> z-50 fixed top-0 transition-all ease-in-out duration-600 md:flex md:static md:h-auto bg-gradient-to-b from-courageous-plum-900/75 w-screen md:w-auto" :class="transitionMobileHomeHeader ? 'bg-courageous-plum-900/75 h-14' : '<?= !isset($isHome) ? 'h-14' : 'h-[20vh]' ?>'" >
+		<header class="flex xl:px-28 lg:-mt-1 <?= !isset($isHome) ? 'bg-courageous-plum text-confident-carnation' : 'text-spark-pink-100 md:bg-transparent' ?> z-50 fixed top-0 transition-all ease-in-out duration-600 md:flex md:static md:h-auto bg-gradient-to-b from-courageous-plum-900/75 w-screen md:w-auto" :class="transitionMobileHomeHeader ? 'bg-courageous-plum-900/75 h-14' : '<?= !isset($isHome) ? 'h-14' : 'h-[20vh]' ?>'" >
 			<?= $this->fetch('components/navigation.php', compact('pageSlug')) ?>
 		</header>
 
 		<?php if (isset($isHome)) : ?>
 			<?= $this->fetch('components/masthead-hero.php') ?>
-		<?php elseif (!isset($isSingle) && in_array($pageSlug, ['about', 'partners', 'events', 'resources', 'blog', 'connect'])) : ?>
+		<?php elseif (!isset($isSinglePage) && isset($pageSlug) && in_array($pageSlug, ['about', 'partners', 'events', 'resources', 'blog', 'connect'])) : ?>
 			<?= $this->fetch('components/masthead.php', compact('pageTitle', 'pageDescription')) ?>
-		<?php else : ?>
-			<?= $this->fetch('components/masthead-single.php', ['pageData' => $pageData]) ?>
 		<?php endif; ?>
 
 		<?= $content ?>
