@@ -28,6 +28,7 @@ return function (App $app) {
 	$app->get('/connect', ConnectAction::class);
 
 	$app->get('/resource/{slug}', GetResourcePageAction::class);
+	$app->get('/partner/{id}/resource/{slug}', GetResourcePageAction::class);
 	$app->get('/event/{slug}', GetEventPageAction::class);
 	$app->get('/partner/{slug}', GetPartnerPageAction::class);
 

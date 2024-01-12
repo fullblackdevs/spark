@@ -44,4 +44,12 @@ class PartnersRepository implements RepositoryInterface
 
 		return $partner ?? null;
 	}
+
+	public function getRandonPartner(): array|null
+	{
+		$partners = new Collection($this->getPartners());
+		$partner = $partners->sample(1)->first();
+
+		return $partner ?? null;
+	}
 }

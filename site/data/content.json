@@ -1,0 +1,133 @@
+{
+	"pages": [
+		{
+			"pageName": "home",
+			"pageUrl": "index.html",
+			"pageType": "home"
+		},
+		{
+			"pageName": "about",
+			"pageUrl": "/about",
+			"pageType": "about"
+		},
+		{
+			"pageName": "contact",
+			"pageUrl": "contact.html",
+			"pageType": "contact"
+		},
+		{
+			"pageName": "services",
+			"pageUrl": "services.html",
+			"pageType": "services"
+		},
+		{
+			"pageName": "portfolio",
+			"pageUrl": "portfolio.html",
+			"pageType": "portfolio"
+		},
+		{
+			"pageName": "blog",
+			"pageUrl": "blog.html",
+			"pageType": "blog"
+		},
+		{
+			"pageName": "blog-single",
+			"pageUrl": "blog-single.html",
+			"pageType": "blog-single"
+		},
+		{
+			"pageName": "404",
+			"pageUrl": "404.html",
+			"pageType": "404"
+		}
+	],
+	"components": [
+		{
+			"componentName": "history",
+			"componentType": "text",
+			"content": [
+				{
+					"text": "Our Story",
+					"type": "header"
+				},
+				{
+					"text": "SPARK, founded in 2018, stands out as a remarkable initiative aimed at empowering girls and women. The acronym \"SPARK\" encapsulates the essence of the organization: Sisters working together to Promote Awareness through Resources and Knowledge. This description suggests a strong focus on collaboration, education, and empowerment. Let's delve deeper into Spark’s core values.",
+					"type": "paragraph"
+				}
+			],
+			"usages": [
+				{
+					"pageName": "about",
+					"componentUrl": "history.html"
+				}
+			]
+		},
+		{
+			"componentName": "footer",
+			"componentUrl": "footer.html",
+			"componentType": "footer"
+		},
+		{
+			"componentName": "sidebar",
+			"componentUrl": "sidebar.html",
+			"componentType": "sidebar"
+		},
+		{
+			"componentName": "slider",
+			"componentUrl": "slider.html",
+			"componentType": "slider"
+		},
+		{
+			"componentName": "banner",
+			"componentUrl": "banner.html",
+			"componentType": "banner"
+		},
+		{
+			"componentName": "services",
+			"componentUrl": "services.html",
+			"componentType": "services"
+		},
+		{
+			"componentName": "portfolio",
+			"componentUrl": "portfolio.html",
+			"componentType": "portfolio"
+		},
+		{
+			"componentName": "blog",
+			"componentUrl": "blog.html",
+			"componentType": "blog"
+		},
+		{
+			"componentName": "contact",
+			"componentUrl": "contact.html",
+			"componentType": "contact"
+		},
+		{
+			"componentName": "map",
+			"componentUrl": "map.html",
+			"componentType": "map"
+		},
+		{
+			"componentName": "social",
+			"componentUrl": "social.html",
+			"componentType": "social"
+		},
+		{
+			"componentName": "subscribe",
+			"componentUrl": "subscribe.html",
+			"componentType": "subscribe"
+		},
+		{
+			"componentName": "testimonials",
+			"componentUrl": "testimonials.html",
+			"componentType": "testimonials"
+		},
+		{
+			"componentName": "clients",
+			"componentUrl": "clients.html",
+			"componentType": "clients"
+		},
+		{
+			"componentName": "team",
+			"componentUrl": "
+}

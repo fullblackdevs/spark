@@ -1,39 +1,49 @@
-<div class="bg-[#FAF3F9] grow min-h-full px-28 text-black py-16 tracking-tight">
-	<div class="flex gap-16">
+<div class="flex flex-col justify-end flex-none bg-masthead-about bg-cover min-h-96 px-28 pb-24 bg-blend-darken bg-courageous-plum-950 bg-opacity-50 text-spark-pink-100">
+	<div class="flex mb-2">
+		<div class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Resource</div>
+	</div>
+	<h2 class="text-6xl font-semibold tracking-tighter"><?= $resource['name'] ?></h2>
+	<dl>
+		<dt class="sr-only">Provider</dt>
+		<dd class="text-2xl font-medium tracking-tighter"><?= $resource['provider']['name'] ?></dd>
+	</dl>
+</div>
+
+<div class="bg-[#FAF3F9] grow min-h-full px-28 text-black pt-16 tracking-tight">
+	<div class="flex gap-16 -mt-32 bg-[#FAF3F9] p-10 rounded-t-lg">
 		<section class="w-3/5">
-			<h3 class="text-3xl font-bold text-courageous-plum">AHF Pharmacy</h3>
-			<p><a href="/partner/ahf">AIDS Healthcare Foundation</a></p>
-
-			<p class="mt-6 leading-loose">AHF Pharmacy is a not-for-profit healthcare provider operated by Los Angeles-based AIDS Healthcare Foundation. The organization offers pharmaceutical essentials to patients through a network of pharmacies. The pharmacies employ clinically trained pharmacists to provide custom services. Customers can select between pickup at store locations or getting the medications delivered at their doorstep. It also offers special packaging that guides patients on the medication to be taken and at what time of the day. For this, it adopts GoPak and CalendarPak custom medication packaging and labeling services. As part of GoPak packaging, the organization keeps a month’s medication into daily dose-specific packets labeled with the date and time when the medication is to be taken, and its CalendarPak service labels the monthly medications. AHF Pharmacy also offers a mobile app for patients to stay connected with pharmacies, receive alerts on medications, and get refills throughout the day. It also sends reminders to patients on monthly refills. It coordinates with the patient’s physician, insurance companies, and other parties that could be involved in the patient’s overall healthcare.</p>
-
-			<div class="my-10">
-				<h3 class="font-semibold text-xl">Testimonials/Reviews</h3>
-				<p>“I have been a customer of AHF Pharmacy for over 10 years. I have always received excellent service from the staff. They are always friendly and helpful. I have never had a problem with my medications. I would recommend AHF Pharmacy to anyone who needs a pharmacy.”</p>
-			</div>
+			<h3 class="text-3xl font-bold text-courageous-plum">The Details</h3>
+			<p class="mt-6 leading-loose"><?= $resource['description']['full'] ?></p>
 		</section>
 
 		<aside class="w-2/5 h-fit mt-2 flex flex-col divide-y grow-0 overflow-hidden rounded-md bg-white shadow">
 			<div class="px-6 py-4">Program/Service Logo</div>
 			<div class="flex justify-between px-6 py-4">
-				<h4>Address</h4>
+				<h4>Location</h4>
 				<p class="text-right">
-					2829 Euclid Avenue<br />
-					Cleveland, OH 44115
+					<?= $resource['provider']['address']['street'] ?><br />
+					<?= $resource['provider']['address']['city'] . ', ' . $resource['provider']['address']['state'] . ' ' . $resource['provider']['address']['zip'] ?>
 				</p>
 			</div>
-			<div class="flex justify-between px-6 py-4">
-				<h4>Schedule</h4>
-				<dl>
-					<dt>Monday</dt>
-					<dd>9:00 AM - 5:00 PM</dd>
-					<dt>Tuesday</dt>
-					<dd>9:00 AM - 5:00 PM</dd>
-				</dl>
-			</div>
-			<div class="flex justify-between px-6 py-4">
-				<h4>Website</h4>
-				<p><a href="https://ahfpharmacy.org">ahfpharmacy.org</a></p>
-			</div>
+			<?php if (isset($resource['schedule'])) : ?>
+				<div class="flex justify-between px-6 py-4">
+					<h4>Schedule</h4>
+					<dl>
+						<dt>Monday</dt>
+						<dd>9:00 AM - 5:00 PM</dd>
+						<dt>Tuesday</dt>
+						<dd>9:00 AM - 5:00 PM</dd>
+					</dl>
+				</div>
+			<?php endif; ?>
+
+			<?php if (isset($resource['provider']['website'])) : ?>
+				<div class="flex justify-between px-6">
+					<h4>Website</h4>
+					<p><a href="https://<?= $resource['provider']['website'] ?>"><?= $resource['provider']['website'] ?></a></p>
+				</div>
+			<?php endif; ?>
+
 			<div class="flex justify-between px-6 py-4">
 				<h4>Socials</h4>
 				<ul class="flex justify-between items-center gap-4">

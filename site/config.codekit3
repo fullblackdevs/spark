@@ -627,6 +627,14 @@
       "oAP" : "\/templates\/pages\/partners.php",
       "oF" : 0
     },
+    "\/templates\/pages\/post.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/post.php",
+      "oF" : 0
+    },
     "\/templates\/pages\/resource.php" : {
       "cB" : 0,
       "ft" : 8192,

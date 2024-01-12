@@ -250,5 +250,36 @@
             "region": "Midwest"
         },
         "timezone": "America/Chicago"
-    }
+    },
+	{
+		"id": "354b16a5-2dd6-4c09-960f-60d807cca43b",
+		"name": "AIDS Healthcare Foundation",
+		"mission": "AIDS Healthcare Foundation (AHF) is a global nonprofit organization providing cutting-edge medicine and advocacy to over 1,000,000 people in 43 countries. We are currently the largest provider of HIV/AIDS medical care in the U.S.",
+		"slug": "ahf",
+		"address": {
+			"street": "6255 W Sunset Blvd",
+			"city": "Los Angeles",
+			"state": "California",
+			"zip": "90028",
+			"region": "Western"
+		},
+		"timezone": "America/Los_Angeles"
+	},
+	{
+		"id": "6caffb87-cef3-4098-ad53-1039d912f5e4",
+		"name": "SunServe",
+		"mission": "Recognizing that the entire LGBTQ community has the right to quality care, our mission is to provide critical life assistance and professional mental health services with an emphasis on economically disadvantaged, marginalized youth, adults and seniors in the greater South Florida metropolitan area.",
+		"slug": "sunserve",
+		"address": {
+			"street": "2312 Wilton Drive",
+			"city": "Wilton Manors",
+			"state": "Florida",
+			"zip": "33305",
+			"region": "Southern"
+		},
+		"timezone": "America/New_York",
+		"contact": {
+			"email": "info@sunserve.org"
+		}
+	}
 ]
