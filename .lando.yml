@@ -23,5 +23,5 @@ tooling:
     cmd: php
   composer:
     service: site
-    cmd: composer -d site
+    cmd: composer -d "site"
     description: "Run Composer commands"

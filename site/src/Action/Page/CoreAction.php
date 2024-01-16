@@ -46,6 +46,7 @@ abstract class CoreAction
 		$this->renderer->setLayout('layouts/page.php');
 
 		$this->renderer->addAttribute('now', ChronosDate::now());
+		$this->renderer->addAttribute('version', time());
 
 		return $this->renderer;
 	}

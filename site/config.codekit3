@@ -13,9 +13,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.env",
-      "oF" : 1
+      "oF" : 0
     },
     "\/.gitignore" : {
       "cB" : 0,
@@ -131,13 +131,51 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/assets\/scripts\/.gitkeep" : {
+    "\/assets\/images\/renaissance-beyonce-film.webp" : {
+      "ft" : 8388608,
+      "iS" : 97500,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/renaissance-beyonce-film.webp",
+      "oF" : 2,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-photo",
+      "rq" : 100
+    },
+    "\/assets\/src\/.gitkeep" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/scripts\/.gitkeep",
+      "oAP" : "\/assets\/src\/.gitkeep",
       "oF" : 0
+    },
+    "\/assets\/src\/icons\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/src\/icons\/.gitkeep",
+      "oF" : 0
+    },
+    "\/assets\/src\/scripts\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/src\/scripts\/.gitkeep",
+      "oF" : 0
+    },
+    "\/assets\/src\/scripts\/main.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 1,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/scripts\/main-min.js",
+      "oF" : 3,
+      "sC" : 3,
+      "tS" : 1
     },
     "\/assets\/src\/spark-icons.ai" : {
       "cB" : 0,
@@ -191,7 +229,15 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/styles\/main.css" : {
+    "\/assets\/src\/styles\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/src\/styles\/.gitkeep",
+      "oF" : 0
+    },
+    "\/assets\/src\/styles\/main.css" : {
       "aP" : 0,
       "bl" : 0,
       "ci" : 0,
@@ -199,7 +245,7 @@
       "ft" : 16,
       "ma" : 1,
       "oA" : 0,
-      "oAP" : "\/web\/assets\/styles\/theme-min.css",
+      "oAP" : "\/web\/assets\/styles\/main-min.css",
       "oF" : 2,
       "pg" : 0
     },
@@ -225,11 +271,53 @@
       "oAP" : "\/config",
       "oF" : 0
     },
-    "\/data" : {
-      "ft" : 65536,
-      "oA" : 1,
-      "oAP" : "\/data",
+    "\/data\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/data\/.gitkeep",
       "oF" : 0
+    },
+    "\/data\/content.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/data\/content-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/data\/events.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/data\/events-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/data\/partners.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/data\/partners-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/data\/posts.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/data\/posts.json",
+      "oF" : 3,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/data\/resources.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/data\/resources-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/node_modules" : {
       "ft" : 65536,
@@ -440,6 +528,14 @@
       "oAP" : "\/src\/Action\/Page\/ResourcesAction.php",
       "oF" : 0
     },
+    "\/src\/Repository\/CoreRepository.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Repository\/CoreRepository.php",
+      "oF" : 0
+    },
     "\/src\/Repository\/EventsRepository.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -454,6 +550,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Repository\/PartnersRepository.php",
+      "oF" : 0
+    },
+    "\/src\/Repository\/PostsRepository.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Repository\/PostsRepository.php",
       "oF" : 0
     },
     "\/src\/Repository\/RepositoryInterface.php" : {
@@ -478,6 +582,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Service\/DigitalOceanSpacesService.php",
+      "oF" : 0
+    },
+    "\/src\/Service\/Storage\/LocalStorageService.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Service\/Storage\/LocalStorageService.php",
+      "oF" : 0
+    },
+    "\/src\/Utility\/functions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Utility\/functions.php",
       "oF" : 0
     },
     "\/tailwind.config.js" : {
@@ -839,6 +959,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/web\/assets\/scripts\/main-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/scripts\/main-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/web\/assets\/scripts\/main-min.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/scripts\/main-min.js.map",
+      "oF" : 0
+    },
+    "\/web\/assets\/styles\/main-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/styles\/main-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/web\/assets\/styles\/main-min.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/styles\/main-min.css.map",
+      "oF" : 0
+    },
     "\/web\/assets\/styles\/theme-min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -858,6 +1017,14 @@
       "oA" : 0,
       "oAP" : "\/web\/assets\/styles\/theme-min.css.map",
       "oF" : 0
+    },
+    "\/web\/data\/posts.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/web\/data\/posts-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/web\/favicon.ico" : {
       "cB" : 0,
@@ -1181,18 +1348,18 @@
     "bowerUseExactVersion" : 0,
     "browserRefreshDelay" : 0,
     "browserslistString" : ">0.2%, last 2 versions, Firefox ESR, not dead",
-    "buildEnvironment" : 0,
+    "buildEnvironment" : 1,
     "buildFolderActive" : 0,
     "buildFolderName" : "build",
     "cleanBuild" : 1,
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
-      "NODE_ENV:::production"
+      "NODE_ENV:::development"
     ],
     "esLintConfigFileHandlingType" : 0,
-    "esLintECMAVersion" : 7,
-    "esLintEnvironmentsMask" : 1,
+    "esLintECMAVersion" : 6,
+    "esLintEnvironmentsMask" : 17,
     "esLintRules" : {
       "accessor-pairs" : {
         "active" : 0,
@@ -1250,8 +1417,8 @@
         "optionString" : "{'exceptMethods': [], 'enforceForClassFields': true}"
       },
       "comma-dangle" : {
-        "active" : 1,
-        "optionString" : "'never'"
+        "active" : 0,
+        "optionString" : "'always'"
       },
       "comma-spacing" : {
         "active" : 0,
@@ -2407,7 +2574,7 @@
     "npmCreatePackageLock" : 1,
     "npmInstallOptionalDependencies" : 0,
     "npmSaveExactVersion" : 0,
-    "npmTargetDependencyListType" : 2,
+    "npmTargetDependencyListType" : 1,
     "overrideExternalServerCSS" : 0,
     "previewPathAddition" : "",
     "purgeCSS" : {
@@ -2441,7 +2608,7 @@
         "node_modules\/**"
       ]
     },
-    "rollupContext" : "",
+    "rollupContext" : "window",
     "rollupExternalEntries" : [
 
     ],
@@ -2449,9 +2616,9 @@
       "process.env.NODE_ENV:::$NODE_ENV",
       "ENVIRONMENT:::$NODE_ENV"
     ],
-    "rollupTreeshakingEnabled" : 1,
+    "rollupTreeshakingEnabled" : 0,
     "rollupTreeshakingModuleSideEffects" : 1,
-    "skippedFoldersString" : "\/config,log,_logs,.idea,cache,node_modules,\/data,\/vars,\/vendor,logs,_cache,\/storage\/framework\/sessions",
+    "skippedFoldersString" : "\/vendor,\/vars,\/storage\/framework\/sessions,node_modules,_logs,logs,log,.idea,\/config,cache,_cache",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowArbitraryExtensions" : 0,

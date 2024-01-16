@@ -1,5 +1,9 @@
 module.exports = {
-    content: ["./web/**/*.php", "./templates/**/*.php"],
+    content: [
+		"./web/**/*.php",
+		"./templates/**/*.php",
+		"./node_modules/flowbite/**/*.js"
+	],
     theme: {
         fontFamily: {
             display: ["PlakatGrotesk"],
@@ -60,5 +64,8 @@ module.exports = {
             },
         },
     },
-    plugins: [require("@tailwindcss/forms")],
+    plugins: [
+		require('@tailwindcss/forms'),
+		require('flowbite/plugin')
+	],
 };

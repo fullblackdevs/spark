@@ -1,0 +1,70 @@
+{
+    "items": [
+        {
+            "name": "How to Find a Therapist",
+            "date": "2021-09-01T00:00:00+00:00",
+            "description": "This is a test excerpt for this article.",
+            "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+            "type": "article",
+            "slug": "how-to-find-a-therapist",
+            "format": "article-lg"
+        },
+        {
+            "name": "Spark Rings in the New Year with a New Look",
+            "date": "2021-09-01T00:00:00+00:00",
+            "description": "Finding a therapist can be a daunting task. Here are some tips to help you find the right therapist for you.",
+            "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+            "type": "video",
+            "slug": "how-to-find-a-therapist",
+            "size": "col-span-5 aspect-video",
+            "format": "video"
+        },
+        {
+            "name": "New Year, New Me, Who Dis?",
+            "titles": { "subtitle": "January 2023 Newsletter" },
+            "date": "2021-09-01T00:00:00+00:00",
+            "description": { "full": null, "excerpt": null },
+            "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+            "type": "newsletter",
+            "slug": "how-to-find-a-therapist",
+            "size": "col-span-3 row-span-2 h-auto",
+            "format": "publication"
+        },
+        {
+            "name": "Spark Rings in the New Year with a New Look",
+            "date": "2021-09-01T00:00:00+00:00",
+            "description": "Finding a therapist can be a daunting task. Here are some tips to help you find the right therapist for you.",
+            "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+            "type": "article",
+            "slug": "how-to-find-a-therapist",
+            "format": "article-sm"
+        },
+        {
+            "name": "Spark Rings in the New Year with a New Look",
+            "date": "2021-09-01T00:00:00+00:00",
+            "description": "Finding a therapist can be a daunting task. Here are some tips to help you find the right therapist for you.",
+            "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+            "type": "instagram",
+            "slug": "how-to-find-a-therapist",
+            "format": "social"
+        },
+        {
+            "name": "Spark Rings in the New Year with a New Look",
+            "date": "2021-09-01T00:00:00+00:00",
+            "description": "Finding a therapist can be a daunting task. Here are some tips to help you find the right therapist for you.",
+            "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+            "type": "article",
+            "slug": "how-to-find-a-therapist",
+            "format": "article-md"
+        },
+        {
+            "name": "Spark Rings in the New Year with a New Look",
+            "date": "2021-09-01T00:00:00+00:00",
+            "description": "Finding a therapist can be a daunting task. Here are some tips to help you find the right therapist for you.",
+            "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+            "type": "article",
+            "slug": "how-to-find-a-therapist",
+            "format": "article-md"
+        }
+    ]
+}

@@ -53,6 +53,13 @@ define('CACHE', TMP . 'cache' . DS);
 define('TEMPLATES', ROOT . DS . 'templates');
 
 /*
+ * Path to the web root directory.
+ */
+define('WEB_ROOT', ROOT . DS . 'web' . DS);
+define('WEB_ROOT_ASSETS', ROOT . DS . 'web' . DS . 'assets' . DS);
+define('WEB_ROOT_DATA', ROOT . DS . 'web' . DS . 'data' . DS);
+
+/*
  * The absolute path to the "cake" directory, WITHOUT a trailing DS.
  *
  * CakePHP should always be installed with composer, so look there.
