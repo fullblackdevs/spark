@@ -13,9 +13,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/.env",
-      "oF" : 0
+      "oF" : 1
     },
     "\/.gitignore" : {
       "cB" : 0,
@@ -131,16 +131,42 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/assets\/images\/renaissance-beyonce-film.webp" : {
-      "ft" : 8388608,
-      "iS" : 97500,
+    "\/assets\/images\/renaissance-beyonce-film.png" : {
+      "ft" : 32768,
+      "iS" : 984603,
       "oA" : 0,
-      "oAP" : "\/web\/assets\/images\/renaissance-beyonce-film.webp",
+      "oAP" : "\/web\/assets\/images\/renaissance-beyonce-film.png",
       "oF" : 2,
       "oIPL" : 0,
       "opt" : 1,
-      "ou" : "lpckwebp-photo",
-      "rq" : 100
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/assets\/images\/renaissance-beyonce-film.webp" : {
+      "ft" : 8388608,
+      "iS" : 97500,
+      "oA" : 1,
+      "oAP" : "\/assets\/images\/renaissance-beyonce-film.webp",
+      "oF" : 1,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/images\/spark-MEL02509.jpg" : {
+      "ft" : 16384,
+      "iS" : 3077398,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/spark-MEL02509.jpg",
+      "oF" : 2,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/assets\/src\/.gitkeep" : {
       "cB" : 0,
@@ -173,7 +199,7 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/web\/assets\/scripts\/main-min.js",
-      "oF" : 3,
+      "oF" : 2,
       "sC" : 3,
       "tS" : 1
     },
@@ -237,6 +263,26 @@
       "oAP" : "\/assets\/src\/styles\/.gitkeep",
       "oF" : 0
     },
+    "\/assets\/src\/styles\/main-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/src\/styles\/main-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/assets\/src\/styles\/main-min.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/src\/styles\/main-min.css.map",
+      "oF" : 0
+    },
     "\/assets\/src\/styles\/main.css" : {
       "aP" : 0,
       "bl" : 0,
@@ -271,53 +317,11 @@
       "oAP" : "\/config",
       "oF" : 0
     },
-    "\/data\/.gitkeep" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/data\/.gitkeep",
+    "\/data" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/data",
       "oF" : 0
-    },
-    "\/data\/content.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/data\/content-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/data\/events.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/data\/events-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/data\/partners.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/data\/partners-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/data\/posts.json" : {
-      "ft" : 524288,
-      "oA" : 2,
-      "oAP" : "\/web\/data\/posts.json",
-      "oF" : 3,
-      "oO" : 0,
-      "oS" : 1
-    },
-    "\/data\/resources.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/data\/resources-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
     },
     "\/node_modules" : {
       "ft" : 65536,
@@ -946,6 +950,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/web\/assets\/images\/renaissance-beyonce-film.png" : {
+      "ft" : 32768,
+      "iS" : 515293,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/renaissance-beyonce-film.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/web\/assets\/images\/thought-catalog-23KdVfc395A-unsplash.jpg" : {
       "ft" : 16384,
       "iS" : 1766086,
@@ -1358,8 +1375,8 @@
       "NODE_ENV:::development"
     ],
     "esLintConfigFileHandlingType" : 0,
-    "esLintECMAVersion" : 6,
-    "esLintEnvironmentsMask" : 17,
+    "esLintECMAVersion" : 7,
+    "esLintEnvironmentsMask" : 1,
     "esLintRules" : {
       "accessor-pairs" : {
         "active" : 0,
@@ -1417,8 +1434,8 @@
         "optionString" : "{'exceptMethods': [], 'enforceForClassFields': true}"
       },
       "comma-dangle" : {
-        "active" : 0,
-        "optionString" : "'always'"
+        "active" : 1,
+        "optionString" : "'never'"
       },
       "comma-spacing" : {
         "active" : 0,
@@ -2574,7 +2591,7 @@
     "npmCreatePackageLock" : 1,
     "npmInstallOptionalDependencies" : 0,
     "npmSaveExactVersion" : 0,
-    "npmTargetDependencyListType" : 1,
+    "npmTargetDependencyListType" : 2,
     "overrideExternalServerCSS" : 0,
     "previewPathAddition" : "",
     "purgeCSS" : {
@@ -2616,9 +2633,9 @@
       "process.env.NODE_ENV:::$NODE_ENV",
       "ENVIRONMENT:::$NODE_ENV"
     ],
-    "rollupTreeshakingEnabled" : 0,
+    "rollupTreeshakingEnabled" : 1,
     "rollupTreeshakingModuleSideEffects" : 1,
-    "skippedFoldersString" : "\/vendor,\/vars,\/storage\/framework\/sessions,node_modules,_logs,logs,log,.idea,\/config,cache,_cache",
+    "skippedFoldersString" : "\/config,log,_logs,.idea,cache,node_modules,\/data,\/vars,\/vendor,logs,_cache,\/storage\/framework\/sessions",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowArbitraryExtensions" : 0,

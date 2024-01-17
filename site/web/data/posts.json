@@ -18,7 +18,7 @@
 			}
         },
         {
-            "name": "Spark Rings in the New Year with a New Look",
+            "title": "Beyoncé Redefines Womanhood in New Film",
             "date": "2021-09-01T00:00:00+00:00",
             "description": "Finding a therapist can be a daunting task. Here are some tips to help you find the right therapist for you.",
             "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
@@ -29,7 +29,7 @@
 			"media": {
 				"images": {
 					"featured": {
-						"file": "renaissance-beyonce-film.webp",
+						"file": "renaissance-beyonce-film.png",
 						"alt": null
 					}
 				}
@@ -47,9 +47,12 @@
             "format": "publication"
         },
         {
-            "name": "Spark Rings in the New Year with a New Look",
+            "name": "Redefining Beauty Standards: Embracing Your Authentic Self",
             "date": "2021-09-01T00:00:00+00:00",
-            "description": "Finding a therapist can be a daunting task. Here are some tips to help you find the right therapist for you.",
+            "description": {
+				"full": "Let's challenge conventional beauty norms and embrace our unique selves. This post explores how redefining beauty standards can boost confidence and empower women.",
+				"excerpt": "Let's challenge conventional beauty norms and embrace our unique selves."
+			},
             "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
             "type": "article",
             "slug": "how-to-find-a-therapist",
@@ -62,22 +65,40 @@
             "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
             "type": "instagram",
             "slug": "how-to-find-a-therapist",
-            "format": "social"
+            "format": "social",
+			"media": {
+				"images": {
+					"primary": {
+						"file": "spark-MEL02509.jpg",
+						"alt": null,
+						"caption": "This is a test caption for this image."
+					},
+					"collection": []
+				}
+			}
         },
         {
-            "name": "Spark Rings in the New Year with a New Look",
+            "title": "The Power of Self-Care: Prioritizing Your Well-Being",
             "date": "2021-09-01T00:00:00+00:00",
-            "description": "Finding a therapist can be a daunting task. Here are some tips to help you find the right therapist for you.",
+            "description": {
+				"full": "Self-care is at the heart of maintaining your physical and mental health. Learn practical tips to create a routine that empowers you to thrive.",
+				"excerpt": "Self-care is at the heart of maintaining your physical and mental health."
+			},
             "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+			"content": null,
             "type": "article",
             "slug": "how-to-find-a-therapist",
             "format": "article-md"
         },
         {
-            "name": "Spark Rings in the New Year with a New Look",
+            "title": "Why Men Play an Important Role in Normalizing Discussions About Women's Health",
             "date": "2021-09-01T00:00:00+00:00",
-            "description": "Finding a therapist can be a daunting task. Here are some tips to help you find the right therapist for you.",
+			"description": {
+				"full": "Men's active involvement in promoting open and honest conversations about women's health can break down taboos and lead to better healthcare outcomes for everyone.",
+				"excerpt": "Men's active involvement in women's health can lead to better healthcare outcomes for everyone."
+			},
             "contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+			"content": null,
             "type": "article",
             "slug": "how-to-find-a-therapist",
             "format": "article-md"

@@ -246,7 +246,12 @@
                     "user": "zrath",
                     "url": "https://www.facebook.com/zrath"
                 }
-            ]
+            ],
+			"tags":
+			{
+				"type": [],
+				"category": []
+			}
         },
         {
             "name": "Breaking Barriers: Women in STEM Conference",
