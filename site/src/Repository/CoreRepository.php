@@ -24,8 +24,6 @@ abstract class CoreRepository
 		} else {
 			$this->fs = LocalStorageService::init(WEB_ROOT_DATA);
 		}
-
-		ray($this->fs);
 	}
 
 	public function loadData(string|null $type = null): null|array

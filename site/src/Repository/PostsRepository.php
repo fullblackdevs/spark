@@ -16,15 +16,12 @@ class PostsRepository extends CoreRepository implements RepositoryInterface
 		parent::__construct();
 
 		$postsData = $this->loadData('posts');
-		ray($postsData);
 
 		if (isset($postsData['items'])) {
 			$this->Posts = $postsData['items'];
 		} else {
 			$this->Posts = $postsData;
 		}
-
-		ray($this->Posts);
 	}
 
 	public function getPosts()
