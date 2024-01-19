@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+require_once dirname(__DIR__) . '/vendor/autoload.php';
+require_once dirname(__DIR__) . '/config/paths.php';
+
+use App\Console\Application;
+use Symfony\Component\Console\CommandLoader\FactoryCommandLoader;
+use App\Console\Command\CoreCommand as Command;
+use App\Console\Command\User\CreateUserCommand;
+use App\Console\Command\Users\UpdateUsersCommand;
+
+$console = Application::startup();
+
+$console->setCommandLoader(new FactoryCommandLoader([
+	'user:create' => function (): Command { return new CreateUserCommand(); },
+	'users:update' => function (): Command { return new UpdateUsersCommand(); },
+]));
+
+$console->run();

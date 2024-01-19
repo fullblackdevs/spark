@@ -1,5 +1,9 @@
 <?php
 return [
+	'App' => [
+		'name' => 'Spark Site Utilities',
+		'version' => '0.1.0',
+	],
 	/** set where to load site data from */
 	'Datasources' => [
 		'default' => [

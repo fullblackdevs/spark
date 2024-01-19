@@ -295,6 +295,14 @@
       "oF" : 2,
       "pg" : 0
     },
+    "\/bin\/console" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/bin\/console",
+      "oF" : 0
+    },
     "\/composer.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -315,6 +323,12 @@
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/config",
+      "oF" : 0
+    },
+    "\/content" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/content",
       "oF" : 0
     },
     "\/data" : {
@@ -362,14 +376,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/ray.php",
-      "oF" : 0
-    },
-    "\/README.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/README.html",
       "oF" : 0
     },
     "\/README.md" : {
@@ -565,6 +571,62 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Application.php",
+      "oF" : 0
+    },
+    "\/src\/Console\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Console\/.gitkeep",
+      "oF" : 0
+    },
+    "\/src\/Console\/Application.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Console\/Application.php",
+      "oF" : 0
+    },
+    "\/src\/Console\/Command\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Console\/Command\/.gitkeep",
+      "oF" : 0
+    },
+    "\/src\/Console\/Command\/CoreCommand.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Console\/Command\/CoreCommand.php",
+      "oF" : 0
+    },
+    "\/src\/Console\/Command\/User\/CreateUserCommand.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Console\/Command\/User\/CreateUserCommand.php",
+      "oF" : 0
+    },
+    "\/src\/Console\/Command\/Users\/UpdateUsersCommand.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Console\/Command\/Users\/UpdateUsersCommand.php",
+      "oF" : 0
+    },
+    "\/src\/Core\/AbstractApplication.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Core\/AbstractApplication.php",
       "oF" : 0
     },
     "\/src\/Repository\/CoreRepository.php" : {
@@ -2731,7 +2793,7 @@
     ],
     "rollupTreeshakingEnabled" : 1,
     "rollupTreeshakingModuleSideEffects" : 1,
-    "skippedFoldersString" : "\/config,log,_logs,.idea,cache,node_modules,\/data,\/vars,\/vendor,logs,_cache,\/storage\/framework\/sessions",
+    "skippedFoldersString" : "\/config,\/vars,\/vendor,node_modules,\/storage\/framework\/sessions,\/content,cache,_logs,log,.idea,\/data,logs,_cache",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowArbitraryExtensions" : 0,

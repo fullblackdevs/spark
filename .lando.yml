@@ -25,3 +25,6 @@ tooling:
     service: site
     cmd: composer -d "site"
     description: "Run Composer commands"
+  console:
+    service: site
+    cmd: site/bin/console

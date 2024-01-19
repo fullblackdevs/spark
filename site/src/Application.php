@@ -1,51 +1,24 @@
 <?php
 namespace App;
 
+use App\Core\AbstractApplication;
 use Cake\Core\Configure;
 use Cake\Core\Configure\Engine\PhpConfig;
-use Dotenv\Dotenv;
 use Exception;
 use RuntimeException;
 use Slim\Factory\AppFactory as SlimAppFactory;
 use Slim\App as SlimApp;
-use Sentry;
 
-class Application
+class Application extends AbstractApplication
 {
 	private SlimApp $app;
 
 	public function __construct(SlimApp $app)
 	{
 		$this->initialize();
+
 		$app = $this->registerRoutes($app);
 		$this->app = $app;
-	}
-
-	/**
-	 * Initialize Application
-	 *
-	 * Initializes the application by loading configurations, setting up the database connection, etc.
-	 *
-	 * @return void
-	 */
-	private function initialize() : void
-	{
-		Sentry\init([
-			'dsn' => 'https://523c9817a1fc98fdfedfe8768bdfae24@o104948.ingest.sentry.io/4506446586904576',
-			'traces_sample_rate' => 1.0,
-		]);
-
-		if (!env('APP_NAME') && file_exists(dirname(__DIR__) . '/.env')) {
-			$this->loadEnvironmentVariables();
-		}
-
-		/** LOAD CONFIGURATION */
-		try {
-			Configure::config('default', new PhpConfig());
-			Configure::load('app', 'default', false);
-		} catch (Exception $e) {
-			exit($e->getMessage() . "\n");
-		}
 	}
 
 	/**
@@ -81,14 +54,18 @@ class Application
         return $routes($app);
     }
 
-	private function getApp() : SlimApp
+	public function getApp() : SlimApp
 	{
 		return $this->app;
 	}
 
-	private function loadEnvironmentVariables() : void
+	protected function initializeConfig() : void
 	{
-		$dotenv = Dotenv::createImmutable(dirname(__DIR__));
-		$dotenv->load();
+		try {
+			Configure::config('default', new PhpConfig());
+			Configure::load('app', 'default', false);
+		} catch (Exception $e) {
+			exit($e->getMessage() . "\n");
+		}
 	}
 }
