@@ -364,6 +364,33 @@
       "oAP" : "\/ray.php",
       "oF" : 0
     },
+    "\/README.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0
+    },
+    "\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/README.html",
+      "oF" : 1,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/src\/.gitkeep" : {
       "cB" : 0,
       "ft" : 8192,
@@ -532,6 +559,14 @@
       "oAP" : "\/src\/Action\/Page\/ResourcesAction.php",
       "oF" : 0
     },
+    "\/src\/Application.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Application.php",
+      "oF" : 0
+    },
     "\/src\/Repository\/CoreRepository.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -671,6 +706,14 @@
       "oAP" : "\/templates\/layouts\/.gitkeep",
       "oF" : 0
     },
+    "\/templates\/layouts\/auth.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/layouts\/auth.php",
+      "oF" : 0
+    },
     "\/templates\/layouts\/page.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -693,6 +736,46 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pages\/about.php",
+      "oF" : 0
+    },
+    "\/templates\/pages\/admin\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/admin\/.gitkeep",
+      "oF" : 0
+    },
+    "\/templates\/pages\/admin\/cms.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/admin\/cms.php",
+      "oF" : 0
+    },
+    "\/templates\/pages\/admin\/dashboard.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/admin\/dashboard.php",
+      "oF" : 0
+    },
+    "\/templates\/pages\/admin\/login.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/admin\/login.php",
+      "oF" : 0
+    },
+    "\/templates\/pages\/admin\/logout.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/admin\/logout.php",
       "oF" : 0
     },
     "\/templates\/pages\/blog.php" : {
@@ -961,6 +1044,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/web\/assets\/images\/spark-MEL02509.jpg" : {
+      "ft" : 16384,
+      "iS" : 967217,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/spark-MEL02509.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/web\/assets\/images\/thought-catalog-23KdVfc395A-unsplash.jpg" : {
