@@ -9,3 +9,10 @@ function env(string $key, string|float|int|bool|null $default = null) : string|f
 
 	return $default;
 }
+
+if (!function_exists('isCLI')) {
+	function isCLI() : bool
+	{
+		return ((!empty(php_sapi_name()) && (stripos(php_sapi_name(), 'cli') !== false)) && (is_numeric($_SERVER['argc']) && $_SERVER['argc'] > 0));
+	}
+}

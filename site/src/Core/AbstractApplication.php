@@ -24,8 +24,8 @@ abstract class AbstractApplication
 
 	private function initializeEnvironmentVars(): void
 	{
-		if (!env('APP_NAME') && file_exists(dirname(__DIR__) . '/.env')) {
-			$dotenv = Dotenv::createImmutable(dirname(__DIR__));
+		if (!env('APP_NAME') && file_exists(ROOT . DS . '.env')) {
+			$dotenv = Dotenv::createImmutable(ROOT . DS);
 			$dotenv->load();
 		}
 	}

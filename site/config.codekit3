@@ -105,6 +105,19 @@
       "oAP" : "\/assets\/fonts\/PlakatGrotesk-Regular.woff2",
       "oF" : 0
     },
+    "\/assets\/images\/AdobeStock_660421479.jpeg" : {
+      "ft" : 16384,
+      "iS" : 5535975,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/AdobeStock_660421479.jpg",
+      "oF" : 2,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-photo",
+      "q" : 80,
+      "rq" : 75
+    },
     "\/assets\/images\/alex-starnes-tbYPDBChsZU-unsplash.png" : {
       "ft" : 32768,
       "iS" : 3268973,
@@ -413,6 +426,14 @@
       "oAP" : "\/src\/Action\/.gitkeep",
       "oF" : 0
     },
+    "\/src\/Action\/Admin\/UserLoginAction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Action\/Admin\/UserLoginAction.php",
+      "oF" : 0
+    },
     "\/src\/Action\/API\/.gitkeep" : {
       "cB" : 0,
       "ft" : 8192,
@@ -613,12 +634,12 @@
       "oAP" : "\/src\/Console\/Command\/User\/CreateUserCommand.php",
       "oF" : 0
     },
-    "\/src\/Console\/Command\/Users\/UpdateUsersCommand.php" : {
+    "\/src\/Console\/Command\/Users\/UpdateRegistryCommand.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/src\/Console\/Command\/Users\/UpdateUsersCommand.php",
+      "oAP" : "\/src\/Console\/Command\/Users\/UpdateRegistryCommand.php",
       "oF" : 0
     },
     "\/src\/Core\/AbstractApplication.php" : {
@@ -683,6 +704,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Service\/DigitalOceanSpacesService.php",
+      "oF" : 0
+    },
+    "\/src\/Service\/Storage\/DigitalOceanSpacesService.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Service\/Storage\/DigitalOceanSpacesService.php",
       "oF" : 0
     },
     "\/src\/Service\/Storage\/LocalStorageService.php" : {
@@ -1003,6 +1032,30 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/web\/assets\/images\/AdobeStock_660421479.jpg" : {
+      "ft" : 16384,
+      "iS" : 2226452,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/AdobeStock_660421479.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/web\/assets\/images\/AdobeStock_660421479.webp" : {
+      "ft" : 8388608,
+      "iS" : 1043130,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/AdobeStock_660421479.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
     },
     "\/web\/assets\/images\/alex-starnes-tbYPDBChsZU-unsplash.png" : {
       "ft" : 32768,

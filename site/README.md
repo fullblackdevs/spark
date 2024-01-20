@@ -33,3 +33,7 @@ Pages contain the primary response to a request object and are self contained vi
 ### Themes
 
 Themes are collections of Components, Pages and Layout
+
+## Security
+
+Configuration data for the Spark 2 website is store in an AWS S3-compatible object store as an encrypted JSON document. This document is read by decrypting with a pre-determined and rotated Organization ID as the "salt" and I predefined Organization Encryption Key, parsed and cached. The encryption key is stored in the Registry. The Organization ID is stored in the Registry and the Environment.

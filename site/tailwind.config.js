@@ -53,8 +53,14 @@ module.exports = {
                 "spark-pink": {
                     DEFAULT: "#f7d6e9",
                     100: "#fefbfd",
+					300: "#fcedf6",
                     600: "#f7d6e9",
                 },
+				"tranquil-pink": {
+					100: "#fffefe",
+					200: "#fefcfe",
+					600: "#faf3f9"
+				}
             },
             backgroundImage: {
                 "masthead-hero":

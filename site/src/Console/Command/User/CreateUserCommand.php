@@ -1,7 +1,11 @@
 <?php
+
 namespace App\Console\Command\User;
 
 use App\Console\Command\CoreCommand;
+use App\Service\Storage\DigitalOceanSpacesService;
+use Cake\Utility\Security;
+use Cake\Utility\Text;
 use RuntimeException;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -15,12 +19,25 @@ class CreateUserCommand extends CoreCommand
 	{
 		$this->setName('user:create')
 			->setDescription('Create a new user')
-			->setHelp('This command allows you to create a user...');
+			->setHelp('Create a new User to access the Online Site Manager (OSM) for Spark.');
+	}
+
+	protected function initialize(InputInterface $in, OutputInterface $out): void
+	{
+		parent::initialize($in, $out);
+		Security::setSalt(env('ORGANIZATION_ID'));
 	}
 
 	protected function execute(InputInterface $in, OutputInterface $out): int
 	{
+		ray()->clearScreen();
+
 		$user = [
+			'$schema' => [
+				'resource' => 'user',
+				'version' => '0.1.0',
+			],
+			'id' => null,
 			'name' => [
 				'first' => null,
 				'last' => null
@@ -28,9 +45,20 @@ class CreateUserCommand extends CoreCommand
 			'credentials' => [
 				'username' => null,
 				'password' => null,
+				'status' => null,
 			],
+			'roles' => [],
 			'contact' => [
-				'email' => null,
+				'email' => [
+					'address' => null,
+					'type' => null,
+					'verified' => null,
+				],
+				'phone' => [
+					'number' => null,
+					'type' => null,
+					'verified' => null,
+				],
 			],
 		];
 
@@ -45,6 +73,8 @@ class CreateUserCommand extends CoreCommand
 		$this->out->writeln('Please enter the following information for the new User:');
 		$user['name']['first'] = $helper->ask($this->in, $this->out, new Question("First Name: "));
 		$user['name']['last'] = $helper->ask($this->in, $this->out, new Question("Last Name: "));
+
+		/** @todo use setValidator() to check for duplicate user */
 		$user['credentials']['username'] = $helper->ask($this->in, $this->out, new Question("Email Address: "));
 
 		$password['value'] = $helper->ask($this->in, $this->out, (new Question("Password: "))->setHidden(true)->setHiddenFallback(false));
@@ -58,16 +88,48 @@ class CreateUserCommand extends CoreCommand
 
 		$user['credentials']['password'] = password_hash($password['value'], PASSWORD_BCRYPT);
 
-		$returnCode = $this->getApplication()->doRun(new ArrayInput([
-			'command' => 'users:update',
-			'--data' => json_encode([
-				'users' => [
-					$user
-				]
-			]),
-		]), $this->out);
+		$user['id'] = strtoupper(str_replace('-', '', Text::uuid()));
+		$user['contact']['email']['address'] = $user['credentials']['username'];
 
 		ray($user, $password);
+
+		$event = [
+			'type' => 'user.create',
+			'when' => time(),
+			'by' => [
+				'id' => env('ORGANIZATION_ID'),
+				'name' => 'System',
+			],
+			'with' => [
+				'what' => 'user',
+				'from' => null,
+				'to' => $user,
+			],
+		];
+
+		if (!isset($user['events'])) {
+			$user['events'] = [];
+		}
+
+		$user['events'][$event['when']] = $event;
+
+		ray($user);
+
+		$badge = [
+			'$schema' => [
+				'resource' => 'badge',
+				'version' => '0.1.0',
+			],
+			'username' => $user['credentials']['username'],
+		];
+
+		$badgeID = strtoupper(Security::hash(json_encode($badge), 'md5', true));
+
+		ray($badgeID);
+
+		$fs = DigitalOceanSpacesService::init('registry/users');
+
+		$fs->write($badgeID . '.json', Security::encrypt(json_encode($user), env('ORGANIZATION_KEY')));
 
 		return CoreCommand::SUCCESS;
 	}

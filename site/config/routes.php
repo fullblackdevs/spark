@@ -1,5 +1,6 @@
 <?php
 
+use App\Action\Admin\UserLoginAction;
 use Slim\App;
 use Slim\Routing\RouteCollectorProxy;
 use App\Action\API\GetConnectionsAction;
@@ -31,6 +32,10 @@ return function (App $app) {
 	$app->get('/partner/{id}/resource/{slug}', GetResourcePageAction::class);
 	$app->get('/event/{slug}', GetEventPageAction::class);
 	$app->get('/partner/{slug}', GetPartnerPageAction::class);
+
+	$app->group('/admin', function (RouteCollectorProxy $admin) {
+		$admin->get('/login', UserLoginAction::class);
+	});
 
 	$app->group('/api', function (RouteCollectorProxy $api) {
         $api->group('/v0', function(RouteCollectorProxy $api) {
