@@ -426,14 +426,6 @@
       "oAP" : "\/src\/Action\/.gitkeep",
       "oF" : 0
     },
-    "\/src\/Action\/Admin\/UserLoginAction.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/Action\/Admin\/UserLoginAction.php",
-      "oF" : 0
-    },
     "\/src\/Action\/API\/.gitkeep" : {
       "cB" : 0,
       "ft" : 8192,
@@ -488,6 +480,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Action\/API\/PulseAction.php",
+      "oF" : 0
+    },
+    "\/src\/Action\/CoreAction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Action\/CoreAction.php",
       "oF" : 0
     },
     "\/src\/Action\/GetEventPageAction.php" : {
@@ -650,6 +650,70 @@
       "oAP" : "\/src\/Core\/AbstractApplication.php",
       "oF" : 0
     },
+    "\/src\/Middleware\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Middleware\/.gitkeep",
+      "oF" : 0
+    },
+    "\/src\/Middleware\/UserAuthenticationMiddleware.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Middleware\/UserAuthenticationMiddleware.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Authentication\/AuthenticationResult.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Authentication\/AuthenticationResult.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Authentication\/AuthenticationService.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Authentication\/AuthenticationService.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/User\/Action\/CoreAction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/User\/Action\/CoreAction.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/User\/Action\/DashboardViewAction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/User\/Action\/DashboardViewAction.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/User\/Action\/LoginAction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/User\/Action\/LoginAction.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/User\/Action\/LogoutAction.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/User\/Action\/LogoutAction.php",
+      "oF" : 0
+    },
     "\/src\/Repository\/CoreRepository.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -704,6 +768,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Service\/DigitalOceanSpacesService.php",
+      "oF" : 0
+    },
+    "\/src\/Service\/Security\/Authentication\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Service\/Security\/Authentication\/.gitkeep",
       "oF" : 0
     },
     "\/src\/Service\/Storage\/DigitalOceanSpacesService.php" : {
@@ -789,20 +861,28 @@
       "oAP" : "\/templates\/components\/navigation.php",
       "oF" : 0
     },
+    "\/templates\/Context\/user.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/Context\/user.php",
+      "oF" : 0
+    },
+    "\/templates\/Context\/User\/auth.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/Context\/User\/auth.php",
+      "oF" : 0
+    },
     "\/templates\/layouts\/.gitkeep" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/layouts\/.gitkeep",
-      "oF" : 0
-    },
-    "\/templates\/layouts\/auth.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/layouts\/auth.php",
       "oF" : 0
     },
     "\/templates\/layouts\/page.php" : {
@@ -843,30 +923,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pages\/admin\/cms.php",
-      "oF" : 0
-    },
-    "\/templates\/pages\/admin\/dashboard.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/admin\/dashboard.php",
-      "oF" : 0
-    },
-    "\/templates\/pages\/admin\/login.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/admin\/login.php",
-      "oF" : 0
-    },
-    "\/templates\/pages\/admin\/logout.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/admin\/logout.php",
       "oF" : 0
     },
     "\/templates\/pages\/blog.php" : {
@@ -947,6 +1003,30 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pages\/resources.php",
+      "oF" : 0
+    },
+    "\/templates\/View\/User\/dashboard.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/View\/User\/dashboard.php",
+      "oF" : 0
+    },
+    "\/templates\/View\/User\/login.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/View\/User\/login.php",
+      "oF" : 0
+    },
+    "\/templates\/View\/User\/logout.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/View\/User\/logout.php",
       "oF" : 0
     },
     "\/vars" : {

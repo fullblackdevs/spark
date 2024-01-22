@@ -1,5 +1,5 @@
 <?php
-namespace App\Action\Page;
+namespace App\Action;
 
 use Cake\Chronos\ChronosDate;
 use Psr\Http\Message\ResponseInterface;
@@ -21,6 +21,15 @@ abstract class CoreAction
 
 	public function __invoke(ServerRequestInterface $request, ResponseInterface $response) : ResponseInterface
 	{
+		$this->_initialize($request, $response);
+
+		$this->invoke();
+
+		return $this->response;
+	}
+
+	protected function _initialize(ServerRequestInterface $request, ResponseInterface $response)
+	{
 		$this->request = $request;
 		$this->response = $response;
 
@@ -28,9 +37,9 @@ abstract class CoreAction
 
 		$this->fake = Faker::create();
 
-		$this->invoke();
-
-		return $this->response;
+		if (method_exists($this, 'initialize')) {
+			$this->initialize();
+		}
 	}
 
 	protected function getRequest() : ServerRequestInterface
@@ -49,7 +58,9 @@ abstract class CoreAction
 			$this->renderer = new PhpRenderer(TEMPLATES);
 		}
 
-		$this->renderer->setLayout('layouts/page.php');
+		if (empty($this->renderer->getLayout())) {
+			$this->renderer->setLayout('layouts/page.php');
+		}
 
 		$this->renderer->addAttribute('now', ChronosDate::now());
 		$this->renderer->addAttribute('version', time());
@@ -63,5 +74,5 @@ abstract class CoreAction
 		return $this->Router;
 	}
 
-	abstract public function invoke() : void;
+	abstract public function invoke(): ResponseInterface;
 }

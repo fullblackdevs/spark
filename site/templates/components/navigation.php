@@ -35,6 +35,8 @@ $hover = 'border-b-2 border-transparent hover:text-confident-carnation-400 hover
 		<?php endforeach; ?>
 	</ul>
 	<div class="hidden md:flex justify-end items-center text-2xl gap-2 font-body font-semibold tracking-tight md:mx-4 shrink-0">
-		<button type="button" class="h-fit text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">Admin Login</button>
+		<a href="<?= $Router->urlFor('user.login') ?>" class="h-fit px-5 py-2.5 text-sm font-medium text-center rounded-lg text-spark-gold hover:text-spark-gold-100 border border-spark-gold hover:bg-spark-gold-800 focus:ring-2 focus:outline-none focus:ring-spark-gold-300">
+			Admin Login
+		</a>
 	</div>
 </nav>

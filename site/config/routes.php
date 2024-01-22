@@ -1,6 +1,4 @@
 <?php
-
-use App\Action\Admin\UserLoginAction;
 use Slim\App;
 use Slim\Routing\RouteCollectorProxy;
 use App\Action\API\GetConnectionsAction;
@@ -18,6 +16,10 @@ use App\Action\GetResourcePageAction;
 use App\Action\Page\HomeAction;
 use App\Action\Page\PartnersAction;
 use App\Action\Page\ResourcesAction;
+use App\Middleware\UserAuthenticationMiddleware;
+use App\Module\User\Action\DashboardViewAction;
+use App\Module\User\Action\LoginAction;
+use App\Module\User\Action\LogoutAction;
 
 return function (App $app) {
 	$app->get('[/]', HomeAction::class);
@@ -34,8 +36,11 @@ return function (App $app) {
 	$app->get('/partner/{slug}', GetPartnerPageAction::class);
 
 	$app->group('/admin', function (RouteCollectorProxy $admin) {
-		$admin->get('/login', UserLoginAction::class);
-	});
+		$admin->get('[/]', DashboardViewAction::class)->setName('user.dashboard');
+		$admin->get('/login', LoginAction::class)->setName('user.login');
+		$admin->post('/login', LoginAction::class)->setName('user.login@authenticate');
+		$admin->get('/logout', LogoutAction::class)->setName('user.logout');
+	})->add(UserAuthenticationMiddleware::class);
 
 	$app->group('/api', function (RouteCollectorProxy $api) {
         $api->group('/v0', function(RouteCollectorProxy $api) {
