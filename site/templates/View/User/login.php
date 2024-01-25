@@ -2,18 +2,27 @@
 	<img class="absolute inset-0 h-full w-full object-cover" src="/assets/images/AdobeStock_660421479.webp" alt="">
 </div>
 <div class="flex flex-col justify-center w-full xl:w-2/5 lg:flex-none bg-spark-pink-300 xl:px-8">
-	<div class="flex flex-col bg-white p-8 shadow rounded-lg w-full max-w-md min-w-96 mx-auto shrink-0 border-2 border-tranquil-pink-600">
+	<?php if (isset($httpStatus) && $httpStatus === 401) : ?>
+		<div>You must be logged in to access that resource.</div>
+	<?php endif; ?>
+	<div class="flex flex-col gap-6 bg-white p-8 shadow rounded-lg w-full max-w-md min-w-96 mx-auto shrink-0 border-2 border-tranquil-pink-600">
 		<div class="mx-auto w-full">
 			<h1 class="grow-0 overflow-hidden relative z-50">
 				<svg viewbox="0 0 225 65" class="font-display text-8xl h-20 font-bold mx-auto text-courageous-plum">
 					<text y="65" class="fill-current uppercase">Spark</text>
 				</svg>
 			</h1>
-			<h2 class="mt-2 mb-6 text-center text-3xl font-bold text-spark-gold-800 tracking-tighter">
+			<h2 class="mt-2 text-center text-3xl font-bold text-spark-gold-800 tracking-tighter">
 				Site Manager
 			</h2>
 		</div>
-		<form class="space-y-6" action="#" method="POST">
+		<?php if (isset($Flash) && $Flash->has('error')) : ?>
+			<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-center" role="alert">
+				<strong class="font-semibold block sm:inline"><?= $Flash->get('error')[0] ?></strong>
+			</div>
+			<?php $Flash->clear() ?>
+		<?php endif; ?>
+		<form class="space-y-6" action="<?= $Router->urlFor('user.login') ?>" method="POST">
 			<div>
 				<label for="email" class="block text-sm font-medium text-gray-700">
 					Username

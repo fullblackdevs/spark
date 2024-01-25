@@ -2,6 +2,7 @@
 namespace App;
 
 use App\Core\AbstractApplication;
+use App\Middleware\SessionMiddleware;
 use Cake\Core\Configure;
 use Cake\Core\Configure\Engine\PhpConfig;
 use Exception;
@@ -18,6 +19,7 @@ class Application extends AbstractApplication
 		$this->initialize();
 
 		$app = $this->registerRoutes($app);
+		$app->add(SessionMiddleware::class);
 		$this->app = $app;
 	}
 

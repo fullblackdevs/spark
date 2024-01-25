@@ -23,7 +23,8 @@
         "fakerphp/faker": "^1.23",
         "cakephp/core": "^5.0",
         "cakephp/collection": "^5.0",
-        "symfony/console": "^6"
+        "symfony/console": "^6",
+        "odan/session": "^6.1"
     },
 	"require-dev": {
 		"spatie/ray": "^1.40"

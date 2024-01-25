@@ -7,13 +7,17 @@ use Psr\Http\Message\ServerRequestInterface;
 use Slim\Views\PhpRenderer;
 use Faker\Factory as Faker;
 use Faker\Generator as FakerGenerator;
+use Odan\Session\Flash;
 use Slim\Interfaces\RouteParserInterface;
+use Slim\Routing\RouteContext;
 
 abstract class CoreAction
 {
-	private ServerRequestInterface $request;
-    private ResponseInterface $response;
+	protected ServerRequestInterface $request;
+    protected ResponseInterface $response;
 	private PhpRenderer $renderer;
+
+	private Flash $_flash;
 
 	private RouteParserInterface $Router;
 
@@ -23,7 +27,7 @@ abstract class CoreAction
 	{
 		$this->_initialize($request, $response);
 
-		$this->invoke();
+		$this->response = $this->invoke();
 
 		return $this->response;
 	}
@@ -33,9 +37,15 @@ abstract class CoreAction
 		$this->request = $request;
 		$this->response = $response;
 
-		$this->Router = $request->getAttribute('__routeParser__');
+		if ($request->getAttribute('session')) {
+			$this->_flash = $request->getAttribute('session')->getFlash();
+		}
+
+		$this->Router = RouteContext::fromRequest($request)->getRouteParser();
 
 		$this->fake = Faker::create();
+
+		$this->request = $this->getRequest()->withAttribute('__renderer__', $this->getView());
 
 		if (method_exists($this, 'initialize')) {
 			$this->initialize();
@@ -65,6 +75,7 @@ abstract class CoreAction
 		$this->renderer->addAttribute('now', ChronosDate::now());
 		$this->renderer->addAttribute('version', time());
 		$this->renderer->addAttribute('Router', $this->getRouter());
+		$this->renderer->addAttribute('Flash', $this->_flash);
 
 		return $this->renderer;
 	}

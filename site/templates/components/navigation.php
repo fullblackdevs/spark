@@ -34,9 +34,9 @@ $hover = 'border-b-2 border-transparent hover:text-confident-carnation-400 hover
 			<?= $route === $pageSlug ? '</li>' : '</a></li>' ?>
 		<?php endforeach; ?>
 	</ul>
-	<div class="hidden md:flex justify-end items-center text-2xl gap-2 font-body font-semibold tracking-tight md:mx-4 shrink-0">
+	<div class="hidden md:flex justify-end items-center text-2xl gap-2 font-body font-semibold tracking-tight md:mx-4 shrink-0 z-50">
 		<a href="<?= $Router->urlFor('user.login') ?>" class="h-fit px-5 py-2.5 text-sm font-medium text-center rounded-lg text-spark-gold hover:text-spark-gold-100 border border-spark-gold hover:bg-spark-gold-800 focus:ring-2 focus:outline-none focus:ring-spark-gold-300">
-			Admin Login
+			<?= isset($Auth) && $Auth->isLoggedIn() ? 'Site Manager' : 'Admin Login' ?>
 		</a>
 	</div>
 </nav>

@@ -168,6 +168,84 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/assets\/images\/spark-as-554608479.jpg" : {
+      "ft" : 16384,
+      "iS" : 2717899,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/images\/spark-as-554608479.jpg",
+      "oF" : 3,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/spark-as-638493400.jpg" : {
+      "ft" : 16384,
+      "iS" : 1343029,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/images\/spark-as-638493400.jpg",
+      "oF" : 3,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/spark-as-643271915.jpg" : {
+      "ft" : 16384,
+      "iS" : 899218,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/images\/spark-as-643271915.jpg",
+      "oF" : 3,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/spark-as-666100981.jpg" : {
+      "ft" : 16384,
+      "iS" : 2736455,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/images\/spark-as-666100981.jpg",
+      "oF" : 3,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/spark-as-679251537.jpg" : {
+      "ft" : 16384,
+      "iS" : 1574130,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/images\/spark-as-679251537.jpg",
+      "oF" : 3,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/spark-as-704123305.jpg" : {
+      "ft" : 16384,
+      "iS" : 666142,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/web\/assets\/images\/spark-as-704123305.jpg",
+      "oF" : 3,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/spark-MEL02509.jpg" : {
       "ft" : 16384,
       "iS" : 3077398,
@@ -658,6 +736,14 @@
       "oAP" : "\/src\/Middleware\/.gitkeep",
       "oF" : 0
     },
+    "\/src\/Middleware\/SessionMiddleware.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Middleware\/SessionMiddleware.php",
+      "oF" : 0
+    },
     "\/src\/Middleware\/UserAuthenticationMiddleware.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -680,6 +766,62 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Module\/Authentication\/AuthenticationService.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Authentication\/Authenticator\/AbstractResult.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Authentication\/Authenticator\/AbstractResult.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Authentication\/Authenticator\/AuthenticatorInterface.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Authentication\/Authenticator\/AuthenticatorInterface.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Authentication\/Authenticator\/FormAuthenticator.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Authentication\/Authenticator\/FormAuthenticator.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Authentication\/Authenticator\/Result.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Authentication\/Authenticator\/Result.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Authentication\/Authenticator\/ResultInterface.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Authentication\/Authenticator\/ResultInterface.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Authentication\/Authenticator\/ResultStatus.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Authentication\/Authenticator\/ResultStatus.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Authentication\/Authenticator\/SessionAuthenticator.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Authentication\/Authenticator\/SessionAuthenticator.php",
       "oF" : 0
     },
     "\/src\/Module\/User\/Action\/CoreAction.php" : {
@@ -712,6 +854,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Module\/User\/Action\/LogoutAction.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/User\/Model\/UserEntity.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/User\/Model\/UserEntity.php",
+      "oF" : 0
+    },
+    "\/src\/Network\/Session.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Network\/Session.php",
       "oF" : 0
     },
     "\/src\/Repository\/CoreRepository.php" : {
@@ -1239,6 +1397,71 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/web\/assets\/images\/spark-as-638493400.jpg" : {
+      "ft" : 16384,
+      "iS" : 1317163,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/spark-as-638493400.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/web\/assets\/images\/spark-as-643271915.jpg" : {
+      "ft" : 16384,
+      "iS" : 899218,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/spark-as-643271915.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/web\/assets\/images\/spark-as-666100981.jpg" : {
+      "ft" : 16384,
+      "iS" : 2736455,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/spark-as-666100981.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/web\/assets\/images\/spark-as-679251537.jpg" : {
+      "ft" : 16384,
+      "iS" : 1574130,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/spark-as-679251537.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/web\/assets\/images\/spark-as-704123305.jpg" : {
+      "ft" : 16384,
+      "iS" : 666142,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/spark-as-704123305.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/web\/assets\/images\/spark-MEL02509.jpg" : {
