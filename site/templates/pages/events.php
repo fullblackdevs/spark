@@ -4,6 +4,10 @@ use Cake\Chronos\Chronos;
 
 ray($events);
 ?>
+<div class="flex flex-col justify-end flex-none bg-[url('/assets/images/spark-as-554608479.jpg')] bg-center bg-cover min-h-[550px] px-28 pb-20 text-spark-pink-100">
+	<h2 class="text-6xl font-semibold tracking-tighter">Events</h2>
+	<p class="text-lg">Events that empower, engage and entertain</p>
+</div>
 <div class="bg-[#FAF3F9] grow min-h-full px-28 text-black py-16">
 	<!-- PINNED EVENTS: FEATURED & TODAY'S EVENTS -->
 	<div x-data="{ currentFeaturedEvent: 1, showFeaturedEvent: (featuredEventID) => $data.currentFeaturedEvent = featuredEventID }" class="flex flex-col overflow-hidden">

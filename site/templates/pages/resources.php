@@ -1,3 +1,7 @@
+<div class="flex flex-col justify-end flex-none bg-[url('/assets/images/spark-as-666100981.jpg')] bg-center bg-cover min-h-[550px] px-28 pb-20 text-spark-pink-100">
+	<h2 class="text-6xl font-semibold tracking-tighter">Resources</h2>
+	<p class="text-lg">Our curated and searchable directory of services tailored to you</p>
+</div>
 <div class="bg-[#FAF3F9] grow min-h-full px-28 text-black py-16">
 	<section class="grid grid-cols-3 gap-8 text-base">
 		<?php foreach ($resources as $resource) : ?>

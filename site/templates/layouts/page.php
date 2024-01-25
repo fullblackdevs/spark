@@ -20,7 +20,7 @@
 
 		<?php if (isset($isHome)) : ?>
 			<?= $this->fetch('components/masthead-hero.php') ?>
-		<?php elseif (!isset($isSinglePage) && isset($pageSlug) && in_array($pageSlug, ['about', 'partners', 'events', 'resources', 'blog', 'connect'])) : ?>
+		<?php elseif (!isset($isSinglePage) && isset($pageSlug) && in_array($pageSlug, ['about', 'partners', 'connect'])) : ?>
 			<?= $this->fetch('components/masthead.php', compact('pageTitle', 'pageDescription')) ?>
 		<?php endif; ?>
 

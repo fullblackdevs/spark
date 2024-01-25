@@ -5,6 +5,10 @@ use Faker\Factory as Faker;
 
 $fake = Faker::create();
 ?>
+<div class="flex flex-col justify-end flex-none bg-[url('/assets/images/spark-as-679251537.jpg')] bg-center bg-cover min-h-[550px] px-28 pb-20 text-spark-pink-100">
+	<h2 class="text-6xl font-semibold tracking-tighter">Sparkle: The Official Spark Blog</h2>
+	<p class="text-lg">Essays, articles, video and more from the Spark team</p>
+</div>
 <div class="bg-[#FAF3F9] grow min-h-full px-28 text-black py-16">
 	<div class="grid grid-cols-8 auto-rows-auto overflow-hidden w-full mb-4 gap-8">
 		<?php foreach ($posts as $index => $post) : ?>
