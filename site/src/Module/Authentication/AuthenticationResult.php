@@ -3,9 +3,12 @@ namespace App\Module\Authentication;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use Slim\Factory\Psr17\GuzzlePsr17Factory;
 
 final class AuthenticationResult
 {
+	protected string $_status;
+
 	private ServerRequestInterface $_request;
 
 	public function __construct(ServerRequestInterface $request)
@@ -20,11 +23,11 @@ final class AuthenticationResult
 
 	public function getResponse(): ResponseInterface
 	{
-		return $response;
+		return GuzzlePsr17Factory::getResponseFactory()->createResponse(200);
 	}
 
 	public function getAuthenticatedResponse(): ResponseInterface
 	{
-		return $response;
+		return GuzzlePsr17Factory::getResponseFactory()->createResponse(200);
 	}
 }

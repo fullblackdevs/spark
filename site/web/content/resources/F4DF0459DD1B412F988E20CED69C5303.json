@@ -1,0 +1,11 @@
+{
+	"name": "Support Group for LGBTQ+ Youth",
+	"description": {
+		"short": "Our LGBTQ+ youth support group provides a safe and inclusive space for young individuals to connect, share experiences, and find support. We promote acceptance, mental health, and empowerment within the LGBTQ+ community.",
+		"blurb": "Join our LGBTQ+ youth support group for a safe and inclusive space.",
+		"full": "Sisters United recognizes that LGBTQ+ youth face unique challenges and struggles in our society, and as a result, they have created a Support Group specifically for this community. The Support Group for LGBTQ+ Youth is a safe and inclusive space where young individuals can come together to share their experiences, find support, and build relationships with others who understand and accept them. The group is facilitated by trained professionals who provide a nurturing and non-judgmental environment for LGBTQ+ youth to express themselves freely. The focus of the group is on empowerment, education, and uplifting, aligning with Sisters United's mission. Through group discussions, workshops, and activities, participants are given the opportunity to learn about their identities, build self-confidence, and develop skills to navigate their personal and social environments. The Support Group also serves as a resource for LGBTQ+ youth to access information and services that may be beneficial to their well-being and growth. This can include mental health support, legal resources, and educational opportunities. Sisters United understands that LGBTQ+ youth often face discrimination and lack resources, and through this group, they aim to bridge that gap and provide a sense of community and belonging. By providing this resource, Sisters United hopes to create a stronger community of empowered and educated LGBTQ+ youth who can advocate for themselves and each other. They believe that by uplifting this marginalized group, they can contribute to a more inclusive and accepting society, aligning with their overall mission to empower and uplift women of all backgrounds."
+	},
+	"types": ["support-group"],
+	"id": "f4df0459-dd1b-412f-988e-20ced69c5303",
+	"partner": "1f3b33d6-8a3f-40c8-9bf9-2f57a28be3c8"
+}

@@ -1,0 +1,285 @@
+[
+    {
+        "id": "d76c6664-48b7-4429-a9fd-79e5f24b8875",
+        "name": "Women's Empowerment Alliance",
+        "mission": "Empowering women and girls through education and leadership development.",
+        "slug": "womens-empowerment-alliance",
+        "address": {
+            "street": "123 Main St",
+            "city": "New York City",
+            "state": "New York",
+            "zip": "10001",
+            "region": "Mid-Atlantic"
+        },
+        "timezone": "America/New_York"
+    },
+    {
+        "id": "a44ca010-ae99-4e87-9500-ed37f2c7ae6c",
+        "name": "Girls Rock Foundation",
+        "mission": "Providing mentorship and resources to help girls achieve their full potential.",
+        "slug": "girls-rock-foundation",
+        "address": {
+            "street": "456 Broadway Ave",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "zip": "30303",
+            "region": "Southern"
+        },
+        "timezone": "America/New_York"
+    },
+    {
+        "id": "a65107fc-8a84-4add-b12f-8bb52f58110e",
+        "name": "Sisterhood Support Network",
+        "mission": "Creating a supportive community for women to navigate life's challenges together.",
+        "slug": "sisterhood-support-network",
+        "address": {
+            "street": "789 Oak St",
+            "city": "Chicago",
+            "state": "Illinois",
+            "zip": "60605",
+            "region": "Midwest"
+        },
+        "timezone": "America/Chicago"
+    },
+    {
+        "id": "72c8de7d-6ad4-45b8-b7cf-11af7c6e6b39",
+        "name": "Girls on the Rise",
+        "mission": "Empowering girls to reach their full potential by providing mentorship and educational opportunities.",
+        "slug": "girls-on-the-rise",
+        "address": {
+            "street": "12 Main St",
+            "city": "Nashville",
+            "state": "Tennessee",
+            "zip": "37203",
+            "region": "Southern"
+        },
+        "timezone": "America/Chicago"
+    },
+    {
+        "id": "e4ab69f9-0f4a-42f9-a2fd-caca90cb775c",
+        "name": "Women's Resource Center",
+        "mission": "Offering resources, support, and education to women in need.",
+        "slug": "womens-resource-center",
+        "address": {
+            "street": "111 Elm St",
+            "city": "Baltimore",
+            "state": "Maryland",
+            "zip": "21201",
+            "region": "Mid-Atlantic"
+        },
+        "timezone": "America/New_York"
+    },
+    {
+        "id": "5cd27bd3-54b6-4658-a317-77953a676a46",
+        "name": "GirlStrong Foundation",
+        "mission": "Empowering and inspiring girls to become confident leaders of tomorrow.",
+        "slug": "girlstrong-foundation",
+        "address": {
+            "street": "888 Pine St",
+            "city": "San Francisco",
+            "state": "California",
+            "zip": "94108",
+            "region": "Western"
+        },
+        "timezone": "America/Los_Angeles"
+    },
+    {
+        "id": "5c2fe3ce-3d26-4ff7-8f9a-bab4e885856b",
+        "name": "Women's Support Circle",
+        "mission": "Creating a safe and empowering space for women to connect and grow.",
+        "slug": "womens-support-circle",
+        "address": {
+            "street": "555 Main St",
+            "city": "Houston",
+            "state": "Texas",
+            "zip": "77002",
+            "region": "Southern"
+        },
+        "timezone": "America/Chicago"
+    },
+    {
+        "id": "a2c05aff-06ff-4d0b-a3a3-38c6c35b0ae4",
+        "name": "Girls for Change",
+        "mission": "Empowering girls to become agents of change in their communities through leadership development and community service.",
+        "slug": "girls-for-change",
+        "address": {
+            "street": "222 Pine St",
+            "city": "Philadelphia",
+            "state": "Pennsylvania",
+            "zip": "19103",
+            "region": "Mid-Atlantic"
+        },
+        "timezone": "America/New_York"
+    },
+    {
+        "id": "1f3b33d6-8a3f-40c8-9bf9-2f57a28be3c8",
+        "name": "Sisters United",
+        "mission": "Empowering, educating, and uplifting women of all backgrounds to create a stronger community.",
+        "slug": "sisters-united",
+        "address": {
+            "street": "333 Oak St",
+            "city": "Detroit",
+            "state": "Michigan",
+            "zip": "48201",
+            "region": "Midwest"
+        },
+        "timezone": "America/Detroit"
+    },
+    {
+        "id": "5a5b716b-a68f-4e57-b382-dba9d1fa2c41",
+        "name": "Girls' Education Initiative",
+        "mission": "Providing access to education and mentorship for girls in underserved communities.",
+        "slug": "girls-education-initiative",
+        "address": {
+            "street": "456 Main St",
+            "city": "Seattle",
+            "state": "Washington",
+            "zip": "98101",
+            "region": "Western"
+        },
+        "timezone": "America/Los_Angeles"
+    },
+    {
+        "id": "7487da97-64e3-4b2f-9ca1-7199086ceab1",
+        "name": "Women's Haven",
+        "mission": "Providing a safe and supportive haven for women in need.",
+        "slug": "womens-haven",
+        "address": {
+            "street": "101 Elm St",
+            "city": "Dallas",
+            "state": "Texas",
+            "zip": "75201",
+            "region": "Southern"
+        },
+        "timezone": "America/Chicago"
+    },
+    {
+        "id": "a8f0d338-262d-4fee-9381-079e0ae7afad",
+        "name": "Girls on the Rise Foundation",
+        "mission": "Empowering and equipping young girls with the tools and resources they need to reach their fullest potential.",
+        "slug": "girls-on-the-rise-foundation",
+        "address": {
+            "street": "789 Main St",
+            "city": "Miami",
+            "state": "Florida",
+            "zip": "33130",
+            "region": "Southern"
+        },
+        "timezone": "America/New_York"
+    },
+    {
+        "id": "aa86f8af-0d21-4547-a926-377cb1ab0a90",
+        "name": "Women's Strength Alliance",
+        "mission": "Creating a supportive and empowering community for women to find strength in their struggles.",
+        "slug": "womens-strength-alliance",
+        "address": {
+            "street": "321 Oak St",
+            "city": "Boston",
+            "state": "Massachusetts",
+            "zip": "02108",
+            "region": "Northern"
+        },
+        "timezone": "America/New_York"
+    },
+    {
+        "id": "c18e4b0a-d81e-4509-a242-1a7c379669b0",
+        "name": "Girl Power Initiative",
+        "mission": "Inspiring and empowering girls through mentorship, education, and leadership development.",
+        "slug": "girl-power-initiative",
+        "address": {
+            "street": "456 Elm St",
+            "city": "Denver",
+            "state": "Colorado",
+            "zip": "80202",
+            "region": "Western"
+        },
+        "timezone": "America/Denver"
+    },
+    {
+        "id": "87001193-956e-4205-b655-94b6a6a90d3a",
+        "name": "Sisterly Love Foundation",
+        "mission": "Promoting sisterhood and providing resources for women to succeed in all areas of life.",
+        "slug": "sisterly-love-foundation",
+        "address": {
+            "street": "777 Main St",
+            "city": "Washington DC",
+            "state": "District of Columbia",
+            "zip": "20005",
+            "region": "Mid-Atlantic"
+        },
+        "timezone": "America/New_York"
+    },
+    {
+        "id": "adf0e7f1-903b-4e5c-9e92-8a95feaa6668",
+        "name": "Girls' Future Foundation",
+        "mission": "Empowering young girls to create a better future for themselves and their communities.",
+        "slug": "girls-future-foundation",
+        "address": {
+            "street": "999 Oak St",
+            "city": "Phoenix",
+            "state": "Arizona",
+            "zip": "85003",
+            "region": "Western"
+        },
+        "timezone": "America/Phoenix"
+    },
+    {
+        "id": "d4eab347-68ff-466a-acbe-ff3d136dfed0",
+        "name": "Women's Wellness Collective",
+        "mission": "Providing support, education, and resources to improve the physical, mental, and emotional well-being of women.",
+        "slug": "womens-wellness-collective",
+        "address": {
+            "street": "1 Main St",
+            "city": "Portland",
+            "state": "Oregon",
+            "zip": "97209",
+            "region": "Western"
+        },
+        "timezone": "America/Los_Angeles"
+    },
+    {
+        "id": "f0b4159d-afef-4192-9b7b-584ca89627ad",
+        "name": "Girls Rising Association",
+        "mission": "Empowering and uplifting girls through education, mentorship, and leadership opportunities.",
+        "slug": "girls-rising-association",
+        "address": {
+            "street": "555 Elm St",
+            "city": "Minneapolis",
+            "state": "Minnesota",
+            "zip": "55401",
+            "region": "Midwest"
+        },
+        "timezone": "America/Chicago"
+    },
+	{
+		"id": "354b16a5-2dd6-4c09-960f-60d807cca43b",
+		"name": "AIDS Healthcare Foundation",
+		"mission": "AIDS Healthcare Foundation (AHF) is a global nonprofit organization providing cutting-edge medicine and advocacy to over 1,000,000 people in 43 countries. We are currently the largest provider of HIV/AIDS medical care in the U.S.",
+		"slug": "ahf",
+		"address": {
+			"street": "6255 W Sunset Blvd",
+			"city": "Los Angeles",
+			"state": "California",
+			"zip": "90028",
+			"region": "Western"
+		},
+		"timezone": "America/Los_Angeles"
+	},
+	{
+		"id": "6caffb87-cef3-4098-ad53-1039d912f5e4",
+		"name": "SunServe",
+		"mission": "Recognizing that the entire LGBTQ community has the right to quality care, our mission is to provide critical life assistance and professional mental health services with an emphasis on economically disadvantaged, marginalized youth, adults and seniors in the greater South Florida metropolitan area.",
+		"slug": "sunserve",
+		"address": {
+			"street": "2312 Wilton Drive",
+			"city": "Wilton Manors",
+			"state": "Florida",
+			"zip": "33305",
+			"region": "Southern"
+		},
+		"timezone": "America/New_York",
+		"contact": {
+			"email": "info@sunserve.org"
+		}
+	}
+]

@@ -1,0 +1,10 @@
+{
+	"id": "6bb73a9f-c4d1-4596-bd0d-a5f391d3162c",
+	"name": "AHF Pharmacy",
+	"description": {
+		"short": "AHF offers multiple services to complete an easy-to-use circle of care. With convenient pharmacy locations, healthcare centers, and specialty medicare programs, we've got you covered.",
+		"full": "AHF Pharmacy is a not-for-profit healthcare provider operated by Los Angeles-based AIDS Healthcare Foundation. The organization offers pharmaceutical essentials to patients through a network of pharmacies. The pharmacies employ clinically trained pharmacists to provide custom services. Customers can select between pickup at store locations or getting the medications delivered at their doorstep. It also offers special packaging that guides patients on the medication to be taken and at what time of the day. For this, it adopts GoPak and CalendarPak custom medication packaging and labeling services. As part of GoPak packaging, the organization keeps a month’s medication into daily dose-specific packets labeled with the date and time when the medication is to be taken, and its CalendarPak service labels the monthly medications. AHF Pharmacy also offers a mobile app for patients to stay connected with pharmacies, receive alerts on medications, and get refills throughout the day. It also sends reminders to patients on monthly refills. It coordinates with the patient’s physician, insurance companies, and other parties that could be involved in the patient’s overall healthcare."
+	},
+	"types": ["healthcare"],
+	"partner": "354b16a5-2dd6-4c09-960f-60d807cca43b"
+}

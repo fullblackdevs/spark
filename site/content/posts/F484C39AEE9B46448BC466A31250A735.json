@@ -1,0 +1,12 @@
+{
+	"id": "f484c39a-ee9b-4644-8bc4-66a31250a735",
+	"name": "New Year, New Me, Who Dis?",
+	"titles": { "subtitle": "January 2023 Newsletter" },
+	"date": "2021-09-01T00:00:00+00:00",
+	"description": { "full": null, "excerpt": null },
+	"contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+	"type": "newsletter",
+	"slug": "how-to-find-a-therapist",
+	"size": "col-span-3 row-span-2 h-auto",
+	"format": "publication"
+}

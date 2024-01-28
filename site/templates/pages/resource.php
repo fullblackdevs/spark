@@ -5,7 +5,7 @@
 	<h2 class="text-6xl font-semibold tracking-tighter"><?= $resource['name'] ?></h2>
 	<dl>
 		<dt class="sr-only">Provider</dt>
-		<dd class="text-2xl font-medium tracking-tighter"><?= $resource['provider']['name'] ?></dd>
+		<dd class="text-2xl font-medium tracking-tighter"><?= $resource['partner']['name'] ?></dd>
 	</dl>
 </div>
 
@@ -21,8 +21,8 @@
 			<div class="flex justify-between px-6 py-4">
 				<h4>Location</h4>
 				<p class="text-right">
-					<?= $resource['provider']['address']['street'] ?><br />
-					<?= $resource['provider']['address']['city'] . ', ' . $resource['provider']['address']['state'] . ' ' . $resource['provider']['address']['zip'] ?>
+					<?= $resource['partner']['address']['street'] ?><br />
+					<?= $resource['partner']['address']['city'] . ', ' . $resource['partner']['address']['state'] . ' ' . $resource['partner']['address']['zip'] ?>
 				</p>
 			</div>
 			<?php if (isset($resource['schedule'])) : ?>
@@ -37,10 +37,10 @@
 				</div>
 			<?php endif; ?>
 
-			<?php if (isset($resource['provider']['website'])) : ?>
+			<?php if (isset($resource['partner']['website'])) : ?>
 				<div class="flex justify-between px-6">
 					<h4>Website</h4>
-					<p><a href="https://<?= $resource['provider']['website'] ?>"><?= $resource['provider']['website'] ?></a></p>
+					<p><a href="https://<?= $resource['partner']['website'] ?>"><?= $resource['partner']['website'] ?></a></p>
 				</div>
 			<?php endif; ?>
 

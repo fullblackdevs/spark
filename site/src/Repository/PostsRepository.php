@@ -4,8 +4,6 @@ namespace App\Repository;
 
 use Cake\Collection\Collection;
 use League\Flysystem\Filesystem;
-use Orhanerday\OpenAi\OpenAi;
-use Faker\Factory as Faker;
 
 class PostsRepository extends CoreRepository implements RepositoryInterface
 {
@@ -15,13 +13,7 @@ class PostsRepository extends CoreRepository implements RepositoryInterface
 	{
 		parent::__construct();
 
-		$postsData = $this->loadData('posts');
-
-		if (isset($postsData['items'])) {
-			$this->Posts = $postsData['items'];
-		} else {
-			$this->Posts = $postsData;
-		}
+		$this->Posts = $this->loadContent('posts');
 	}
 
 	public function getPosts()
@@ -32,6 +24,8 @@ class PostsRepository extends CoreRepository implements RepositoryInterface
 			/** @todo: implement external Posts data load in constructor to its own method
 			 * this can be called load() and moved up to the RepositoryInterface and then into
 			 * an AbstractRepository class since the implementation is the same for all Repositories
+			 * This allows for Posts to be lazy-loaded and not initate the loading until getPosts()
+			 * method is called
 			 */
 		}
 

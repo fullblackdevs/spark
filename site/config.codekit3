@@ -396,10 +396,10 @@
     },
     "\/composer.json" : {
       "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/composer-min.json",
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/composer.json",
       "oF" : 0,
-      "oO" : 1,
+      "oO" : 0,
       "oS" : 1
     },
     "\/composer.lock" : {
@@ -416,11 +416,293 @@
       "oAP" : "\/config",
       "oF" : 0
     },
-    "\/content" : {
-      "ft" : 65536,
-      "oA" : 1,
-      "oAP" : "\/content",
-      "oF" : 0
+    "\/content\/content.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/content.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/partners.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/partners.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/posts.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/posts.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/posts\/4CC79F2EA32F44A7AFDC0B85C7100B3B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/posts\/4CC79F2EA32F44A7AFDC0B85C7100B3B.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/posts\/9A740EA1F22F443283EC1CF8F8106AA5.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/posts\/9A740EA1F22F443283EC1CF8F8106AA5.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/posts\/351E21EE79114B2DB9C58FE1BE2E5894.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/posts\/351E21EE79114B2DB9C58FE1BE2E5894.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/posts\/A31A3B29FAB5482E8032E9C48079054B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/posts\/A31A3B29FAB5482E8032E9C48079054B.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/posts\/A588593F66094D90856C324475040D48.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/posts\/A588593F66094D90856C324475040D48.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/posts\/F484C39AEE9B46448BC466A31250A735.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/posts\/F484C39AEE9B46448BC466A31250A735.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/posts\/FBD184E27B11484FB36F4C459990C4D1.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/posts\/FBD184E27B11484FB36F4C459990C4D1.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/0E94954C1CFD4284847311F7A71308EC.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/0E94954C1CFD4284847311F7A71308EC.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/0F73E33E17D54C76BAD182C1F0531B2B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/0F73E33E17D54C76BAD182C1F0531B2B.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/1A51BDC726244B33881CA90E731FC63B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/1A51BDC726244B33881CA90E731FC63B.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/3BA309CF4A964EC4AFFE7FA60283AC17.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/3BA309CF4A964EC4AFFE7FA60283AC17.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/3D800DED2D0E4B8EAFF6FF57DA880B79.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/3D800DED2D0E4B8EAFF6FF57DA880B79.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/6BB73A9FC4D14596BD0DA5F391D3162C.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/6BB73A9FC4D14596BD0DA5F391D3162C.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/54AAEB19850E4B97A0BF20016374F57B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/54AAEB19850E4B97A0BF20016374F57B.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/54B604467CDD468BAEBD35A0E03AE2B7.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/54B604467CDD468BAEBD35A0E03AE2B7.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/60A149F7AE3548EB9465E975064D88CC.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/60A149F7AE3548EB9465E975064D88CC.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/69C457E468734753AE9872F40981D172.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/69C457E468734753AE9872F40981D172.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/89CC7DB6682B409A80211F82503713C6.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/89CC7DB6682B409A80211F82503713C6.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/0113CB63AC194868A5FD98B73706C3FE.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/0113CB63AC194868A5FD98B73706C3FE.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/143A585163AC4BAE9A2CEA553472B674.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/143A585163AC4BAE9A2CEA553472B674.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/356C47705A804AC9A5C262B6168A921B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/356C47705A804AC9A5C262B6168A921B.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/5396FB59DFE24BBEA27D825540F56D59.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/5396FB59DFE24BBEA27D825540F56D59.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/7300AB988ADE4ADAB77CBE27F55523DB.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/7300AB988ADE4ADAB77CBE27F55523DB.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/184629AB9FAC405393117B33ED4E5EB1.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/184629AB9FAC405393117B33ED4E5EB1.json",
+      "oF" : 2,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/226532FAE4BC4D0798E958A1FB1D0E13.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/226532FAE4BC4D0798E958A1FB1D0E13.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/A44B5AABBE0541BB81C86849A3513120.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/A44B5AABBE0541BB81C86849A3513120.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/BE0088860788463592518C7637BD84CD.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/BE0088860788463592518C7637BD84CD.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/C77C494E60EF4F32A34D7FB3F3FF8225.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/C77C494E60EF4F32A34D7FB3F3FF8225.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/CAB48669C6794927881C698D5053B0A3.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/CAB48669C6794927881C698D5053B0A3.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/E45665E3E2514B8AAD0C97FECE0F40FE.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/E45665E3E2514B8AAD0C97FECE0F40FE.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/EDE937FB8EB04DE484E46AE5998D4106.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/EDE937FB8EB04DE484E46AE5998D4106.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/content\/resources\/F4DF0459DD1B412F988E20CED69C5303.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/F4DF0459DD1B412F988E20CED69C5303.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
     },
     "\/data" : {
       "ft" : 65536,
@@ -437,17 +719,17 @@
     "\/package-lock.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/package-lock-min.json",
+      "oAP" : "\/web\/content\/resources\/package-lock.json",
       "oF" : 0,
-      "oO" : 1,
+      "oO" : 0,
       "oS" : 1
     },
     "\/package.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/package-min.json",
+      "oAP" : "\/web\/content\/resources\/package.json",
       "oF" : 0,
-      "oO" : 1,
+      "oO" : 0,
       "oS" : 1
     },
     "\/postcss.config.js" : {
@@ -822,6 +1104,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/Module\/Authentication\/Authenticator\/SessionAuthenticator.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Content\/ContentCollection.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Content\/ContentCollection.php",
+      "oF" : 0
+    },
+    "\/src\/Module\/Content\/ContentItem.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/Module\/Content\/ContentItem.php",
       "oF" : 0
     },
     "\/src\/Module\/User\/Action\/CoreAction.php" : {
@@ -1399,6 +1697,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/web\/assets\/images\/spark-as-554608479.jpg" : {
+      "ft" : 16384,
+      "iS" : 2717899,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/assets\/images\/spark-as-554608479.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/web\/assets\/images\/spark-as-638493400.jpg" : {
       "ft" : 16384,
       "iS" : 1317163,
@@ -1549,12 +1860,300 @@
       "oAP" : "\/web\/assets\/styles\/theme-min.css.map",
       "oF" : 0
     },
+    "\/web\/content\/.gitkeep" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/web\/content\/.gitkeep",
+      "oF" : 0
+    },
+    "\/web\/content\/partners.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/partners.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/posts.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/posts.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/posts\/4CC79F2EA32F44A7AFDC0B85C7100B3B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/4CC79F2EA32F44A7AFDC0B85C7100B3B.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/posts\/9A740EA1F22F443283EC1CF8F8106AA5.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/9A740EA1F22F443283EC1CF8F8106AA5.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/posts\/351E21EE79114B2DB9C58FE1BE2E5894.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/351E21EE79114B2DB9C58FE1BE2E5894.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/posts\/A31A3B29FAB5482E8032E9C48079054B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/A31A3B29FAB5482E8032E9C48079054B.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/posts\/A588593F66094D90856C324475040D48.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/A588593F66094D90856C324475040D48.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/posts\/F484C39AEE9B46448BC466A31250A735.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/F484C39AEE9B46448BC466A31250A735.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/posts\/FBD184E27B11484FB36F4C459990C4D1.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/FBD184E27B11484FB36F4C459990C4D1.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/resources.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/0E94954C1CFD4284847311F7A71308EC.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/0E94954C1CFD4284847311F7A71308EC.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/0F73E33E17D54C76BAD182C1F0531B2B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/0F73E33E17D54C76BAD182C1F0531B2B.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/1A51BDC726244B33881CA90E731FC63B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/1A51BDC726244B33881CA90E731FC63B.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/3BA309CF4A964EC4AFFE7FA60283AC17.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/3BA309CF4A964EC4AFFE7FA60283AC17.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/3D800DED2D0E4B8EAFF6FF57DA880B79.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/3D800DED2D0E4B8EAFF6FF57DA880B79.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/6BB73A9FC4D14596BD0DA5F391D3162C.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/6BB73A9FC4D14596BD0DA5F391D3162C.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/54AAEB19850E4B97A0BF20016374F57B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/54AAEB19850E4B97A0BF20016374F57B.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/54B604467CDD468BAEBD35A0E03AE2B7.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/54B604467CDD468BAEBD35A0E03AE2B7.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/60A149F7AE3548EB9465E975064D88CC.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/60A149F7AE3548EB9465E975064D88CC.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/69C457E468734753AE9872F40981D172.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/69C457E468734753AE9872F40981D172.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/89CC7DB6682B409A80211F82503713C6.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/89CC7DB6682B409A80211F82503713C6.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/0113CB63AC194868A5FD98B73706C3FE.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/0113CB63AC194868A5FD98B73706C3FE.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/143A585163AC4BAE9A2CEA553472B674.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/143A585163AC4BAE9A2CEA553472B674.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/356C47705A804AC9A5C262B6168A921B.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/356C47705A804AC9A5C262B6168A921B.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/5396FB59DFE24BBEA27D825540F56D59.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/5396FB59DFE24BBEA27D825540F56D59.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/7300AB988ADE4ADAB77CBE27F55523DB.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/7300AB988ADE4ADAB77CBE27F55523DB.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/184629AB9FAC405393117B33ED4E5EB1.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/184629AB9FAC405393117B33ED4E5EB1.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/226532FAE4BC4D0798E958A1FB1D0E13.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/226532FAE4BC4D0798E958A1FB1D0E13.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/A44B5AABBE0541BB81C86849A3513120.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/A44B5AABBE0541BB81C86849A3513120.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/BE0088860788463592518C7637BD84CD.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/BE0088860788463592518C7637BD84CD.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/C77C494E60EF4F32A34D7FB3F3FF8225.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/C77C494E60EF4F32A34D7FB3F3FF8225.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/CAB48669C6794927881C698D5053B0A3.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/CAB48669C6794927881C698D5053B0A3.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/E45665E3E2514B8AAD0C97FECE0F40FE.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/E45665E3E2514B8AAD0C97FECE0F40FE.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/EDE937FB8EB04DE484E46AE5998D4106.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/EDE937FB8EB04DE484E46AE5998D4106.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/web\/content\/resources\/F4DF0459DD1B412F988E20CED69C5303.json" : {
+      "ft" : 524288,
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/F4DF0459DD1B412F988E20CED69C5303.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
     "\/web\/data\/posts.json" : {
       "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/web\/data\/posts-min.json",
+      "oA" : 2,
+      "oAP" : "\/web\/content\/resources\/posts.json",
       "oF" : 0,
-      "oO" : 1,
+      "oO" : 0,
       "oS" : 1
     },
     "\/web\/favicon.ico" : {
@@ -2929,13 +3528,13 @@
       "transpilerStyle" : 0
     },
     "languageDefaultsJSON" : {
-      "autoOutputAction" : 1,
-      "autoOutputPathFilenamePattern" : "*-min.json",
-      "autoOutputPathRelativePath" : "",
+      "autoOutputAction" : 2,
+      "autoOutputPathFilenamePattern" : "*.json",
+      "autoOutputPathRelativePath" : "web\/content\/resources",
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
-      "autoOutputPathStyle" : 0,
-      "orderOutput" : 1,
+      "autoOutputPathStyle" : 1,
+      "orderOutput" : 0,
       "outputStyle" : 1
     },
     "languageDefaultsKIT" : {
@@ -3149,7 +3748,7 @@
     ],
     "rollupTreeshakingEnabled" : 1,
     "rollupTreeshakingModuleSideEffects" : 1,
-    "skippedFoldersString" : "\/config,\/vars,\/vendor,node_modules,\/storage\/framework\/sessions,\/content,cache,_logs,log,.idea,\/data,logs,_cache",
+    "skippedFoldersString" : "\/vendor,\/vars,\/storage\/framework\/sessions,node_modules,_logs,logs,log,.idea,\/data,\/config,cache,_cache",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowArbitraryExtensions" : 0,

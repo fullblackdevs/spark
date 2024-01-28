@@ -4,6 +4,7 @@ use Cake\Chronos\Chronos;
 use Faker\Factory as Faker;
 
 $fake = Faker::create();
+ray($posts);
 ?>
 <div class="flex flex-col justify-end flex-none bg-[url('/assets/images/spark-as-679251537.jpg')] bg-center bg-cover min-h-[550px] px-28 pb-20 text-spark-pink-100">
 	<h2 class="text-6xl font-semibold tracking-tighter">Sparkle: The Official Spark Blog</h2>

@@ -19,4 +19,24 @@ return [
 			'connection' => 'aws',
 		],
 	],
+
+	'Content' => [
+		'Repository' => [
+			'environment' => env('CONTENT_REPOSITORY_ENVIRONMENT', 'default'),
+			'environments' => [
+				'default' => [
+					'connection' => env('CONTENT_REPOSITORY_SOURCE'),
+					'format' => env('CONTENT_REPOSITORY_FORMAT'),
+				],
+				'dev' => [
+					'connection' => 'local',
+					'format' => 'json',
+				],
+				'live' => [
+					'connection' => 'digitalocean',
+					'format' => 'json',
+				],
+			],
+		],
+	],
 ];

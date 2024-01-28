@@ -1,0 +1,9 @@
+{
+	"id": "be008886-0788-4635-9251-8c7637bd84cd",
+	"name": "SunServe Safe T Support Group",
+	"description": {
+		"short": "Drop-in support group for those who do not conform to gender stereotypes specifically for Transgender, and Gender-queer persons."
+	},
+	"types": ["support-group"],
+	"partner": "6caffb87-cef3-4098-ad53-1039d912f5e4"
+}

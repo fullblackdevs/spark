@@ -1,0 +1,11 @@
+{
+	"name": "Resource Library for Women's Rights Activists",
+	"description": {
+		"short": "Our extensive resource library is a valuable resource for women's rights activists. Access toolkits, research papers, case studies, and advocacy resources to support your efforts in promoting gender equality and women's empowerment.",
+		"blurb": "Explore our resource library for tools and information on women's rights advocacy.",
+		"full": "The Women's Resource Center is proud to present our newest addition to our wide range of services and resources - the Resource Library for Women's Rights Activists. As an organization dedicated to empowering women in need, we understand the importance of providing our target audience with the tools and knowledge needed to advocate for their rights. The Resource Library for Women's Rights Activists is a comprehensive collection of materials that cover a variety of topics related to women's rights. This includes information on legal rights, reproductive health, domestic violence, workplace discrimination, and much more. Our library also offers a diverse range of resources, including books, articles, documentaries, and online materials, to cater to the different learning styles of our activists. One of the key features of our Resource Library is its focus on providing practical information and tools that can be used in real-life situations. We believe that knowledge is power, and by equipping our activists with the necessary information and resources, we are arming them to fight for their rights effectively. In addition to providing informational resources, our library is also a safe and welcoming space for women to come and gather, exchange ideas, and support one another. It serves as a hub for networking and community-building among our activists, fostering a sense of sisterhood and solidarity. We are committed to continually updating and expanding our Resource Library to ensure that it remains a relevant and reliable source for women's rights activists. We believe that by providing this valuable resource, we are not only supporting our target audience but also making significant strides towards achieving our mission of empowering women."
+	},
+	"types": ["learning", "publication"],
+	"id": "89cc7db6-682b-409a-8021-1f82503713c6",
+	"partner": "e4ab69f9-0f4a-42f9-a2fd-caca90cb775c"
+}

@@ -10,29 +10,26 @@ use Cake\Utility\Text;
 use Orhanerday\OpenAi\OpenAi;
 use Faker\Factory as Faker;
 
-class ResourcesRepository implements RepositoryInterface
+class ResourcesRepository extends CoreRepository implements RepositoryInterface
 {
 	private array $Resources;
-	private PartnersRepository $Providers;
-
-	private Filesystem $fs;
 
 	public function __construct(?Filesystem $fs = null)
 	{
-		$this->fs = $fs ?? DigitalOceanSpacesService::init("data");
+		parent::__construct();
 
-		foreach ($this->fs->listContents('/') as $data) {
-			if ($data->type() === 'file' && $this->fs->mimeType($data->path()) === 'application/json' && $data->path() === 'resources.json') {
-				$resources = json_decode($this->fs->read($data->path()), true);
-				$this->Resources = $resources;
+		$this->Resources = $this->loadContent('resources');
+
+		$this->Resources = $this->loadAssociatedContent($this->Resources, 'partner', 'file');
+
+		foreach ($this->Resources as $index => $resource) {
+			// GENERATE SLUG
+			if (!isset($resource['slug'])) {
+				$this->Resources[$index]['slug'] = strtolower(Text::slug($resource['name']));
 			}
 		}
 
-		$this->Providers = new PartnersRepository();
-
-		ray($this->Resources);
-
-		foreach ($this->Resources as $index => $resource) {
+		/* foreach ($this->Resources as $index => $resource) {
 			// SET ID
 			if (!isset($resource['id'])) {
 				$resource['id'] = Text::uuid();
@@ -78,10 +75,9 @@ class ResourcesRepository implements RepositoryInterface
 			}
 
 			$this->Resources[$index] = $resource;
-		}
+		} */
 
-		$this->fs->write('resources.json', json_encode($this->Resources));
-		ray($this->Resources);
+		//$this->fs->write('resources.json', json_encode($this->Resources));
 	}
 
 	public function getResources()

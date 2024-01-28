@@ -1,0 +1,11 @@
+{
+	"name": "Educational Scholarships for Women",
+	"description": {
+		"short": "We offer educational scholarships exclusively for women pursuing higher education. Whether you're studying in STEM fields, the arts, or any other discipline, our scholarships provide financial support to help you achieve your academic and career goals.",
+		"blurb": "Apply for our scholarships to support your education and career aspirations.",
+		"full": "Sisters United is committed to providing support and resources to the women in our community, and one of the ways we strive to achieve this goal is through our Educational Scholarships for Women program. We firmly believe that education is a powerful tool that can empower women and help create a stronger community. Our scholarship program aims to provide financial assistance to women from all backgrounds who are seeking to further their education. The program offers educational scholarships to women of all ages, whether they are high school graduates looking to attend college, or single mothers hoping to return to school after taking time off to raise their children. We understand that the cost of education can be a barrier for many women, and we want to alleviate that burden by providing financial support. Our educational scholarships cover a variety of expenses, including tuition fees, book costs, and other educational expenses. We also offer mentorship opportunities to our scholarship recipients, connecting them with successful women in their chosen field to provide guidance and support. Through this program, we aim to not only provide financial assistance but also support and encouragement to women pursuing their educational goals. We believe that by investing in the education of women, we are investing in the future of our community. With this scholarship program, we hope to create a positive and lasting impact on the lives of women and the community as a whole."
+	},
+	"types": ["education", "financial-assistance"],
+	"id": "ede937fb-8eb0-4de4-84e4-6ae5998d4106",
+	"partner": "1f3b33d6-8a3f-40c8-9bf9-2f57a28be3c8"
+}

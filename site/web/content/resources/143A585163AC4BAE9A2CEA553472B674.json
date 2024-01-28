@@ -1,0 +1,9 @@
+{
+	"id": "143a5851-63ac-4bae-9a2c-ea553472b674",
+	"name": "AHF Advocacy",
+	"description": {
+		"short": "Advocacy is written into the mission of AIDS Healthcare Foundation and drives our organization to fight for what's right. We're committed to doing good on a global scale. Find out more about how you can get involved in AHF's many advocacy efforts today."
+	},
+	"types": ["advocacy"],
+	"partner": "354b16a5-2dd6-4c09-960f-60d807cca43b"
+}

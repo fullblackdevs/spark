@@ -1,0 +1,11 @@
+{
+	"name": "Women's Empowerment Program",
+	"description": {
+		"short": "Our Women's Empowerment Program is dedicated to providing educational opportunities and support for women and girls in various aspects of life. We offer mentorship, workshops, and resources to help them achieve their goals and overcome challenges.",
+		"blurb": "Join our program to empower women and girls through education and support.",
+		"full": "The Women's Empowerment Program, provided by Girls for Change, is a comprehensive resource designed to support and uplift young girls in their journey towards becoming agents of change within their communities. This program recognizes the importance of empowering girls and providing them with the necessary tools and skills to confidently lead and create positive change in the world. Through this program, girls are able to participate in leadership development activities that help them build self-esteem, communication skills, and critical thinking abilities. These skills are essential for girls to be able to take on leadership roles and advocate for themselves and others effectively. The Women's Empowerment Program also focuses on community service, encouraging girls to identify and address issues within their communities. By engaging in service projects, girls are not only making a positive impact but also learning the value of giving back and being active members of their society. Furthermore, the program offers mentorship opportunities where girls can connect with successful female leaders from a variety of fields. This not only provides girls with role models and guidance but also exposes them to different career paths and possibilities for their future. Overall, the Women's Empowerment Program equips girls with the necessary skills, knowledge, and support to become confident, compassionate, and effective leaders in their communities. By investing in and empowering girls, Girls for Change is creating a generation of empowered and capable young women who will undoubtedly make a significant difference in the world."
+	},
+	"types": ["support-group"],
+	"id": "69c457e4-6873-4753-ae98-72f40981d172",
+	"partner": "a2c05aff-06ff-4d0b-a3a3-38c6c35b0ae4"
+}

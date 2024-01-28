@@ -1,0 +1,9 @@
+{
+	"id": "0f73e33e-17d5-4c76-bad1-82c1f0531b2b",
+	"name": "AHF Healthcare Center",
+	"description": {
+		"short": "Visit an AHF Healthcare Center for expert care delivered by experienced and compassionate staff. With over 1 million lives in care worldwide, we provide advanced medical services designed specifically for you."
+	},
+	"types": ["healthcare"],
+	"partner": "354b16a5-2dd6-4c09-960f-60d807cca43b"
+}
