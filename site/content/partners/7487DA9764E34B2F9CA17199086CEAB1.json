@@ -1,0 +1,14 @@
+{
+	"id": "7487da97-64e3-4b2f-9ca1-7199086ceab1",
+	"name": "Women's Haven",
+	"mission": "Providing a safe and supportive haven for women in need.",
+	"slug": "womens-haven",
+	"address": {
+		"street": "101 Elm St",
+		"city": "Dallas",
+		"state": "Texas",
+		"zip": "75201",
+		"region": "Southern"
+	},
+	"timezone": "America/Chicago"
+}

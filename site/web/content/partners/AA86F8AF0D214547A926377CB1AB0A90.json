@@ -1,0 +1,14 @@
+{
+	"id": "aa86f8af-0d21-4547-a926-377cb1ab0a90",
+	"name": "Women's Strength Alliance",
+	"mission": "Creating a supportive and empowering community for women to find strength in their struggles.",
+	"slug": "womens-strength-alliance",
+	"address": {
+		"street": "321 Oak St",
+		"city": "Boston",
+		"state": "Massachusetts",
+		"zip": "02108",
+		"region": "Northern"
+	},
+	"timezone": "America/New_York"
+}

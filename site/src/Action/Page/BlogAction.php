@@ -11,9 +11,13 @@ class BlogAction extends CoreAction
 	{
 		$this->Posts = new PostsRepository();
 
+		$page = $this->Pages->getPage('blog');
+		$header = $page->getSection('header');
+
 		$this->getView()->render($this->getResponse(), 'pages/blog.php', [
-			'pageTitle' => 'Sparkle: The Official Spark Blog',
-			'pageDescription' => 'Essays, articles, video and more from the Spark team.',
+			'pageTitle' => isset($header['title']) ? $header['title'] : 'Title Not Set',
+			'pageDescription' => isset($header['description']) ? $header['description'] : 'Description Not Set',
+			'pageHeaderImage' => isset($header['image']) ? $header['image'] : null,
 			'pageSlug' => 'blog',
 			'posts' => $this->Posts->getPosts(),
 		]);

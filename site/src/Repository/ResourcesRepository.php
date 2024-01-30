@@ -20,7 +20,7 @@ class ResourcesRepository extends CoreRepository implements RepositoryInterface
 
 		$this->Resources = $this->loadContent('resources');
 
-		$this->Resources = $this->loadAssociatedContent($this->Resources, 'partner', 'file');
+		$this->Resources = $this->loadAssociatedContent($this->Resources, 'partner');
 
 		foreach ($this->Resources as $index => $resource) {
 			// GENERATE SLUG

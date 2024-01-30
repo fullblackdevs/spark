@@ -1,0 +1,14 @@
+{
+	"id": "c18e4b0a-d81e-4509-a242-1a7c379669b0",
+	"name": "Girl Power Initiative",
+	"mission": "Inspiring and empowering girls through mentorship, education, and leadership development.",
+	"slug": "girl-power-initiative",
+	"address": {
+		"street": "456 Elm St",
+		"city": "Denver",
+		"state": "Colorado",
+		"zip": "80202",
+		"region": "Western"
+	},
+	"timezone": "America/Denver"
+}

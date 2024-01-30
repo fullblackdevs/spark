@@ -1,0 +1,14 @@
+{
+	"id": "d76c6664-48b7-4429-a9fd-79e5f24b8875",
+	"name": "Women's Empowerment Alliance",
+	"mission": "Empowering women and girls through education and leadership development.",
+	"slug": "womens-empowerment-alliance",
+	"address": {
+		"street": "123 Main St",
+		"city": "New York City",
+		"state": "New York",
+		"zip": "10001",
+		"region": "Mid-Atlantic"
+	},
+	"timezone": "America/New_York"
+}

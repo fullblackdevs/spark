@@ -1,0 +1,14 @@
+{
+	"id": "a2c05aff-06ff-4d0b-a3a3-38c6c35b0ae4",
+	"name": "Girls for Change",
+	"mission": "Empowering girls to become agents of change in their communities through leadership development and community service.",
+	"slug": "girls-for-change",
+	"address": {
+		"street": "222 Pine St",
+		"city": "Philadelphia",
+		"state": "Pennsylvania",
+		"zip": "19103",
+		"region": "Mid-Atlantic"
+	},
+	"timezone": "America/New_York"
+}

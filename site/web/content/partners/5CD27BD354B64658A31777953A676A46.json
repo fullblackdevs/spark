@@ -1,0 +1,14 @@
+{
+	"id": "5cd27bd3-54b6-4658-a317-77953a676a46",
+	"name": "GirlStrong Foundation",
+	"mission": "Empowering and inspiring girls to become confident leaders of tomorrow.",
+	"slug": "girlstrong-foundation",
+	"address": {
+		"street": "888 Pine St",
+		"city": "San Francisco",
+		"state": "California",
+		"zip": "94108",
+		"region": "Western"
+	},
+	"timezone": "America/Los_Angeles"
+}

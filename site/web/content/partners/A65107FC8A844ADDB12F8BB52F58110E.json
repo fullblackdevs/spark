@@ -1,0 +1,14 @@
+{
+	"id": "a65107fc-8a84-4add-b12f-8bb52f58110e",
+	"name": "Sisterhood Support Network",
+	"mission": "Creating a supportive community for women to navigate life's challenges together.",
+	"slug": "sisterhood-support-network",
+	"address": {
+		"street": "789 Oak St",
+		"city": "Chicago",
+		"state": "Illinois",
+		"zip": "60605",
+		"region": "Midwest"
+	},
+	"timezone": "America/Chicago"
+}

@@ -1,0 +1,18 @@
+{
+	"name": "contributor",
+	"sections": {
+		"header": {
+			"image": "2A89610862274928AC3B66D54249CA34.jpg",
+			"title": "",
+			"description": "Our curated and searchable directory of services tailored to you"
+		}
+	},
+	"config": {
+		"navigation": {
+			"includeInNav": false,
+			"navLabel": "Contributor",
+			"navOrder": null,
+			"path": "contributor"
+		}
+	}
+}

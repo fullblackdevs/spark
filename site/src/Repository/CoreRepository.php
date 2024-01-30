@@ -87,7 +87,7 @@ abstract class CoreRepository
 	 * @param string $collection
 	 * @return null|array
 	 */
-	public function loadContent(string|null $type = null, string $collection = 'dir'): null|array
+	public function loadContent(?string $type = null, string $collection = 'dir'): ?array
 	{
 		$content = [];
 

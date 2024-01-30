@@ -1,0 +1,14 @@
+{
+	"id": "1f3b33d6-8a3f-40c8-9bf9-2f57a28be3c8",
+	"name": "Sisters United",
+	"mission": "Empowering, educating, and uplifting women of all backgrounds to create a stronger community.",
+	"slug": "sisters-united",
+	"address": {
+		"street": "333 Oak St",
+		"city": "Detroit",
+		"state": "Michigan",
+		"zip": "48201",
+		"region": "Midwest"
+	},
+	"timezone": "America/Detroit"
+}

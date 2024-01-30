@@ -1,0 +1,14 @@
+{
+	"id": "a8f0d338-262d-4fee-9381-079e0ae7afad",
+	"name": "Girls on the Rise Foundation",
+	"mission": "Empowering and equipping young girls with the tools and resources they need to reach their fullest potential.",
+	"slug": "girls-on-the-rise-foundation",
+	"address": {
+		"street": "789 Main St",
+		"city": "Miami",
+		"state": "Florida",
+		"zip": "33130",
+		"region": "Southern"
+	},
+	"timezone": "America/New_York"
+}

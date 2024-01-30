@@ -1,0 +1,17 @@
+{
+	"id": "6caffb87-cef3-4098-ad53-1039d912f5e4",
+	"name": "SunServe",
+	"mission": "Recognizing that the entire LGBTQ community has the right to quality care, our mission is to provide critical life assistance and professional mental health services with an emphasis on economically disadvantaged, marginalized youth, adults and seniors in the greater South Florida metropolitan area.",
+	"slug": "sunserve",
+	"address": {
+		"street": "2312 Wilton Drive",
+		"city": "Wilton Manors",
+		"state": "Florida",
+		"zip": "33305",
+		"region": "Southern"
+	},
+	"timezone": "America/New_York",
+	"contact": {
+		"email": "info@sunserve.org"
+	}
+}

@@ -1,6 +1,6 @@
-<div class="flex flex-col justify-end flex-none bg-[url('/assets/images/spark-as-666100981.jpg')] bg-center bg-cover min-h-[550px] px-28 pb-20 text-spark-pink-100">
-	<h2 class="text-6xl font-semibold tracking-tighter">Resources</h2>
-	<p class="text-lg">Our curated and searchable directory of services tailored to you</p>
+<div class="flex flex-col justify-end flex-none bg-courageous-plum-800 min-h-[550px] px-28 pb-20 text-spark-pink-100" <?php if (isset($pageHeaderImage)) : ?>style="background: url('/assets/images/<?= $pageHeaderImage ?>') center / cover no-repeat;" <?php endif; ?>>
+	<h2 class="text-6xl font-semibold tracking-tighter"><?= $pageTitle ?></h2>
+	<p class="text-lg"><?= $pageDescription ?></p>
 </div>
 <div class="bg-[#FAF3F9] grow min-h-full px-28 text-black py-16">
 	<section class="grid grid-cols-3 gap-8 text-base">

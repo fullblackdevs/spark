@@ -1,0 +1,14 @@
+{
+	"id": "87001193-956e-4205-b655-94b6a6a90d3a",
+	"name": "Sisterly Love Foundation",
+	"mission": "Promoting sisterhood and providing resources for women to succeed in all areas of life.",
+	"slug": "sisterly-love-foundation",
+	"address": {
+		"street": "777 Main St",
+		"city": "Washington DC",
+		"state": "District of Columbia",
+		"zip": "20005",
+		"region": "Mid-Atlantic"
+	},
+	"timezone": "America/New_York"
+}

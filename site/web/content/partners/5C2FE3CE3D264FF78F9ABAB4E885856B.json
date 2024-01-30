@@ -1,0 +1,14 @@
+{
+	"id": "5c2fe3ce-3d26-4ff7-8f9a-bab4e885856b",
+	"name": "Women's Support Circle",
+	"mission": "Creating a safe and empowering space for women to connect and grow.",
+	"slug": "womens-support-circle",
+	"address": {
+		"street": "555 Main St",
+		"city": "Houston",
+		"state": "Texas",
+		"zip": "77002",
+		"region": "Southern"
+	},
+	"timezone": "America/Chicago"
+}

@@ -18,18 +18,11 @@ class PostsRepository extends CoreRepository implements RepositoryInterface
 
 	public function getPosts()
 	{
-		if (isset($this->Posts)) {
-			return $this->Posts;
-		} else {
-			/** @todo: implement external Posts data load in constructor to its own method
-			 * this can be called load() and moved up to the RepositoryInterface and then into
-			 * an AbstractRepository class since the implementation is the same for all Repositories
-			 * This allows for Posts to be lazy-loaded and not initate the loading until getPosts()
-			 * method is called
-			 */
+		if (empty($this->Posts)) {
+			$this->Posts = $this->loadContent('posts');
 		}
 
-		return $this->Posts;
+		return new Collection($this->Posts);
 	}
 
 	/**

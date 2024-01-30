@@ -1,0 +1,14 @@
+{
+	"id": "a44ca010-ae99-4e87-9500-ed37f2c7ae6c",
+	"name": "Girls Rock Foundation",
+	"mission": "Providing mentorship and resources to help girls achieve their full potential.",
+	"slug": "girls-rock-foundation",
+	"address": {
+		"street": "456 Broadway Ave",
+		"city": "Atlanta",
+		"state": "Georgia",
+		"zip": "30303",
+		"region": "Southern"
+	},
+	"timezone": "America/New_York"
+}

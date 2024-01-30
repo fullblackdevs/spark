@@ -1,0 +1,14 @@
+{
+	"id": "f0b4159d-afef-4192-9b7b-584ca89627ad",
+	"name": "Girls Rising Association",
+	"mission": "Empowering and uplifting girls through education, mentorship, and leadership opportunities.",
+	"slug": "girls-rising-association",
+	"address": {
+		"street": "555 Elm St",
+		"city": "Minneapolis",
+		"state": "Minnesota",
+		"zip": "55401",
+		"region": "Midwest"
+	},
+	"timezone": "America/Chicago"
+}

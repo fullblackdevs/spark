@@ -1,0 +1,14 @@
+{
+	"id": "adf0e7f1-903b-4e5c-9e92-8a95feaa6668",
+	"name": "Girls' Future Foundation",
+	"mission": "Empowering young girls to create a better future for themselves and their communities.",
+	"slug": "girls-future-foundation",
+	"address": {
+		"street": "999 Oak St",
+		"city": "Phoenix",
+		"state": "Arizona",
+		"zip": "85003",
+		"region": "Western"
+	},
+	"timezone": "America/Phoenix"
+}

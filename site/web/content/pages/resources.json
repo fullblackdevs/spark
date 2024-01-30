@@ -1,0 +1,18 @@
+{
+	"name": "resources",
+	"sections": {
+		"header": {
+			"image": "2A89610862274928AC3B66D54249CA34.jpg",
+			"title": "Resources",
+			"description": "Our curated and searchable directory of services tailored to you"
+		}
+	},
+	"config": {
+		"navigation": {
+			"includeInNav": true,
+			"navLabel": "Resources",
+			"navOrder": 4,
+			"path": "resources"
+		}
+	}
+}

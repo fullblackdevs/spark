@@ -4,14 +4,13 @@ use Cake\Chronos\Chronos;
 use Faker\Factory as Faker;
 
 $fake = Faker::create();
-ray($posts);
 ?>
-<div class="flex flex-col justify-end flex-none bg-[url('/assets/images/spark-as-679251537.jpg')] bg-center bg-cover min-h-[550px] px-28 pb-20 text-spark-pink-100">
-	<h2 class="text-6xl font-semibold tracking-tighter">Sparkle: The Official Spark Blog</h2>
-	<p class="text-lg">Essays, articles, video and more from the Spark team</p>
+<div class="flex flex-col justify-end flex-none bg-courageous-plum-800 min-h-[550px] px-28 pb-20 text-spark-pink-100"<?php if (isset($pageHeaderImage)) : ?>style="background: url('/assets/images/<?= $pageHeaderImage ?>') center / cover no-repeat;" <?php endif; ?>>
+	<h2 class="text-6xl font-semibold tracking-tighter"><?= $pageTitle ?></h2>
+	<p class="text-lg"><?= $pageDescription ?></p>
 </div>
-<div class="bg-[#FAF3F9] grow min-h-full px-28 text-black py-16">
-	<div class="grid grid-cols-8 auto-rows-auto overflow-hidden w-full mb-4 gap-8">
+<div class="bg-tranquil-pink-600 grow min-h-full px-28 text-black py-16">
+	<div class="grid grid-cols-8 auto-rows-fr grid-flow-dense overflow-hidden w-full mb-4 gap-8">
 		<?php foreach ($posts as $index => $post) : ?>
 			<?php if (isset($post['format'])) : ?>
 				<?php if ($post['format'] === 'article-lg') : ?>

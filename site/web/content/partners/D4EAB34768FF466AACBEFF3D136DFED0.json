@@ -1,0 +1,14 @@
+{
+	"id": "d4eab347-68ff-466a-acbe-ff3d136dfed0",
+	"name": "Women's Wellness Collective",
+	"mission": "Providing support, education, and resources to improve the physical, mental, and emotional well-being of women.",
+	"slug": "womens-wellness-collective",
+	"address": {
+		"street": "1 Main St",
+		"city": "Portland",
+		"state": "Oregon",
+		"zip": "97209",
+		"region": "Western"
+	},
+	"timezone": "America/Los_Angeles"
+}

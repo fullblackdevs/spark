@@ -11,6 +11,7 @@ use Odan\Session\Flash;
 use Slim\Interfaces\RouteParserInterface;
 use Slim\Routing\RouteContext;
 use Odan\Session\PhpSession as Session;
+use App\Module\Content\Repository\PagesRepository;
 
 abstract class CoreAction
 {
@@ -19,6 +20,8 @@ abstract class CoreAction
 	private PhpRenderer $renderer;
 
 	private RouteParserInterface $Router;
+
+	protected PagesRepository $Pages;
 
 	private Flash $_flash;
 
@@ -36,6 +39,9 @@ abstract class CoreAction
 		$this->Router = RouteContext::fromRequest($request)->getRouteParser();
 
 		$this->fake = Faker::create();
+
+		$this->Pages = new PagesRepository();
+		ray($this->Pages);
 
 		$this->invoke();
 

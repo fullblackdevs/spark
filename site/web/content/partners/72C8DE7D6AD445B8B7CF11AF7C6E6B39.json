@@ -1,0 +1,14 @@
+{
+	"id": "72c8de7d-6ad4-45b8-b7cf-11af7c6e6b39",
+	"name": "Girls on the Rise",
+	"mission": "Empowering girls to reach their full potential by providing mentorship and educational opportunities.",
+	"slug": "girls-on-the-rise",
+	"address": {
+		"street": "12 Main St",
+		"city": "Nashville",
+		"state": "Tennessee",
+		"zip": "37203",
+		"region": "Southern"
+	},
+	"timezone": "America/Chicago"
+}

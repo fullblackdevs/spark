@@ -1,0 +1,14 @@
+{
+	"id": "5a5b716b-a68f-4e57-b382-dba9d1fa2c41",
+	"name": "Girls' Education Initiative",
+	"mission": "Providing access to education and mentorship for girls in underserved communities.",
+	"slug": "girls-education-initiative",
+	"address": {
+		"street": "456 Main St",
+		"city": "Seattle",
+		"state": "Washington",
+		"zip": "98101",
+		"region": "Western"
+	},
+	"timezone": "America/Los_Angeles"
+}

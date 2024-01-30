@@ -1,0 +1,14 @@
+{
+	"id": "e4ab69f9-0f4a-42f9-a2fd-caca90cb775c",
+	"name": "Women's Resource Center",
+	"mission": "Offering resources, support, and education to women in need.",
+	"slug": "womens-resource-center",
+	"address": {
+		"street": "111 Elm St",
+		"city": "Baltimore",
+		"state": "Maryland",
+		"zip": "21201",
+		"region": "Mid-Atlantic"
+	},
+	"timezone": "America/New_York"
+}

@@ -16,7 +16,7 @@ class PartnersRepository extends CoreRepository implements RepositoryInterface
 	{
 		parent::__construct();
 
-		$this->Partners = $this->loadContent('partners', 'file');
+		$this->Partners = $this->loadContent('partners');
 	}
 
 	public function getPartners()
