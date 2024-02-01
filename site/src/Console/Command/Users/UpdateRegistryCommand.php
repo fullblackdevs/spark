@@ -39,7 +39,6 @@ class UpdateRegistryCommand extends CoreCommand
 			}
 
 			$user = json_decode(Security::decrypt($fs->read($item->path()), env('ORGANIZATION_KEY')), true);
-			ray($user);
 		}
 
 		$this->out->writeln('Users Registry Index is Updated');

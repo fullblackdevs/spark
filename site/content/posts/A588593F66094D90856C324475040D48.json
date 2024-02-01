@@ -3,8 +3,10 @@
 	"name": "How to Find a Therapist",
 	"date": "2021-09-01T00:00:00+00:00",
 	"description": "This is a test excerpt for this article.",
-	"contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+	"contributor": "36d1984a-829a-46f3-bb4c-f568be932131",
 	"type": "article",
 	"slug": "how-to-find-a-therapist",
-	"format": "article-lg"
+	"format": "article-lg",
+	"isPinned": true,
+	"image": "B151BE25A8B645A79EA6D22DB37CE90F.jpg"
 }

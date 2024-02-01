@@ -7,5 +7,7 @@
 	},
 	"types": ["skill-building"],
 	"id": "0113cb63-ac19-4868-a5fd-98b73706c3fe",
-	"partner": "72c8de7d-6ad4-45b8-b7cf-11af7c6e6b39"
+	"partner": "72c8de7d-6ad4-45b8-b7cf-11af7c6e6b39",
+	"isPinned": true,
+	"image": "0E8C5CE7459F437EB4C82DB69B7ACB9F.jpg"
 }

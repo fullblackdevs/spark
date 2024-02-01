@@ -28,6 +28,11 @@ define('APP', ROOT . DS . APP_DIR . DS);
 define('CONFIG', ROOT . DS . 'config' . DS);
 
 /*
+ * Path to the App Data directory
+ */
+define('DATA', ROOT . DS . 'data' . DS);
+
+/*
  * Path to the tests directory.
  */
 define('TESTS', ROOT . DS . 'tests' . DS);

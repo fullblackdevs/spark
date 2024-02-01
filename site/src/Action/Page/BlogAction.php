@@ -1,6 +1,7 @@
 <?php
 namespace App\Action\Page;
 
+use App\Module\Content\Repository\ContributorsRepository;
 use App\Repository\PostsRepository;
 
 class BlogAction extends CoreAction

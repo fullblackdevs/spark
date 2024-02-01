@@ -1,19 +1,21 @@
-<div class="flex flex-col justify-end flex-none bg-masthead-about bg-cover min-h-96 px-28 pb-24 bg-blend-darken bg-courageous-plum-950 bg-opacity-50 text-spark-pink-100">
-	<div class="flex mb-2">
-		<div class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Resource</div>
+<div class="flex flex-col justify-end relative min-h-96 text-spark-pink-100 bg-center bg-cover bg-no-repeat before:content-['\00a0'] before:bg-gradient-to-t before:from-courageous-plum-800 before:absolute before:size-full" <?php if ($image = $resource->getImageUrl()) : ?>style="background-image: url('<?= $image ?>');"<?php endif; ?>>
+	<div class="flex flex-col size-full px-28 pb-24 z-10">
+		<div class="flex mb-2">
+			<div class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Resource</div>
+		</div>
+		<h2 class="text-6xl font-semibold tracking-tighter"><?= $resource->getTitle() ?></h2>
+		<dl class="text-spark-gold-200">
+			<dt class="sr-only">Provider</dt>
+			<dd class="text-2xl font-medium tracking-tighter"><?= $resource->getPartner()->getName() ?></dd>
+		</dl>
 	</div>
-	<h2 class="text-6xl font-semibold tracking-tighter"><?= $resource['name'] ?></h2>
-	<dl>
-		<dt class="sr-only">Provider</dt>
-		<dd class="text-2xl font-medium tracking-tighter"><?= $resource['partner']['name'] ?></dd>
-	</dl>
 </div>
 
-<div class="bg-[#FAF3F9] grow min-h-full px-28 text-black pt-16 tracking-tight">
+<div class="bg-[#FAF3F9] grow min-h-full px-28 text-black pt-16 tracking-tight z-10">
 	<div class="flex gap-16 -mt-32 bg-[#FAF3F9] p-10 rounded-t-lg">
 		<section class="w-3/5">
 			<h3 class="text-3xl font-bold text-courageous-plum">The Details</h3>
-			<p class="mt-6 leading-loose"><?= $resource['description']['full'] ?></p>
+			<p class="mt-6 leading-loose"><?= $resource->getFullDescription() ?></p>
 		</section>
 
 		<aside class="w-2/5 h-fit mt-2 flex flex-col divide-y grow-0 overflow-hidden rounded-md bg-white shadow">
@@ -21,11 +23,11 @@
 			<div class="flex justify-between px-6 py-4">
 				<h4>Location</h4>
 				<p class="text-right">
-					<?= $resource['partner']['address']['street'] ?><br />
-					<?= $resource['partner']['address']['city'] . ', ' . $resource['partner']['address']['state'] . ' ' . $resource['partner']['address']['zip'] ?>
+					<?php //$resource['partner']['address']['street'] ?><br />
+					<?php //$resource['partner']['address']['city'] . ', ' . $resource['partner']['address']['state'] . ' ' . $resource['partner']['address']['zip'] ?>
 				</p>
 			</div>
-			<?php if (isset($resource['schedule'])) : ?>
+			<?php if ($resource->getSchedule()) : ?>
 				<div class="flex justify-between px-6 py-4">
 					<h4>Schedule</h4>
 					<dl>
@@ -37,10 +39,10 @@
 				</div>
 			<?php endif; ?>
 
-			<?php if (isset($resource['partner']['website'])) : ?>
+			<?php if ($resource->getPartner()->getWebsite()) : ?>
 				<div class="flex justify-between px-6">
 					<h4>Website</h4>
-					<p><a href="https://<?= $resource['partner']['website'] ?>"><?= $resource['partner']['website'] ?></a></p>
+					<p><a href="https://<?= $resource->getPartner()->getWebsite() ?>"><?= $resource->getPartner()->getWebsite() ?></a></p>
 				</div>
 			<?php endif; ?>
 

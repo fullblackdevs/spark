@@ -1,8 +1,6 @@
 <?php
 
 use Cake\Chronos\Chronos;
-
-ray($events);
 ?>
 <div class="flex flex-col justify-end flex-none bg-[url('/assets/images/spark-as-554608479.jpg')] bg-center bg-cover min-h-[550px] px-28 pb-20 text-spark-pink-100">
 	<h2 class="text-6xl font-semibold tracking-tighter">Events</h2>

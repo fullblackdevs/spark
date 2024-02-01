@@ -17,8 +17,6 @@ class GetPartnerPageAction extends CoreAction
 		$id = $this->getRequest()->getAttribute('slug');
 		$partner = $this->Partners->getPartner($id);
 
-		ray($id);
-
 		$this->getView()->render($this->getResponse(), 'pages/partner.php', [
 			'partner' => $partner,
 			'pageSlug' => 'partners',

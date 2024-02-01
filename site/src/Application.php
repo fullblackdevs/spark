@@ -4,6 +4,7 @@ namespace App;
 use App\Core\AbstractApplication;
 use App\Middleware\SessionMiddleware;
 use Cake\Core\Configure;
+use Cake\Core\Configure\Engine\JsonConfig;
 use Cake\Core\Configure\Engine\PhpConfig;
 use Exception;
 use RuntimeException;
@@ -66,6 +67,9 @@ class Application extends AbstractApplication
 		try {
 			Configure::config('default', new PhpConfig());
 			Configure::load('app', 'default', false);
+
+			Configure::config('default', new JsonConfig(DATA));
+			Configure::load('us-states', 'default', false);
 		} catch (Exception $e) {
 			exit($e->getMessage() . "\n");
 		}

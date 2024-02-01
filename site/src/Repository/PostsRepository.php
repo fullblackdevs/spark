@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use App\Module\Content\Entity\Post;
 use Cake\Collection\Collection;
 use League\Flysystem\Filesystem;
 
@@ -12,14 +13,13 @@ class PostsRepository extends CoreRepository implements RepositoryInterface
 	public function __construct(?Filesystem $fs = null)
 	{
 		parent::__construct();
-
-		$this->Posts = $this->loadContent('posts');
 	}
 
 	public function getPosts()
 	{
 		if (empty($this->Posts)) {
 			$this->Posts = $this->loadContent('posts');
+			$this->Posts = $this->loadAssociatedContent($this->Posts, 'contributor');
 		}
 
 		return new Collection($this->Posts);
@@ -32,13 +32,17 @@ class PostsRepository extends CoreRepository implements RepositoryInterface
 	 * @param string|null $id
 	 * @return array|null
 	 */
-	public function getPost(string $id = null): array|null
+	public function getPost(string $id = null): Post|null
 	{
 		if ($id) {
 			$posts = new Collection($this->getPosts());
 			$post = $posts->firstMatch(['slug' => $id]);
+
+			if ($post) {
+				return new Post($post);
+			}
 		}
 
-		return $post ?? null;
+		return null;
 	}
 }

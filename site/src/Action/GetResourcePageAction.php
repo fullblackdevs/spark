@@ -13,7 +13,6 @@ class GetResourcePageAction extends CoreAction
 		$this->Resources = new ResourcesRepository();
 
 		$resource = $this->Resources->getResource($this->getRequest()->getAttribute('slug'));
-		ray($resource);
 
 		$this->getView()->render($this->getResponse(), 'pages/resource.php', [
 			'pageTitle' => 'Resources',

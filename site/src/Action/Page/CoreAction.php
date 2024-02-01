@@ -41,7 +41,6 @@ abstract class CoreAction
 		$this->fake = Faker::create();
 
 		$this->Pages = new PagesRepository();
-		ray($this->Pages);
 
 		$this->invoke();
 

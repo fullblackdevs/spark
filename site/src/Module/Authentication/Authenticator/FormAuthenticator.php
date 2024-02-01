@@ -40,11 +40,8 @@ class FormAuthenticator implements AuthenticatorInterface
 
 		$badgeID = strtoupper(Security::hash(json_encode($badge), 'md5', true));
 
-		ray($badgeID);
-
 		if ($fs->has($badgeID . '.json')) {
 			$user = json_decode(Security::decrypt($fs->read($badgeID . '.json'), env('ORGANIZATION_KEY')), true);
-			ray($user);
 
 			if (password_verify($credentials['password'], $user['credentials']['password'])) {
 				// User is verified
@@ -56,7 +53,6 @@ class FormAuthenticator implements AuthenticatorInterface
 			}
 		}
 
-		ray($this->_session->getFlash());
 		$this->_session->getFlash()->add('error', 'Invalid username or password.<br />Please try again.');
 
 		return new Result([

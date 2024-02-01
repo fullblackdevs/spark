@@ -115,12 +115,12 @@ $fake = Faker::create();
 							</div>
 							<h4 class="font-semibold text-3xl text-courageous-plum"><?= $post['title'] ?></h4>
 							<div class="relative flex items-center gap-x-3 mt-2">
-								<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-8 w-8 rounded-full bg-gray-50">
+								<img src="<?= $post['contributor']['image'] ?>" alt="" class="h-8 w-8 rounded-full bg-gray-50">
 								<div class="text-sm leading-6">
 									<p class="font-semibold text-gray-900">
-										<a href="#">
+										<a href="/contributor/<?= $post['contributor']['slug'] ?>">
 											<span class="absolute inset-0"></span>
-											Jean Gray
+											<?= $post['contributor']['name'] ?>
 										</a>
 									</p>
 								</div>

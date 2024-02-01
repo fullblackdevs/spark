@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use App\Module\Content\Entity\Resource;
 use App\Repository\RepositoryInterface;
 use App\Service\DigitalOceanSpacesService;
 use Cake\Collection\Collection;
@@ -89,13 +90,15 @@ class ResourcesRepository extends CoreRepository implements RepositoryInterface
 		return $this->Resources;
 	}
 
-	public function getResource(string $id = null): array|null
+	public function getResource(string $id = null): Resource|null
 	{
 		if ($id) {
 			$resources = new Collection($this->getResources());
 			$resource = $resources->firstMatch(['slug' => $id]);
+
+			return new Resource($resource);
 		}
 
-		return $resource ?? null;
+		return null;
 	}
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Repository;
 
 use App\Service\DigitalOceanSpacesService;
@@ -158,6 +159,8 @@ abstract class CoreRepository
 	{
 		$associatedContent = new Collection($this->loadContent(Inflector::pluralize($association), $collectionType));
 
+		/** @todo looping to retrieve the correct Entity should be performed by the Repository for that Entity */
+
 		foreach ($content as $index => $item) {
 			if ($node = Hash::get($item, Inflector::singularize($association))) {
 
@@ -173,21 +176,56 @@ abstract class CoreRepository
 
 				if ($associatedContentNode) {
 					if (is_array($node) && Hash::contains($node, $associatedContentNode)) {
-						ray('The Content Node already contains the Associated Content Node.');
+						//ray('The Content Node already contains the Associated Content Node.');
 					} else {
 						$content[$index][Inflector::singularize($association)] = $associatedContentNode;
 					}
 				}
 			} else {
-				ray('The Content Item does not contain the Association key.');
+				//ray('The Content Item does not contain the Association key.');
 			}
 		}
 
 		return $content;
 	}
 
-	public function getFileSystem() : Filesystem
+	public function getFileSystem(): Filesystem
 	{
 		return $this->fs;
+	}
+
+	public function getPinnedContent(Collection|array $content, string $type, string $key = 'isPinned'): array
+	{
+		$pinnedContent = [];
+
+		if ($content instanceof Collection) {
+			$content = $content->filter(function ($item) use ($key) {
+				return Hash::get($item, $key) === true;
+			});
+
+			$content = $content->each(function ($item) use (&$pinnedContent, $type) {
+				if (class_exists('\\App\\Module\\Content\\Entity\\' . ucwords($type))) {
+					$item = new ('\\App\\Module\\Content\\Entity\\' . ucwords($type))($item);
+				} else {
+					throw new Exception('Entity class for ' . ucwords($type) . ' does not exist.');
+				}
+
+				$pinnedContent[] = $item;
+			});
+		} elseif (is_array($content)) {
+			foreach ($content as $item) {
+				if (Hash::get($item, $key) === true) {
+					if (class_exists('\\App\\Module\\Content\\Entity\\' . ucwords($type))) {
+						$item = new ('\\App\\Module\\Content\\Entity\\' . ucwords($type))($item);
+					} else {
+						throw new Exception('Entity class for ' . ucwords($type) . ' does not exist.');
+					}
+
+					$pinnedContent[] = $item;
+				}
+			}
+		}
+
+		return $pinnedContent;
 	}
 }

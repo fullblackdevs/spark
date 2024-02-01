@@ -1,0 +1,59 @@
+{
+	"name": "about",
+	"sections": {
+		"header": {
+			"image": "3401540549B645BBBD47162A2F125305.jpg",
+			"title": "About Us",
+			"description": "SPARK is here to empower, educate and engage women from every walk of life...everywhere"
+		},
+		"content": [
+			{
+				"title": "Our Story",
+				"body": "Founded in 2018, SPARK is dedicated to empowering and advocating for women and girls of all races, fostering a world where they can thrive, lead, and realize their full potential. We provide invaluable resources and unwavering support to organizations committed to the advancement of women, championing their rights, amplifying their voices, and cultivating a global community that embraces diversity, equality, and inclusion.",
+				"image": "EB9A4FD9AD80449F8ED0EC853B4F3F42.jpg",
+				"order": 1,
+				"format": "text-with-image-left"
+			},
+			{
+				"title": "Core Values",
+				"body": [
+					{
+						"title": "Support",
+						"text": "At SPARK, we believe in the power of unwavering support. We are committed to fostering a nurturing environment where women and girls can find encouragement, mentorship, and solidarity to overcome challenges and achieve their goals."
+					},
+					{
+						"title": "Purpose",
+						"text": "We are driven by a deep sense of purpose to uplift women and girls. SPARK is dedicated to ensuring that they have the opportunities and resources to discover their passions, fulfill their dreams, and lead purposeful lives."
+					},
+					{
+						"title": "Advocacy",
+						"text": "Advocacy is at the heart of what we do. We stand up for the rights and well-being of women and girls, advocating for equality, justice, and opportunities on their behalf, and working tirelessly to dismantle barriers and prejudice."
+					},
+					{
+						"title": "Respect",
+						"text": "Respect is fundamental to our approach. We honor the unique experiences, backgrounds, and perspectives of all women, promoting a culture of respect that values diversity and encourages dialogue and understanding."
+					},
+					{
+						"title": "Resilience",
+						"text": "We recognize the strength and resilience of women and girls in the face of adversity. SPARK supports them in building resilience, equipping them with the tools to overcome obstacles and thrive in an ever-changing world."
+					},
+					{
+						"title": "Knowledge",
+						"text": "Knowledge is the cornerstone of empowerment. SPARK is committed to providing women and girls with access to education, information, and resources that equip them with the knowledge and skills they need to make informed decisions and effect positive change in their lives and communities."
+					}
+				],
+				"image": "85DF4DEBB9B242AD821BC867C433781F.jpg",
+				"order": 2,
+				"format": "accordian-with-image-right"
+			}
+		]
+	},
+	"config": {
+		"navigation": {
+			"includeInNav": true,
+			"navLabel": "About",
+			"navOrder": 1,
+			"path": "about"
+		}
+	}
+}

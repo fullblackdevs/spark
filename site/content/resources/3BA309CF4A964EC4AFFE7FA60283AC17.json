@@ -7,5 +7,7 @@
 	},
 	"types": ["publication", "research"],
 	"id": "3ba309cf-4a96-4ec4-affe-7fa60283ac17",
-	"partner": "c18e4b0a-d81e-4509-a242-1a7c379669b0"
+	"partner": "c18e4b0a-d81e-4509-a242-1a7c379669b0",
+	"isPinned": true,
+	"image": "EB9A4FD9AD80449F8ED0EC853B4F3F42.jpg"
 }

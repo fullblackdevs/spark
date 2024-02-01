@@ -30,8 +30,6 @@ class CreateUserCommand extends CoreCommand
 
 	protected function execute(InputInterface $in, OutputInterface $out): int
 	{
-		ray()->clearScreen();
-
 		$user = [
 			'$schema' => [
 				'resource' => 'user',
@@ -91,8 +89,6 @@ class CreateUserCommand extends CoreCommand
 		$user['id'] = strtoupper(str_replace('-', '', Text::uuid()));
 		$user['contact']['email']['address'] = $user['credentials']['username'];
 
-		ray($user, $password);
-
 		$event = [
 			'type' => 'user.create',
 			'when' => time(),
@@ -113,8 +109,6 @@ class CreateUserCommand extends CoreCommand
 
 		$user['events'][$event['when']] = $event;
 
-		ray($user);
-
 		$badge = [
 			'$schema' => [
 				'resource' => 'badge',
@@ -124,8 +118,6 @@ class CreateUserCommand extends CoreCommand
 		];
 
 		$badgeID = strtoupper(Security::hash(json_encode($badge), 'md5', true));
-
-		ray($badgeID);
 
 		$fs = DigitalOceanSpacesService::init('registry/users');
 

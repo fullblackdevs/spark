@@ -17,6 +17,8 @@ use App\Action\Page\HomeAction;
 use App\Action\Page\PartnersAction;
 use App\Action\Page\ResourcesAction;
 use App\Middleware\UserAuthenticationMiddleware;
+use App\Module\Content\Action\ViewContributorAction;
+use App\Module\Content\Action\ViewPostAction;
 use App\Module\User\Action\DashboardViewAction;
 use App\Module\User\Action\LoginAction;
 use App\Module\User\Action\LogoutAction;
@@ -34,6 +36,10 @@ return function (App $app) {
 	$app->get('/partner/{id}/resource/{slug}', GetResourcePageAction::class);
 	$app->get('/event/{slug}', GetEventPageAction::class);
 	$app->get('/partner/{slug}', GetPartnerPageAction::class);
+
+	$app->get('/blog/{slug}', ViewPostAction::class);
+
+	$app->get('/contributor/{slug}', ViewContributorAction::class);
 
 	$app->group('/admin', function (RouteCollectorProxy $admin) {
 		$admin->get('[/]', DashboardViewAction::class)->setName('user.dashboard');

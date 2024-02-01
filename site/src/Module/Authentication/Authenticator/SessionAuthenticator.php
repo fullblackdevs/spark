@@ -12,10 +12,7 @@ class SessionAuthenticator implements AuthenticatorInterface
 	{
 		$this->_session = $request->getAttribute('session', new Session());
 
-		ray($this->_session->has('Authentication'));
-
 		if ($this->_session->has('Authentication')) {
-			ray($this->_session->get('Authentication'));
 			return new Result([
 				'identity' => 'test',
 				'request' => $request,

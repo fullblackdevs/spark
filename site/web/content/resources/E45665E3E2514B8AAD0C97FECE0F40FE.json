@@ -7,5 +7,7 @@
 	},
 	"types": ["mentorship"],
 	"id": "e45665e3-e251-4b8a-ad0c-97fece0f40fe",
-	"partner": "a65107fc-8a84-4add-b12f-8bb52f58110e"
+	"partner": "a65107fc-8a84-4add-b12f-8bb52f58110e",
+	"isPinned": true,
+	"image": "45AA2CC77E6349818A878DEF9E26D9B8.jpg"
 }

@@ -1,3 +1,10 @@
+<?php
+
+use App\Module\Content\Entity\Contributor;
+use App\Module\Content\Entity\Post;
+use App\Module\Content\Entity\Resource;
+use Cake\Chronos\Chronos;
+use Cake\Chronos\ChronosDate; ?>
 <div class="bg-[#FAF3F9] grow min-h-full *:px-8 md:*:px-28 text-black">
 	<section class="flex flex-col bg-courageous-plum-100 relative gap-4 py-8 md:py-24 overflow-hidden">
 		<div class="flex md:me-9 gap-4 items-center">
@@ -23,74 +30,86 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-6">
-
-			<div class="flex flex-col w-full md:w-2/3 border-2 border-courageous-200 rounded-xl shadow bg-[url('/assets/images/ian-schneider-PAykYb-8Er8-unsplash.jpg')] bg-cover overflow-hidden relative">
-				<a href="/blog/new-website" class="inset-0 absolute block md:hidden z-10">&nbsp;</a>
-				<div class="flex flex-col justify-between grow h-64 p-4 bg-gradient-to-t from-courageous-plum-900">
-					<!-- Content Badges -->
-					<div class="flex justify-end">
-						<div class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded border border-blue-400 w-fit">Press Release</div>
+		<?php if ($pinnedContent->count() >= 1) : ?>
+			<div x-data="{ currentHomeItem: 1, changeHomeItem: (homeItemID) => $data.currentHomeItem = homeItemID }" class="flex flex-wrap md:flex-nowrap gap-4 md:gap-6">
+				<?php $primaryPinnedItem = $pinnedContent->first(); ?>
+				<?php if ($primaryPinnedItem instanceof Post || $primaryPinnedItem instanceof Resource) : ?>
+					<div class="flex flex-col w-full md:w-2/3 border-2 border-courageous-200 rounded-xl shadow overflow-hidden relative h-[528px]" <?php if ($image = $primaryPinnedItem->getImageUrl()) : ?>style="background: url('<?= $image ?>') center / cover no-repeat;" <?php endif; ?>>
+						<div class="flex flex-col justify-between grow h-64 p-4 bg-gradient-to-t from-courageous-plum-900">
+							<!-- Content Badges -->
+							<?php if (($contentBadges = $primaryPinnedItem->getContentBadges()) >= 1) : ?>
+								<div class="flex justify-end">
+									<?php foreach ($contentBadges as $contentBadge) : ?>
+										<div class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded border border-blue-400 w-fit"><?= $contentBadge ?></div>
+									<?php endforeach; ?>
+								</div>
+							<?php endif; ?>
+							<div class="flex flex-col p-2 md:p-4 relative">
+								<h4 class="text-3xl md:text-4xl tracking-tighter font-semibold text-courageous-plum-100 md:w-4/5"><?= $primaryPinnedItem->getName() ?></h4>
+								<?php if ($primaryPinnedItem instanceof Post && ($contributor = $primaryPinnedItem->getContributor()) instanceof Contributor) : ?>
+									<div class="relative flex items-center gap-x-2 mt-2">
+										<img src="<?= $contributor->getProfileImage() ?>" alt="" class="h-6 w-6 rounded-full bg-gray-50">
+										<div class="text-sm leading-6">
+											<p class="font-semibold text-courageous-plum-200">
+												<?php if ($profile_url = $contributor->getUrl()) : ?><a href="<?= $profile_url ?>">
+														<span class="absolute inset-0"></span>
+													<?php endif; ?>
+													<?= $contributor->getName() ?>
+													<?php if ($profile_url) : ?></a><?php endif; ?>
+											</p>
+										</div>
+									</div>
+								<?php endif; ?>
+								<?php if ($postDate = $primaryPinnedItem->getDate()) : ?>
+									<time class="text-xs text-spark-gold-200 mt-2"><?= $postDate ?></time>
+								<?php endif; ?>
+								<a href="<?= $primaryPinnedItem->getUrl() ?>" class="hidden absolute bottom-0 right-0 w-fit md:inline-flex items-center px-4 py-2 text-xs font-medium text-center border-2 border-courageous-plum-300 rounded-lg text-courageous-plum-300 focus:ring-4 focus:outline-none focus:ring-courageous-plum-400 mb-4 me-2">
+									Read more
+									<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+										<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+									</svg>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="flex flex-col p-2 md:p-4 relative">
-						<h4 class="text-3xl md:text-4xl tracking-tighter font-semibold text-courageous-plum-100 md:w-4/5 mb-2">Spark Rings in the New Year with a New Look</h4>
-						<p class="font-medium tracking-tighter text-courageous-plum-200">Sandyanne Munroe</p>
-						<p class="text-xs text-courageous-plum-200">Friday, December 29, 2023</p>
-						<a href="/blog/new-website" class="hidden absolute bottom-0 right-0 w-fit md:inline-flex items-center px-4 py-2 text-xs font-medium text-center border-2 border-courageous-plum-300 rounded-lg text-courageous-plum-300 focus:ring-4 focus:outline-none focus:ring-courageous-plum-400 mb-4 me-2">
-							Read more
-							<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-							</svg>
-						</a>
+				<?php endif; ?>
+				<?php $pinnedContent = $pinnedContent->skip(1); ?>
+				<?php if ($pinnedContent->count() >= 1) : ?>
+					<div class="grid grid-flow-col auto-cols-max md:flex md:flex-col md:w-1/3 md:h-[528px] overflow-x-scroll md:overflow-hidden">
+						<div class="flex flex-col transition ease-in-out duration-300 relative gap-4" :style="'transform: translateY(-' + (currentHomeItem - 1) * (100 / <?= $pinnedContent->count() ?> + <?= (.0625 * ($pinnedContent->count() - 1)) ?>) + '%)'">
+							<?php foreach ($pinnedContent as $index => $pinnedItem) : ?>
+								<a href="<?= $pinnedItem->getUrl() ?>" x-data="{ thisHomeItem: <?= $index ?> }" class="flex flex-col border-2 border-spark-pink-400 rounded-xl shadow overflow-hidden md:h-64 h-48 aspect-square bg-[percentage:140%] bg-center bg-no-repeat relative md:shrink-0 transition-all duration-300 ease-in-out hover:bg-[percentage:150%] before:absolute before:size-full before:inset-0 before:bg-gradient-to-t before:from-courageous-plum-600" <?php if ($image = $pinnedItem->getImageUrl()) : ?>style="background-image: url('<?= $image ?>');"<?php endif; ?>>
+									<div class="flex flex-col grow justify-between p-4 z-10">
+										<!-- Content Badges -->
+										<?php if (($contentBadges = $pinnedItem->getContentBadges()) >= 1) : ?>
+											<div class="flex justify-end">
+												<?php foreach ($contentBadges as $contentBadge) : ?>
+													<div class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded border border-blue-400 w-fit"><?= $contentBadge ?></div>
+												<?php endforeach; ?>
+											</div>
+										<?php endif; ?>
+										<div class="relative">
+											<h4 class="text-lg font-semibold text-courageous-plum-100 tracking-tighter leading-tight"><?= $pinnedItem->getTitle() ?></h4>
+											<?php if ($publishedDate = $pinnedItem->getDate()) : ?>
+												<time class="text-xs text-courageous-plum-200"><?= $publishedDate ?></time>
+											<?php endif; ?>
+											<?php if ($location = $pinnedItem->getLocation()) : ?>
+												<p class="hidden md:block text-xs mt-1 text-courageous-plum-200"><span class="pe-4"><?= "{$location['city']}, {$location['state']}" ?></p>
+											<?php endif; ?>
+										</div>
+									</div>
+								</a>
+							<?php endforeach; ?>
+						</div>
 					</div>
-				</div>
+					<nav class="hidden md:flex md:flex-col space-y-3 rtl:space-x-reverse justify-center">
+						<?php for ($n = 1; $n <= (($pinnedContent->count() % 2 == 0) ? $pinnedContent->count() : $pinnedContent->count() - 1); $n++) : ?>
+							<button x-data="{ homeItemID: <?= $n ?> }" :class="currentHomeItem == homeItemID ? 'bg-spark-gold' : 'bg-courageous-plum hover:bg-courageous-plum-300'" :disabled="homeItemID == currentHomeItem || false" @click="console.log(homeItemID); changeHomeItem(homeItemID)" type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="true" aria-label="Pinned Item <?= $n ?>"></button>
+						<?php endfor; ?>
+					</nav>
+				<?php endif; ?>
 			</div>
-			<div class="grid grid-flow-col auto-cols-max md:flex md:flex-col md:w-1/3 gap-4 overflow-x-scroll md:overflow-hidden">
-				<div class="flex flex-col border border-gray-200 rounded-xl shadow overflow-hidden bg-[url('/assets/images/thought-catalog-23KdVfc395A-unsplash.jpg')] md:h-64 h-48 aspect-square bg-cover">
-					<div class="flex flex-col grow justify-between p-4 bg-gradient-to-t from-courageous-plum-600">
-						<div class="flex justify-end">
-							<div class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 w-fit">Event</div>
-						</div>
-						<div class="relative">
-							<h4 class="text-lg font-semibold text-courageous-plum-100 tracking-tighter leading-tight">Women's Vision Roundtable</h4>
-							<time class="hidden md:block font-medium text-courageous-plum-200 tracking-tighter">Friday, December 1, 2023</time>
-							<p class="hidden md:block text-xs mt-1 text-courageous-plum-200"><span class="pe-4">Miami, FL</p>
-						</div>
-					</div>
-				</div>
-				<div class="flex flex-col border border-gray-200 rounded-xl shadow overflow-hidden bg-[url('/assets/images/imattsmart-v-uoqL494Gs-unsplash.jpg')] md:h-64 h-48 aspect-square bg-cover">
-					<div class="flex flex-col grow justify-between p-4 bg-gradient-to-t from-courageous-plum-600">
-						<div class="flex justify-end">
-							<div class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 w-fit">Resource</div>
-						</div>
-						<div class="relative">
-							<h4 class="text-lg font-semibold text-courageous-plum-100 tracking-tighter leading-tight">Winter Food Pantry</h4>
-							<time class="hidden md:block font-medium tracking-tighter text-courageous-plum-200">AIDS Healthcare Foundation</time>
-							<p class="hidden md:block text-xs mt-1 text-courageous-plum-200">Ft. Lauderdale, FL</p>
-						</div>
-					</div>
-				</div>
-				<div class="flex flex-col border border-gray-200 rounded-xl shadow overflow-hidden bg-[url('/assets/images/christina-wocintechchat-com-jzonFmreWok-unsplash.jpg')] md:h-64 aspect-square h-48 bg-cover md:hidden">
-					<div class="flex flex-col grow justify-between p-4 bg-gradient-to-t from-courageous-plum-600">
-						<div class="flex justify-end">
-							<div class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400 w-fit">Article</div>
-						</div>
-						<div class="relative">
-							<h4 class="text-lg font-semibold text-courageous-plum-100 tracking-tighter leading-tight">Microagressions in the Workplace</h4>
-							<p class="hidden md:block font-medium tracking-tighter text-courageous-plum-200">Tracy Jones</p>
-							<p class="hidden md:block text-xs mt-1 text-courageous-plum-200">December 30, 2023</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<nav class="hidden md:flex md:flex-col space-y-3 rtl:space-x-reverse justify-center">
-				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-				<button type="button" class="w-3 h-3 rounded-full bg-courageous-plum" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-			</nav>
-		</div>
+		<?php endif; ?>
 	</section>
 	<section class="flex flex-col md:flex-row bg-spark-pink relative items-center overflow-hidden py-10 md:py-16">
 		<svg viewbox="0 0 360 150" class="font-display text-8xl relative z-10 md:w-2/5 w-full" xmlns="http://www.w3.org/2000/svg">

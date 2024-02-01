@@ -21,9 +21,7 @@ class EventsRepository implements RepositoryInterface
 
 		foreach ($this->fs->listContents('/') as $config) {
 			if ($config->type() === 'file' && $this->fs->mimeType($config->path()) === 'application/json' && $config->path() === 'events.json') {
-				ray($config);
 				$config = json_decode($this->fs->read($config->path()), true);
-				ray($config);
 				$this->config = $config;
 			}
 		}
@@ -54,7 +52,6 @@ class EventsRepository implements RepositoryInterface
 
 			if ($this->fs->has('partners.json')) {
 				$partners = json_decode($this->fs->read('partners.json'), true);
-				ray($partners);
 			} else {
 				$response2 = $ai->completion([
 					'model' => 'gpt-3.5-turbo-instruct',
@@ -65,9 +62,7 @@ class EventsRepository implements RepositoryInterface
 					'presence_penalty' => 0.6,
 				]);
 				$response2 = json_decode($response2, true);
-				ray($response2);
 				$response2 = json_decode(preg_replace('/\s+/', ' ', trim($response2['choices'][0]['text'])), true);
-				ray($response2);
 
 				$this->fs->write('partners.json', json_encode($response2));
 			}

@@ -20,7 +20,6 @@ class GetEventPageAction extends CoreAction
 		$events['all'] = new Collection($this->Events->getEvents());
 
 		$slug = $this->getRequest()->getAttribute('slug');
-		ray($slug);
 		$event = $events['all']->firstMatch(['slug' => $slug]);
 
 		$this->getView()->render($this->getResponse(), 'pages/event.php', [

@@ -4,7 +4,7 @@
 	"titles": { "subtitle": "January 2023 Newsletter" },
 	"date": "2021-09-01T00:00:00+00:00",
 	"description": { "full": null, "excerpt": null },
-	"contributor": { "name": "Spark Staff Writer", "slug": "spark" },
+	"contributor": "ca90350d-470b-4ece-81d0-f5c5921341e8",
 	"type": "newsletter",
 	"slug": "how-to-find-a-therapist",
 	"size": "col-span-3 row-span-2 h-auto",
