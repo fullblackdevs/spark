@@ -513,9 +513,9 @@
     },
     "\/composer.json" : {
       "ft" : 524288,
-      "oA" : 2,
+      "oA" : 1,
       "oAP" : "\/web\/content\/resources\/composer.json",
-      "oF" : 0,
+      "oF" : 1,
       "oO" : 0,
       "oS" : 1
     },
