@@ -14,9 +14,24 @@ services:
     type: redis:6
     persist: false
     portforward: 56381
+  cms:
+    type: node:18
+    ssl: true
+    environment:
+      NODE_ENV: development
+    globals:
+      npm: "latest"
+    run:
+      - npm install --prefix cms
+    build_as_root:
+      - npm install -g @sanity/cli
+    ports:
+      - 3333:3333
 proxy:
   site:
     - spark.loc
+  cms:
+    - admin.spark.loc:3333
 tooling:
   php:
     service: site
@@ -28,3 +43,7 @@ tooling:
   console:
     service: site
     cmd: site/bin/console
+  cms-start:
+    service: cms
+    description: "Run Sanity Studio"
+    cmd: npm run dev --prefix cms
