@@ -17,13 +17,17 @@ services:
   cms:
     type: node:18
     ssl: true
-    environment:
-      NODE_ENV: development
+    overrides:
+      environment:
+        NODE_ENV: development
+        NPM_CONFIG_PREFIX: ~/.npm-global
     globals:
       npm: "latest"
     run:
       - npm install --prefix cms
+      - npm run dev --prefix cms
     build_as_root:
+      - npm install -g npm@10.8.1
       - npm install -g @sanity/cli
     ports:
       - 3333:3333
