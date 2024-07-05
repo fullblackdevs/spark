@@ -12,6 +12,8 @@ use Slim\Interfaces\RouteParserInterface;
 use Slim\Routing\RouteContext;
 use Odan\Session\PhpSession as Session;
 use App\Module\Content\Repository\PagesRepository;
+use Cake\Core\Configure;
+use Sanity\Client as SanityClient;
 
 abstract class CoreAction
 {
@@ -22,6 +24,8 @@ abstract class CoreAction
 	private RouteParserInterface $Router;
 
 	protected PagesRepository $Pages;
+
+	protected SanityClient $SanityClient;
 
 	private Flash $_flash;
 
@@ -41,6 +45,13 @@ abstract class CoreAction
 		$this->fake = Faker::create();
 
 		$this->Pages = new PagesRepository();
+
+		$this->SanityClient = new SanityClient([
+			'projectId' => Configure::read('Sanity.projectId'),
+			'dataset' => Configure::read('Sanity.dataset'),
+			'token' => Configure::read('Sanity.token'),
+			'apiVersion' => '2024-07-01',
+		]);
 
 		$this->invoke();
 

@@ -4,13 +4,47 @@ use Cake\Chronos\Chronos;
 use Faker\Factory as Faker;
 
 $fake = Faker::create();
+ray($posts2)
 ?>
-<div class="flex flex-col justify-end flex-none bg-courageous-plum-800 min-h-[550px] px-28 pb-20 text-spark-pink-100"<?php if (isset($pageHeaderImage)) : ?>style="background: url('/assets/images/<?= $pageHeaderImage ?>') center / cover no-repeat;" <?php endif; ?>>
+<div class="flex flex-col justify-end flex-none bg-courageous-plum-800 min-h-[550px] px-28 pb-20 text-spark-pink-100" <?php if (isset($pageHeaderImage)) : ?>style="background: url('/assets/images/<?= $pageHeaderImage ?>') center / cover no-repeat;" <?php endif; ?>>
 	<h2 class="text-6xl font-semibold tracking-tighter"><?= $pageTitle ?></h2>
 	<p class="text-lg"><?= $pageDescription ?></p>
 </div>
 <div class="bg-tranquil-pink-600 grow min-h-full px-28 text-black py-16">
 	<div class="grid grid-cols-8 auto-rows-fr grid-flow-dense overflow-hidden w-full mb-4 gap-8">
+		<!-- Sanity Posts -->
+		<?php foreach ($posts2 as $index => $post) : ?>
+			<div class="tracking-tight bg-white rounded-xl col-span-4 gap-0 items-stretch overflow-hidden">
+				<div class="flex flex-col justify-between p-6 h-full">
+					<div class="flex mb-1 justify-end">
+						<div class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Article</div>
+					</div>
+					<h4 class="font-semibold text-3xl text-courageous-plum"><?= htmlspecialchars($post['title'], ENT_QUOTES, 'UTF-8') ?></h4>
+					<div class="relative flex items-center gap-x-3 mt-2">
+						<img src="<?= $post['author']['imageUrl'] . "?h=50" ?>" alt="" class="h-8 w-8 rounded-full bg-gray-50">
+						<div class="text-sm leading-6">
+							<p class="font-semibold text-gray-900">
+								<a href="/contributor/<?= $post['author']['slug']['current'] ?>">
+									<span class="absolute inset-0"></span>
+									<?= $post['author']['fullName'] ?>
+								</a>
+							</p>
+						</div>
+					</div>
+					<?php if (!empty($post['summary'])) : ?><p class="mt-4 leading-relaxed grow h-max text-sm"><?= htmlspecialchars($post['summary'], ENT_QUOTES, 'UTF-8') ?></p><?php endif; ?>
+					<footer class="flex justify-between items-center mt-2">
+						<time class="text-sm text-courageous-plum-400 font-medium tracking-tighter"><?= Chronos::createFromFormat(Chronos::ATOM, $post['_createdAt'])->format('l, F j, Y') ?></time>
+						<a href="/post/<?= $post['slug']['current'] ?>" class="w-fit inline-flex items-center px-4 py-2 text-sm font-medium text-center text-courageous-plum border-2 border-courageous-plum rounded-lg hover:bg-courageous-plum-300 hover:text-white focus:ring-4 focus:outline-none focus:ring-courageous-plum-400">
+							Read More
+							<svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+							</svg>
+						</a>
+					</footer>
+				</div>
+			</div>
+		<?php endforeach; ?>
+		<!-- JSON Posts -->
 		<?php foreach ($posts as $index => $post) : ?>
 			<?php if (isset($post['format'])) : ?>
 				<?php if ($post['format'] === 'article-lg') : ?>

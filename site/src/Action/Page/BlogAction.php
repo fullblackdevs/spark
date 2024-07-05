@@ -10,7 +10,10 @@ class BlogAction extends CoreAction
 
 	public function invoke() : void
 	{
+		ray($this->SanityClient);
 		$this->Posts = new PostsRepository();
+
+		$postsSanity = $this->SanityClient->fetch('*[_type == "post"]{...,author->{...,"imageUrl": portrait.asset->url},headerImage->{...}}');
 
 		$page = $this->Pages->getPage('blog');
 		$header = $page->getSection('header');
@@ -21,6 +24,7 @@ class BlogAction extends CoreAction
 			'pageHeaderImage' => isset($header['image']) ? $header['image'] : null,
 			'pageSlug' => 'blog',
 			'posts' => $this->Posts->getPosts(),
+			'posts2' => $postsSanity,
 		]);
 	}
 }
