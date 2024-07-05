@@ -50,7 +50,9 @@ $fake = Faker::create();
 								</div>
 							</div>
 							<div class="text-courageous-plum-200"><!-- CARD CONTENT -->
-								<h4 class="font-semibold text-3xl"><?= $post['title'] ?></h4>
+								<?php if (!empty($post['title'])) : ?>
+									<h4 class="font-semibold text-3xl"><?= htmlspecialchars($post['title'], ENT_QUOTES, 'UTF-8') ?></h4>
+								<?php endif; ?>
 								<time class="font-medium tracking-tighter"><?= Chronos::createFromFormat(Chronos::ATOM, $post['date'])->format('l, F j, Y') ?></time>
 								<footer class="flex justify-end items-center mt-2">
 									<a href="/event/<?= $post['slug'] ?>" class="w-fit inline-flex items-center px-4 py-2 text-sm font-medium text-center text-courageous-plum border-2 border-courageous-plum rounded-lg hover:bg-courageous-plum-300 hover:text-white focus:ring-4 focus:outline-none focus:ring-courageous-plum-400">
