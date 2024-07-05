@@ -32,5 +32,24 @@ export default defineType({
 				defineArrayMember({type: 'contributor'})
 			]
 		}),
+		defineField({
+			title: 'Header Image',
+			name: 'headerImage',
+			type: 'image'
+		}),
+		defineField({
+			title: 'Summary',
+			name: 'summary',
+			type: 'text'
+		}),
+		defineField({
+			title: 'Content',
+			name: 'content',
+			type: 'array',
+			of: [
+				defineArrayMember({type: 'block'}),
+				defineArrayMember({type: 'image'})
+			]
+		})
 	]
 })
