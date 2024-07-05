@@ -4,11 +4,12 @@
 			<div class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Article</div>
 		</div>
 		<h2 class="text-6xl font-semibold tracking-tighter"><?= $Post->getTitle() ?></h2>
-		<?php if ($Contributor = $Post->getContributor()) : ?>
 	</div>
 </div>
 
+
 <div class="bg-[#FAF3F9] grow min-h-full px-28 text-black pt-16 tracking-tight z-10">
+	<?php if ($Contributor = $Post->getContributor()) : ?>
 	<div class="flex gap-16 -mt-32 bg-[#FAF3F9] p-10 rounded-t-lg">
 		<dl class="text-spark-gold-200">
 			<dt class="sr-only">Contributor</dt>
@@ -16,6 +17,7 @@
 			<dt class="sr-only">Publish Date</dt>
 			<dd class="text-2xl font-medium tracking-tighter"><?= $Contributor->getName() ?></dd>
 		</dl>
+		<?php endif; ?>
 
 		<section class="w-3/5">
 			<h3 class="text-3xl font-bold text-courageous-plum">The Details</h3>
@@ -43,7 +45,7 @@
 				</div>
 			<?php endif; ?>
 
-			<?php if ($Post->getPartner()->getWebsite()) : ?>
+			<?php if ($Post->getPartner()?->getWebsite()) : ?>
 				<div class="flex justify-between px-6">
 					<h4>Website</h4>
 					<p><a href="https://<?= $Post->getPartner()->getWebsite() ?>"><?= $Post->getPartner()->getWebsite() ?></a></p>
